@@ -1,0 +1,72 @@
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title></title>
+	</head>
+	<body>
+	<h1 align="center">HTML Lists</h1>
+	<h2>Unordered List (Siralanmamis siyahi)</h2>
+	<ul type="square"> <!--disc / circle / square / none -->
+		<li>Bread</li>
+		<li>Milk</li>
+		<li>Eggs</li>
+		<li>Onion</li>
+	</ul>
+	<h2>Ordered List (Siralanmis siyahi)</h2>	
+	<ol type="1" start="5">
+		<li>Mai</li> <!-- 1 / a / A / i / I -->
+		<li>June</li>
+		<li>July</li>
+		<li>August</li>
+	</ol>
+	<h2>Definition List (Terifler siyahi)</h2>	
+	<dl>
+		<dt>HTML<dt> <!-- definition term --> <!-- dd - definition description -->
+		<dd align="justify"><i>HyperText Markup Language</i> or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the content and structure of web content. It is often assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</dd> <!--  -->
+		
+		<dt>CSS<dt>
+		<dd align="justify"><i>Cascading Style Sheets (CSS)</i> is a style sheet language used for specifying the presentation and styling of a document written in a markup language such as HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</dd>
+		
+		<dt>JS<dt>
+		<dd align="justify"><i>JavaScript (/ˈdʒɑːvəskrɪpt/)</i>, often abbreviated as JS, is a programming language and core technology of the Web, alongside HTML and CSS. 99% of websites use JavaScript on the client side for webpage behavior.</dd>
+	</dl>
+	<h2>Nested List</h2>
+	<ol type="I">
+		<li>FrontEnd
+			<ol type="1">
+				<li>HTML
+					<ul type="disc">
+						<li>Bootstrap</li>
+					</ul>
+				</li>
+				<li>CSS</li>
+				<li>JavaScript
+					<ul type="disc">
+						<li>jQuery</li>
+						<li>AJAX</li>
+						<li>JSON</li>
+						<li>React</li>
+					</ul>
+				</li>
+			</ol>
+		</li>
+		<li>BackEnd
+			<ol type="a">
+				<li>Languages
+					<ul type="circle">
+						<li>PHP</li>
+						<li>Node JS</li>
+						<li>Phyton</li>
+					</ul>
+				</li>
+				<li>DBMS
+					<ol type="a">
+						<li>MySQL</li>
+						<li>MongoDB</li>
+					</ol>
+				</li>
+			</ol>
+		</li>
+	</ol>
+	</body>
+</html>
