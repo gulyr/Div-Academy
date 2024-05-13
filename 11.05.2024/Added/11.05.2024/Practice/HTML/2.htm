@@ -1,0 +1,76 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>HTML List</title>
+	</head>
+	<body>
+		<h1 align="center">HTML Siyahıları</h1>
+		<h2>Unordered List (Sıralanmamış siyahı)</h2>
+		<ul type="square">		<!-- disc | circle | square | none -->
+			<li>Çörək</li>
+			<li>Yumurta</li>
+			<li>Süd</li>
+			<li>Soğan</li>
+		</ul>
+		
+		<h2>Ordered List (Sıralanmış siyahılar)</h2>
+		<ol type="I" start="5">		<!-- 1 | a | A | i | I -->
+			<li>May</li>
+			<li>İyun</li>
+			<li>İyul</li>
+			<li>Avqust</li>
+		</ol>
+		
+		<h2>Definition List (Təriflər siyahısı)</h2>
+		<dl>
+			<dt><b>HTML</b></dt>
+			<dd align="justify"><i>Hypertext Markup Language</i> — brauzerin oxuya biləcəyi hər hansı sənədi və ya səhifəni yaratmaq üçün xüsusi hipermətn dilidir. HTML internetin fundamental baza texnologiyasıdır və veb-səhifənin növünü, funksiyasını təyin edən diskriptorlar əsasında yaradılmış dildir. Bütün veb-qovşaqlarda toplanmış və internetə qoşulmuş kompüterlərin ekranlarında göstərilən sənədlər HTML proqram kodunda yazılırlar. HTML – səhifələrdə mətn bloklarının, təsvirlərin yerləşdirilməsinə, cədvəllərin qurulmasına, sənədin və sənəddəki mətnin rənglərinin seçilməsinə, multimediya elementlərinin əlavə edilməsinə, hiperistinadların və bütün bu elementlər arasında əlaqələrin yaradılmasına imkan verir. Hipermətn koduna malik olan fayllar (.htm) və (.html) genişləndirməsi ilə göstərilir.</dd>
+			
+			<dt><b>CSS</b></dt>
+			<dd align="justify"><i>Cascading Style Sheets</i> — sənədin xarici görünüşünün, işarələmə dilinin istifadəsi ilə yazılmış, formal təsvir dili. Adətən HTML və XHTML işarələmə dillərində yazılmış veb-səhifələrin təsviri və tərtibatı üçün istifadə edilir, lakin istənilən digər XML sənədlərə, məsələn, SVG və ya XUL-a da tətbiq edilə bilər. HTML sənədlərini yaradarkən veb-dizaynerlər müxtəlif mürəkkəb məsələlərlə qarşılaşırlar: müəyyən abzas daxilində şifrələrin dəyişdirilməsi; mətnin və ya təsvirin sənədin hər hansı bir yerində yerləşdirilməsi; mətnin və ya fonun rənginin dəyişdirilməsi; müxtəlif verilənlər cədvəllərinin format edilməsi və s.</dd>
+			
+			<dt><b>JS</b></dt>
+			<dd align="justify"><i>JavaScript</i> — internet səhifələrin yaradılmasında geniş istifadə olunan proqramlaşdırma dilidir. JavaScript müxtəlif dilllərdən ilhamlanaraq yaradılmışdır. 1995-ci ilə Brendan Eyx tərəfindən yazılmışdır. JavaScript Obyekt Yönümlü Proqramlaşdırma (OYP) dilidir. Obyektə Yönümlü Proqramlaşdırma mövzusu kifayət qədər mürəkkəb proqramlaşdırmadır. JavaScript Netscape Navigator 2.0 ilə birlikdə Brendan Eich tərəfindən inkişaf etdirilən və əvvəllər Mocha sonralar LiveScript olaraq adlandırılan və sonda bu anki adını alan JavaScript dili başlanğıcda sadəcə müştəri tərəfindən (client-side) şərh edilən bir proqramlaşdırma dilidir. Günümüzdə NodeJS texnologiyası ilə server tərəfli də (server-side) şərh edilən proqramlama dili halına gəldi.</dd>
+		</dl>
+		
+		<h2>Nested Lists (İç-içə siyahılar)</h2>
+		<ol type="I">
+			<li>FrontEnd
+				<ol>
+					<li>HTML</li>
+					<li>CSS
+						<ul type="disc">
+							<li>Bootstrap</li>
+						</ul>
+					</li>
+					<li>JavaScript
+						<ul>
+							<li>jQuery</li>
+							<li>AJAX</li>
+							<li>JSON</li>
+							<li>React</li>
+						</ul>
+					</li>
+				</ol>
+			</li>
+			<li>BackEnd
+				<ol type="a">
+					<li>Languages
+						<ul type="circle">
+							<li>PHP</li>
+							<li>NodeJS</li>
+							<li>Python</li>
+						</ul>
+					</li>
+					<li>Databases
+						<ol type="a">
+							<li>MySQL</li>
+							<li>MongoDB</li>
+						</ol>
+					</li>
+				</ol>
+			</li>
+		</ol>
+		
+	</body>
+</html>
