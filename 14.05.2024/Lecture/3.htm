@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements - Lecture - 14.05.2024</title>
+</head>
+
+<body>
+    <h1>Form Elements</h1>
+    <h2>Login Form</h2>
+    <form action="login.php" method="POST">
+        <p>
+            <input type="text" placeholder="Username" name="user">
+        </p>
+        <p>
+            <input type="password" placeholder="Password" name="password">
+        </p>
+        <p>
+            <input type="submit" value="Sign in">
+        </p>
+    </form>
+    <h2>Qeydiyyat Formu</h2>
+    <form action="">
+        <p>Ad Soyad: <input type="text"></p>
+        <p>Dogum tarixi: <input type="date"></p>
+        <p>Doguldugu yeri:
+            <select name="" id="">
+                <option value="">Armenia</option>
+                <option value="" selected="selected">Azerbaijan</option>
+                <option value="">Georgia</option>
+                <option value="">Iran</option>
+                <option value="">Iran</option>
+                <option value="">Ukraine</option>
+            </select>
+        </p>
+        <fieldset>
+            <legend>Cinsiyyet</legend>
+            <label>
+                <input id type="radio" name="sex" checked="checked"> Kisi
+            </label>
+
+            <!-- <input id="m" type="radio" name="sex" checked="checked"> Kisi
+            <label for="m"></label> -->
+
+            <label>
+                <input type="radio" name="sex"> Qadin
+            </label>
+        </fieldset>
+        <p>Boy: <input type="number" min="150" max="200"></p>
+        <p>Goz rengi: <input type="color"></p>
+        <p>Qan qrupu:
+            <input type="checkbox">A
+            <input type="checkbox">B
+        </p>
+        <p>Sekil:
+            <input type="file">
+        </p>
+        <p>Serh:
+            <textarea rows="5" cols="80"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Gonder">
+            <input type="reset" value="Temizle">
+        </p>
+    </form>
+</body>
+
+</html>
