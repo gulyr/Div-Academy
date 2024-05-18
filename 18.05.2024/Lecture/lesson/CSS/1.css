@@ -1,0 +1,80 @@
+body {
+    /* background-color: #f0e68c; 
+    background-image: url('img/monkey.png'); 
+    background-repeat: no-repeat; 
+    background-size: 400px;
+    background-position: right bottom;
+    background-attachment: fixed; */
+    background: #f0e68c url('img/monkey.png') right bottom/400px no-repeat fixed;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+    /* 
+    1em - browserin olcusu qederdir 
+    1rem - 
+    */
+    /* 
+    font-weight: 700; - bold olchu
+    font-weight: 400; - normal qalinliqdir
+    */
+    /* 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.4em;
+    font-weight: 400;
+    font-style: italic;
+    font-variant: small-caps; */
+    font: italic small-caps 400 2.4em Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    text-decoration: underline wavy red;
+}
+
+h2 {
+    font: bold 1.6em Arial, sans-serif;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: -3px 2px 5px #333;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    border: 2px dashed red;
+    border-radius: 20px;
+    padding: 20px;
+    /* width verilen bir elementi ortaya getirmek ucun margin - auto yazilmalidir. */
+    width: 800px;
+    margin: auto;
+}
+
+p {
+    font: normal 1em/1.5 Arial, sans-serif;
+    /* line-height: 1.5; */
+    /* normal olchu - 1.5 */
+    text-indent: 3em;
+    text-align: justify;
+    background-color: #ffffff80;
+    /* opacity: 0.3; */
+}
+
+ul {
+    font: 1em Arial, sans-serif;
+    list-style: ' 💜 ';
+}
+
+
+/* Shekil saquli olanda ona height vermek lazimdir */
+
+img {
+    width: 300px;
+    height: 300px;
+    float: left;
+    border: 1px solid #333;
+    /* border-radius: 0 50px 0 50px; */
+    border-radius: 50%;
+    padding: 20px;
+    margin: 0 30px 10px 0;
+    background: #fff;
+    object-fit: cover;
+    box-shadow: 3px 2px 10px #333;
+    shape-outside: circle(50%);
+}
