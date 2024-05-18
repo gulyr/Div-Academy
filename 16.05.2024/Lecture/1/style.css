@@ -1,0 +1,36 @@
+/* 
+    #A6A6A6 - gray
+    #000000 - black
+    #FFFFFF - white
+ */
+
+
+/* body {
+    background-color: aquamarine;
+    background-image: url('minion.png');
+} */
+
+
+/*  TAB
+    shift + TAB 
+*/
+
+
+/* selector */
+
+body {
+    /* declaration */
+    background-color: #f0e68c;
+    background-image: url('image/jerry.png');
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+    /* background-position: center; */
+    background-size: 250px;
+    background-position: right bottom;
+    background-attachment: fixed;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+}

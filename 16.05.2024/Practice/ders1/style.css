@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {background-color: #8A2EDF;}
+
+.main {
+    background-color: white;
+    width: 55%;
+    margin: 70px auto 0 auto;
+    padding: 20px 40px;
+    border: 3px solid red;
+    border-radius: 15px;
+}
+
+.scales div {
+    color: #fff;
+    margin: 20px 0; 
+    padding: 7px 15px;
+    border-radius: 5px;
+}
+
+.red {background-color: red;}
+
+.blue {background-color: blue;}
+
+.w300 {width: 300px;}
+.w450 {width: 450px;}
+.w600 {width: 600px;}
+.w650 {width: 650px;}

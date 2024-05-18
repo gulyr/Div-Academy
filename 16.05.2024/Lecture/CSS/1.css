@@ -1,0 +1,12 @@
+body {
+    background-color: #f0e68c; 
+    background-image: url('img/monkey.png'); 
+    background-repeat: no-repeat; 
+    background-size: 400px;
+    background-position: right bottom;
+    background-attachment: fixed;
+}
+h1 {
+    color: red;
+    text-align: center;
+}
