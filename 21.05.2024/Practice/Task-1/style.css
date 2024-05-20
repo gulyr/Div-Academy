@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(98deg, rgba(140,203,209,1) 0%, rgba(203,239,235,1) 75%);
+}
+.container{
+    width: 40%;
+    height: 550px;
+    background: linear-gradient(98deg, rgba(140,203,209,1) 0%, rgba(203,239,235,1) 75%);
+    margin: 40px 0 50px 120px;
+    border: 1px solid gray;
+    border-radius:25px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.container .login-box{
+    background: #8DABAB;
+    height: 100px;
+    margin: 50px 0 50px 0;
+    align-content: center;
+}
+.container .login-box h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+}
+.container .name-box{
+    background-color: #C6EDEC;
+    width: 102%;
+    height: 100px;
+    border: 1px solid gray;
+    border-right: 9px solid #8DABAB;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    align-content: center;
+}
+.container .phoneNumber-box{
+    background-color: #C6EDEC;
+    width: 102%;
+    height: 100px;
+    margin: 30px 0;
+    border: 1px solid gray;
+    border-right: 9px solid #8DABAB;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    align-content: center;
+}
+.container .name-box p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #434a4a;
+    text-align: center;
+}
+.container .phoneNumber-box p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #434a4a;
+    text-align: center;
+}
