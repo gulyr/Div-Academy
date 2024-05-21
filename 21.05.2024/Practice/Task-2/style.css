@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.boxes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2px;
+    margin: 7% auto;
+    width: 85%;
+}
+.box{
+    width: 100%;
+    margin: 0 15px;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.boxes .box  img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+}
+.boxes .box p{
+    height: 100%;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+.boxes .box button{
+    width: 35px;
+    height: 30px;
+    border: 1px solid gainsboro;
+    border-radius: 3px;
+    margin: 5px 10px;
+    font-size: 18px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    cursor: pointer;
+}
+.boxes .box label{
+    font-size: 18px;
+}
+.boxes .box input[type="submit"]{
+    background-color: #ED4741;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 110px;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+}
