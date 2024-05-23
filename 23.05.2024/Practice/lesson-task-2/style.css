@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+}
+
+.cards {
+  text-align: center;
+}
+
+.card {
+  width: 300px;
+  background: #fff;
+  border-radius: 20px;
+  margin: 100px 20px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.card .card-top {
+  clip-path: circle(63% at 50% 0);
+  padding: 60px;
+}
+
+.card-1 .card-top {
+  background: orange;
+}
+
+.card-2 .card-top {
+  background: red;
+}
+
+.card-3 .card-top {
+  background: violet;
+}
+
+.card .card-top h1 {
+  text-align: center;
+  color: #fff;
+}
+
+.cards .card .card-bottom {
+  text-align: center;
+}
+
+.cards .card .card-bottom .bottom-text {
+  padding: 10px;
+}
+
+.button button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  margin: 20px;
+}
+
+#button-1 {
+  background: orange;
+}
+
+#button-2 {
+  background: red;
+}
+
+#button-3 {
+  background: violet;
+}
