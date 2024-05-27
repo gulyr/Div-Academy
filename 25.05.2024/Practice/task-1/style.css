@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(106, 106, 193);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 400px;
+    background: #fff;
+    border-radius: 10px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.card {
+    text-align: center;
+}
+
+input {
+    width: 360px;
+    padding: 15px;
+    margin: 5px auto;
+    border-radius: 10px;
+    border-color: aliceblue;
+}
+
+.card-title {
+    text-align: center;
+    margin: 15px;
+}
+
+.buttons button {
+    display: block;
+    width: 360px;
+    margin: 15px auto;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.buttons button i {
+    font-size: 18px;
+}
+
+.buttons button p {
+    display: inline-block;
+    margin: 0 90px;
+}
+
+.buttons button:nth-child(1) {
+    color: #fff;
+    background-color: rgb(69, 69, 171);
+    text-align: left;
+    border: none;
+}
+
+.buttons button:nth-child(2) {
+    background-color: #fff;
+    text-align: left;
+    border-color: aliceblue;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(69, 69, 171);
+}
+
+.login-button input {
+    background: rgb(0, 140, 255);
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    margin: 5px auto;
+}
+
+.forgot-pass a {
+    display: inline-block;
+    margin: 10px auto;
+}
+
+.sign-up {
+    padding: 10px;
+}
+
+.or {
+    margin: 20px auto;
+}
+
+hr {
+    display: inline-block;
+    width: 40%;
+    margin-bottom: 5px;
+    color: #888;
+}

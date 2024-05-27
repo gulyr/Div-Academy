@@ -1,0 +1,128 @@
+body {
+    /* 
+    background-color: #f0e68c; 
+    background-image: url('img/monkey.png'); 
+    background-repeat: no-repeat; 
+    background-size: 400px;
+    background-position: right bottom;
+    background-attachment: fixed; 
+    */
+    background: #f0e68c url('img/monkey.png') right bottom/400px no-repeat fixed;
+}
+h1 {
+    /* 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.4em;
+    font-weight: 400;
+    font-style: italic;
+    font-variant: small-caps; 
+    */
+    font: italic small-caps 400 2.4em Arial, Helvetica, sans-serif;
+    color: red;
+    text-align: center;
+    text-decoration: underline wavy orange;
+    background: #fff;
+}
+h2 {
+    font: bold 1.6em Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 3px 2px 5px #333;
+    color: #fff;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    border: 3px dashed red;
+    border-radius: 20px;
+    padding: 20px;
+    width: 800px;
+    margin: auto;
+}
+ul {
+    font: 1em Arial, sans-serif;
+    list-style: '✅ ';
+}
+#menu {
+    list-style: none;
+    padding: 5px;
+    text-align: center;
+}
+#menu > li {
+    display: inline-block;
+    margin: 3px;
+}
+#menu > li > a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background: orange;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+#menu > li > a:link {}
+#menu > li > a:visited {}
+#menu > li > a:hover {
+    color: orange;
+    background: white;
+}
+#menu > li > a:active{
+    color: yellow;
+    background: red;
+}
+img {
+    border: 1px solid #333;
+    border-radius: 50%;
+    padding: 20px; 
+    margin: 0 30px 10px 0;
+    background: #fff;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    float: left;
+    box-shadow: 3px 2px 10px #333;
+    shape-outside: circle(50%);
+}
+p {
+    font: normal 1em/1.5 Arial, sans-serif;
+    /* line-height: 1.5; */
+    text-indent: 2em;
+    text-align: justify;
+    background: #ffffff80;
+    /* opacity: 0.5; */
+}
+#epiqraf {
+    font-style: italic;
+    letter-spacing: 3px;
+    text-align: right;
+    text-indent: 0;
+}
+.goy { color: blue } 
+.qirmizi { color: red }
+li.goy { font-style: italic; }
+li.qirmizi { font-weight: bold; }
+
+p:nth-of-type(2)::first-letter {
+    font: bold 5em 'Times New Roman', serif;
+    color: white;
+    text-shadow: 0 0 5px red;
+    margin: 0 5px;
+}
+table {
+    border-collapse: collapse;
+    margin: auto;
+    font: 1em Arial, sans-serif;
+}
+th, td {
+    border: 1px solid #333;
+    padding: 10px 40px;
+}
+th { 
+    background: orange;
+    color: white;
+}
+tr:nth-child(odd) {
+    background: #ffff00b3;
+}
+tr:nth-child(even) {
+    background: #ffffffb3;
+}
