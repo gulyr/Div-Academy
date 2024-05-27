@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url("img/cod.jpg") no-repeat fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+.container{
+    width: 100%;
+    padding: 45px;
+    display: inline-block;
+    text-align: center;
+}
+.left{
+    width: 25%;
+    background: red;
+    display: inline-block;
+}
+.text{
+    display: inline-block;
+    margin: 15px 0;
+    width: 200px;
+}
+.content{
+    display: inline-block;
+    text-align: left;
+    background-color: green;
+    margin: 10px;
+    /* padding: 0 0 0 20px;  */
+    width: 200px;
+}
+.games{
+    margin: 15px 0;
+    display: inline-block;
+    text-align: center;
+}
+.games .game{
+    margin: 10px 0;
+    background-color: rgb(44, 46, 41, 0.8);
+    border-radius: 10px;
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+    height: 90px;
+    overflow: hidden;
+}
+.games .game .image{
+    display: inline-block;
+    border-radius: 10px;
+    overflow: hidden;
+    background: yellow;
+    width: 80px;
+    height: 90px;    
+}
+.image img{
+    width: 100%;
+    height: 90px;
+    object-fit: cover;
+    display: inline-block;
+}
+.right{
+    width: 30%;
+    height: 500px;
+    background: green;
+    display: inline-block;
+}
+.more{
+    display: inline-block;
+    text-align: left;
+}
+.content i{
+    display: inline-block;
+    color: #997C4E;
+}
+.content p:last-child{
+    display: inline-block;
+}
