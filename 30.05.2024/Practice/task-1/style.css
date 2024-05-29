@@ -13,22 +13,21 @@ body {
 
 .container {
     text-align: center;
-    margin: 30px 0;
 }
 
-.section{
+.section {
     display: inline-block;
     vertical-align: middle;
-    margin: 30px 150px;
-    width: 27%;
+    width: 22rem;
     height: 530px;
     text-align: center;
 }
 
 .left {
     display: inline-block;
-    padding: 10px 100px 10px 50px;
+    width: 15rem;
     text-align: left;
+    margin-right: 20rem;
 }
 
 .text {
@@ -47,14 +46,15 @@ body {
     background-color: rgb(44, 46, 41, 0.6);
     border-radius: 15px;
     height: 90px;
-    width: 15rem;
+    width: 13rem;
 }
-.game:hover{
+
+.game:hover {
     scale: 1.1;
     box-shadow: 0 0 5px 2px #fff;
     transition: 0.4s all ease;
 }
-    
+
 .image {
     display: inline-block;
     border-radius: 10px;
@@ -77,22 +77,23 @@ img {
     height: 100%;
     font-size: 12px;
     color: lightgray;
+    text-align: left;
 }
 
-.content h4{
+.content h4 {
     margin-top: 15px;
     color: #fff;
 }
 
-.content p{
+.content p {
     margin-top: 10px;
 }
 
 .game i {
     display: inline-block;
     text-align: center;
-    color: #9f7a3c;
-    font-size: 8px;
+    color: #be9349;
+    font-size: 5px;
 }
 
 .more {
@@ -121,6 +122,7 @@ img {
 
 .right {
     display: inline-block;
+    width: 22rem;
     border-radius: 25px;
     padding: 45px 30px;
     text-align: left;
@@ -132,32 +134,32 @@ h1 {
     color: #000;
 }
 
-.new-user{
-    margin: 5px 0;
+.new-user {
+    margin: 1rem 0;
 }
 
-.new-user a{
+.new-user a {
     text-decoration: none;
 }
 
-.inputs{
+.inputs {
     margin: 40px 0;
 }
 
-.inputs input{
+.inputs input {
     width: 100%;
     height: 50px;
     border: none;
     border-radius: 10px;
     margin-bottom: 10px;
-    background: #F1EDEC;
+    background: #f1edec;
 }
 
-.inputs label{
+.inputs label {
     font-size: 12px;
 }
 
-button{
+button {
     width: 100%;
     height: 50px;
     border: none;
@@ -166,29 +168,81 @@ button{
     font-size: 18px;
     transition: 0.4s all ease;
 }
-button:hover{
+
+button:hover {
     scale: 1.1;
     opacity: 1;
 }
 
-.violet{
-    background: #5247A0;
+.violet {
+    background: #5247a0;
     opacity: 0.7;
 }
 
-.blue{
-    background: #3F8CFE;
+.blue {
+    background: #3f8cfe;
     opacity: 0.7;
 }
 
-#or{
+#or {
     margin: 15px auto;
 }
-/* @media only screen and (min-width: 768px) {
-    .section{
+
+.logo {
+    width: 160px;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .container {
+        margin: 4rem 0;
+    }
+    .left,
+    .right {
+        display: block;
+        margin: auto;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+    .left,
+    .right {
         display: inline-block;
+        margin: 4rem auto;
     }
-    .left{
-       text-align: center;
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (min-width: 768px) {
+    .left,
+    .right {
+        display: inline-block;
+        margin: 4rem 2rem;
     }
-} */
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (min-width: 992px) {
+    .left,
+    .right {
+        display: inline-block;
+        margin: 4rem auto;
+    }
+    .left {
+        margin-right: 20rem;
+    }
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (min-width: 1200px) {}
