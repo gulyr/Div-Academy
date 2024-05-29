@@ -12,7 +12,7 @@
 
 <body>
     <div class="container">
-        <div class="left">
+        <div class="section left">
             <div class="logo">
                 <img src="img/logo-white.svg" alt="Logo">
             </div>
@@ -25,7 +25,7 @@
                         <img src="img/game-1.png" alt="Game">
                     </div>
                     <div class="content">
-                        <h3>Call of Duty&#174;</h3>
+                        <h4>Call of Duty&#174;</h4>
                         <p>Shooting</p>
                         <i class="fa-solid fa-circle"></i>
                         <p>2.8k viewers</p>
@@ -36,7 +36,7 @@
                         <img src="img/game-2.png" alt="Game">
                     </div>
                     <div class="content">
-                        <h3>The Dota 2&#174;</h3>
+                        <h4>The Dota 2&#174;</h4>
                         <p>eSport</p>
                         <i class="fa-solid fa-circle"></i>
                         <p>2.8k viewers</p>
@@ -47,7 +47,7 @@
                         <img src="img/game-3.png" alt="Game">
                     </div>
                     <div class="content">
-                        <h3>League of Legends&#174;</h3>
+                        <h4>League of Legends&#174;</h4>
                         <p>Online Game</p>
                         <i class="fa-solid fa-circle"></i>
                         <p>2.8k viewers</p>
@@ -59,11 +59,13 @@
                 <a href="">Discover More</a>
             </div>
         </div>
-        <div class="right">
+        <div class="section right">
             <div class="card">
                 <h1>Sign in</h1>
-                <p>New user?</p>
-                <a href="">Create an account</a>
+                <div class="new-user">
+                    <span>New user?</span>
+                    <a href="">Create an account</a>
+                </div>
                 <div class="inputs">
                     <p>
                         <label for="">Username or email</label>
@@ -78,9 +80,9 @@
                         <input type="password">
                     </p>
                 </div>
-                <button>Continue</button>
-                <p>Or continue with</p>
-                <button>Google</button>
+                <button class="violet">Continue</button>
+                <p id="or">Or continue with</p>
+                <button class="blue">Google</button>
             </div>
         </div>
     </div>

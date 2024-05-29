@@ -8,73 +8,91 @@ body {
     background: url('img/cod.jpg') no-repeat fixed;
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
+    background-size: cover;
 }
 
 .container {
-    width: 100%;
-    display: inline-block;
     text-align: center;
-    margin: 65px auto;
+    margin: 30px 0;
+}
+
+.section{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 30px 150px;
+    width: 27%;
+    height: 530px;
+    text-align: center;
 }
 
 .left {
-    width: 20%;
-    /* background: red; */
     display: inline-block;
-    margin: 0 20px;
+    padding: 10px 100px 10px 50px;
+    text-align: left;
 }
 
 .text {
     display: inline-block;
     margin: 15px 0;
     width: 100%;
+    font-size: 14px;
+}
+
+.games {
+    margin: 18px 0;
+}
+
+.game {
+    margin: 10px 0;
+    background-color: rgb(44, 46, 41, 0.6);
+    border-radius: 15px;
+    height: 90px;
+    width: 15rem;
+}
+.game:hover{
+    scale: 1.1;
+    box-shadow: 0 0 5px 2px #fff;
+    transition: 0.4s all ease;
+}
+    
+.image {
+    display: inline-block;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 70px;
+    height: 100%;
+    margin: 0 8px 0 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .content {
     display: inline-block;
-    text-align: left;
-    background: green;
-    margin: 10px;
-    width: 150px;
+    overflow: hidden;
+    width: 57%;
+    height: 100%;
+    font-size: 12px;
+    color: lightgray;
 }
 
-.games {
-    margin: 15px 0;
+.content h4{
+    margin-top: 15px;
+    color: #fff;
+}
+
+.content p{
+    margin-top: 10px;
+}
+
+.game i {
     display: inline-block;
     text-align: center;
-}
-
-.games .game {
-    margin: 10px 0;
-    background-color: rgb(44, 46, 41, 0.8);
-    border-radius: 10px;
-    text-align: left;
-    display: inline-block;
-    width: 100%;
-    height: 90px;
-    overflow: hidden;
-}
-
-.games .game .image {
-    display: inline-block;
-    border-radius: 10px;
-    overflow: hidden;
-    /* background: yellow; */
-    width: 80px;
-    height: 90px;
-}
-
-.games .game i {
-    display: inline-block;
     color: #9f7a3c;
-    font-size: 10px;
-}
-
-.image img {
-    width: 100%;
-    height: 90px;
-    object-fit: cover;
-    display: inline-block;
+    font-size: 8px;
 }
 
 .more {
@@ -86,19 +104,9 @@ body {
     display: inline-block;
 }
 
-.logo {
-    text-align: left;
-}
-
-.text {
-    text-align: left;
-}
-
 .link {
     display: inline-block;
     text-align: left;
-    width: 100%;
-    /* background: red; */
     width: 100%;
 }
 
@@ -112,24 +120,75 @@ body {
 }
 
 .right {
-    width: 30%;
-    /* height: 40%; */
-    background: #fff;
     display: inline-block;
-    border-radius: 30px;
-    overflow: hidden;
-    padding: 0 20px;
-}
-
-.right .card {
-    background: rgb(141, 224, 118);
-    display: inline-block;
-    width: 90%;
-    height: 400px;
-    margin: 60px auto;
+    border-radius: 25px;
+    padding: 45px 30px;
     text-align: left;
+    background: #fff;
+    color: grey;
 }
 
-.card h1 {
+h1 {
     color: #000;
 }
+
+.new-user{
+    margin: 5px 0;
+}
+
+.new-user a{
+    text-decoration: none;
+}
+
+.inputs{
+    margin: 40px 0;
+}
+
+.inputs input{
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background: #F1EDEC;
+}
+
+.inputs label{
+    font-size: 12px;
+}
+
+button{
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.4s all ease;
+}
+button:hover{
+    scale: 1.1;
+    opacity: 1;
+}
+
+.violet{
+    background: #5247A0;
+    opacity: 0.7;
+}
+
+.blue{
+    background: #3F8CFE;
+    opacity: 0.7;
+}
+
+#or{
+    margin: 15px auto;
+}
+/* @media only screen and (min-width: 768px) {
+    .section{
+        display: inline-block;
+    }
+    .left{
+       text-align: center;
+    }
+} */
