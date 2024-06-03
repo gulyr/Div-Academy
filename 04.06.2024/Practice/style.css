@@ -3,3 +3,116 @@
     padding: 0;
     box-sizing: border-box;
 }
+.clear-fix{
+    content: "";
+    display: table;
+    clear: both;
+}
+body{
+    background: yellowgreen;
+}
+header{
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    padding: 1.7em;    
+}
+.header-container{
+    display: inline-block;
+    width: 100%;
+}
+
+.logo{
+    display: inline-block;
+    float: left;
+}
+.logo h1{
+    color: rgb(102, 102, 102);
+    font-family: 'Raleway', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+}
+nav{
+    margin: 0.2em;
+}
+nav ul li{
+    margin: 1em;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(102, 102, 102);
+    font-size: 12px;
+    font-family: 'Raleway', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.menu-button{
+    display: inline-block;
+    float: right;
+    margin: 0.6em auto;
+}
+.menu-button i{
+    color: rgb(58, 82, 191);
+    font: 14px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+.site-search{
+    margin: 0 0 0 1em;
+}
+.site-search i{
+    color: rgb(58, 82, 191);
+    margin-right: 0.7em;
+    font-size: 12px;
+}
+.site-search span{
+    color: rgb(64, 64, 64, 0.5);
+    font-size: 11px;
+    font-family: sans-serif;
+}
+ul .more{
+    display: none;
+}
+.bg-1{
+    width: 150px;
+    height: 150px;
+    /* background: yellowgreen; */
+}
+.bg-1 img{
+    width: 100%;
+}
+
+
+/* @media only screen and (min-width: 768px) {
+    .logo{
+        display: inline-block;
+        float: none;
+    }
+    nav{
+        display: inline-block;
+    }
+    nav ul li{
+        display: inline-block;
+        margin: 0;
+    }
+    .header-container{
+        display: inline-block;
+        width: 100%;
+    }
+    header{
+        display: inline-block;
+    }
+    .menu-button{
+        display: none;
+    }
+    ul .more{
+        display: inline-block;
+    }
+    .site-search{
+        display: inline-block;
+    }
+    .site-search span{
+        display:none;
+    }
+} */
