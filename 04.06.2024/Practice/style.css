@@ -1,92 +1,187 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    /* background: yellowgreen; */
-}
-.clear-fix{
-    content: "";
+
+body {}
+
+.clear-fix {
+    content: '';
     display: table;
     clear: both;
 }
-header{
-    background-attachment: fixed;
+
+header {
     width: 100%;
     background: #fff;
-    padding: 1.7em;    
+    background-attachment: fixed;
+    padding: 1.7em;
+    /* position: fixed; */
 }
-.header-container{
+
+.header-container {
     display: inline-block;
     width: 100%;
 }
 
-.logo{
+.logo {
     display: inline-block;
     float: left;
 }
-.logo h1{
+
+.logo h1 {
     color: rgb(102, 102, 102);
-    font-family: 'Raleway', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 300;
     font-size: 24px;
 }
-nav{
+
+nav {
     margin: 0.2em;
 }
-nav ul li{
+
+nav ul li {
     margin: 1em;
     list-style: none;
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     color: rgb(102, 102, 102);
     font-size: 12px;
-    font-family: 'Raleway', "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-.menu-button{
+
+.menu-button {
     display: inline-block;
     float: right;
     margin: 0.6em auto;
 }
-.menu-button i{
+
+.menu-button i {
     color: rgb(58, 82, 191);
     font: 14px;
     text-align: center;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.site-search{
+
+.site-search {
     margin: 0 0 0 1em;
 }
-.site-search i{
+
+.site-search i {
     color: rgb(58, 82, 191);
     margin-right: 0.7em;
     font-size: 12px;
 }
-.site-search span{
+
+.site-search span {
     color: rgb(64, 64, 64, 0.5);
     font-size: 11px;
     font-family: sans-serif;
 }
-ul .more{
+
+ul .more {
     display: none;
 }
-.bg-1{
+
+.bg-1 {
     width: 100%;
-    background: center/cover fixed;
+    height: 60vh;
+    background: url('img/bg-1.jpeg') no-repeat fixed center/cover;
+    color: #fff;
+    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-.bg-1 img{
+
+.bg-1 img {
     width: 100%;
-    background: center/cover ;
+    background: center/cover;
+    display: inline-block;
 }
-.content{
+
+.content {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 75vh auto;
+}
+
+.title,
+.text,
+.buttons {
+    margin: 2em 0;
+}
+
+.general-button {
+    width: 12.5rem;
+    padding: 1.2rem;
+    border: 2px solid rgb(116, 92, 249);
+    background: rgb(116, 92, 249);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+button:nth-child(2) {
+    background: none;
+    border: 2px solid #fff;
+}
+
+.text p {
+    width: 100%;
+    font-size: 12px;
+}
+
+.title {
+    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+.title h1 {
+    font-weight: 40px;
+    font-weight: 100;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.sec-2 {
     width: 100%;
     height: 100vh;
-    background: url("img/bg-1.jpeg") no-repeat fixed center/cover;
 }
+
+article {
+    margin: 4rem 1rem;
+}
+
+.top {
+    width: 100vw;
+    text-align: center;
+    background: center/cover;
+}
+
+.top img {
+    width: 100%;
+}
+
+.bottom {
+    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: rgb(0, 0, 0, 0.5);
+    /* margin: ; */
+}
+
+.bottom p {
+    margin: 2rem auto;
+    font-size: 12px;
+    line-height: 2;
+}
+
 
 /* @media only screen and (min-width: 768px) {
     .logo{
@@ -120,3 +215,26 @@ ul .more{
         display:none;
     }
 } */
+
+@media only screen and (min-width: 768px) {
+    header {
+        position: fixed;
+    }
+    article {
+        display: inline-block;
+    }
+    .top {
+        display: inline-block;
+        margin: auto;
+        width: 50vw;
+    }
+    .bottom {
+        display: inline-block;
+        width: 25vw;
+        margin: auto;
+    }
+    .top img {
+        width: 50vw;
+        margin-right: 0;
+    }
+}
