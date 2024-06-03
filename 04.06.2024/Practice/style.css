@@ -3,18 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    /* background: yellowgreen; */
+}
 .clear-fix{
     content: "";
     display: table;
     clear: both;
 }
-body{
-    background: yellowgreen;
-}
 header{
-    position: fixed;
+    background-attachment: fixed;
     width: 100%;
-    background-color: #fff;
+    background: #fff;
     padding: 1.7em;    
 }
 .header-container{
@@ -75,12 +75,15 @@ ul .more{
     display: none;
 }
 .bg-1{
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    background: center/cover fixed;
+    /* width: 150px; */
+    /* height: 150px; */
     /* background: yellowgreen; */
 }
 .bg-1 img{
     width: 100%;
+    background: center/cover ;
 }
 
 
