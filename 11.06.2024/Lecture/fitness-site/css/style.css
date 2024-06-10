@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --red: #fd634d;
+    --green:#a1c927;
+    --white: #fff;
+}
+.red{
+    background: var(--red);
+}
+.green{
+    background: var(--green);
+}
+.white{
+    background: var(--white);
+}
+.red-text{
+    color: var(--red);
+}
+.green-text{
+    color: var(--green);
+}
+.white-text{
+    color: var(--white);
+}
+header{
+    width: 100%;
+    height: 55.7em;
+    background: url('../img/bg.png') 56% center/cover;
+    position: relative;
+    text-align: center;
+}
+header .top{
+    width: 100%;
+}
+header .top .logo{
+    padding: 2.4em 0 0 0;
+}
+header nav{
+    padding: 3.8em 0 0 0;
+}
+header nav ul li{
+    list-style: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    letter-spacing: 1px;
+    font: 0.8em "Avenir Next Rounded";
+    text-align: right;
+}
+.bottom{
+    position: absolute;
+    left: 7.3em;
+    bottom: 9.2em;
+    /* text-align: center; */
+    /* left: 0; */
+    /* bottom: 0; */
+    /* margin: auto; */
+}
+.bottom h1{
+    font: 2.5em "Myriad Pro";
+}
+.bottom h5{
+    letter-spacing: 3px;
+    font: 0.9em "Myriad Pro";
+    text-align: right;
+    margin-top: 1em;
+}
+@media only screen and (min-width: 768px) {
+    header{
+        background: url('../img/bg.png') center/cover;
+    }
+    header .top{
+        display: flex;
+        justify-content: space-between;
+    }
+    header .top .logo{
+        padding: 2.4em 0 0 3.3em;
+    }
+    header nav ul{
+        display: flex;
+        padding-right: 4.3em;
+    }
+    header nav ul li{
+        margin-left: 4em;
+    }
+    .bottom{
+        position: absolute;
+        left: 7.3em;
+        bottom:9.2em;
+    }
+}
