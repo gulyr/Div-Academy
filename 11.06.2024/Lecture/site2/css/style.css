@@ -1,0 +1,89 @@
+:root {
+    --yasil: #a1c927;
+    --qirmizi: #fd634d;
+}
+header {
+    position: relative;
+    height: 100vh;
+    background: url('../img/headerbg.jpg') 55% center/cover;
+}
+nav { top: 40px; }
+nav, #title { 
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
+#menu { padding: 20px 0 0 0}
+#menu li a {
+    font: .8em 'Avenir Next Rounded', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+}
+#title {
+    bottom: 16vh;
+}
+h1, h2, h5, h6 { text-transform: uppercase; }
+h1, h5 { font-family: 'Myriad Pro'; }
+h1 {font-size: 2em;}
+h2 { font: 2em 'Open Sans';}
+h5 {
+    font-size: 1em;
+    letter-spacing: 3px;
+}
+h6 { font: .85em Montserrat; }
+
+#art4 { padding: 66px 0 }
+#art4 .col25 { padding: 33px 10px }
+#fitnessfirst { background: url('../img/fitnessfirst.jpg') center/cover;}
+#yourbody { background: url('../img/yourbody.jpg') center/cover;}
+#lifestyle { background: url('../img/lifestyle.jpg') center/cover;}
+#summeroffun { background: url('../img/summeroffun.jpg') center/cover;}
+#grape { background: url('../img/grape.jpg') center/cover;}
+#mango { background: url('../img/mango.jpg') center/cover;}
+
+.bgag { background-color: #fff; }
+.bgyasil { background-color: var(--yasil); }
+.bgqirmizi { background-color: var(--qirmizi); }
+.txtag { color: #fff; }
+.txtyasil { color: var(--yasil); }
+.txtqirmizi { color: var(--qirmizi); }
+.vh50 { min-height: 50vh;}
+.acenter { text-align: center;}
+.artpadding { padding: 55px 40px }
+
+
+
+@media only screen and (min-width: 768px) {
+    nav, #title { text-align: initial; }
+    nav { position: relative;}
+    #logo, #menu { position: absolute;}
+    #logo { left: 50px }
+    #menu { right: 0 }
+    #menu > li {
+        display: inline-block;
+        padding: 0 4vw 0 0;
+    }
+    #title { 
+        left: 7.1vw;
+        width: initial;
+    }
+    h1 { font-size: 2.5em }
+    h5 { 
+        text-align: right;
+        padding: 13px 20px 0 0
+    }
+    .container {
+        max-width: 1180px;
+        margin: auto;
+    }
+    .row::after {
+        display: table;
+        content: '';
+        clear: both;
+    }
+    .fleft { float: left }
+    .fright { float: right }
+    .col25 { width: 25% }
+    .col33 { width: 33.33% }
+    .col66 { width: 66.66% }
+}
