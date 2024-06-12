@@ -105,9 +105,10 @@ article{
     display: flex;
 }
 .boxes{
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    margin: 4.2em 15em 5em 13em;  
+    gap: 3em;
 }
 .boxes h4{
     margin-bottom: 1.3em;
@@ -121,13 +122,11 @@ article{
     font: 1em;
     border-radius: 50%;
     padding: 1.1em;
-    display: inline-block;
-    margin-right: 0.9em;
 }
 footer{
     background:#0c1119;
 }
- .footer-bg{
+.footer-bg{
     width: 100%;
     height: 100vh;
     background: url('../img/footer-bg.jpg') bottom/cover;
@@ -135,9 +134,42 @@ footer{
 .inputs{
     width: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: right;
+    gap: 0.4em;
 }
-@media only screen and (min-width: 768px) {
+input[type="text"],input[type="email"],button{
+    height: 3em;
+    border-radius: 3px;
+}
+input[type="text"]{
+    width: 13em;
+    padding-left: 1.4em;
+    /* background: yellow; */
+}
+input[type="email"]{
+    width: 21em;
+    padding-left: 1.4em;
+}
+button{
+    width: 11.3em;
+}
+#box-1{
+    width: 23em; 
+}
+#box-2{
+    width: 28em;
+    /* background: yellow; */
+}
+.contact{
+    width: 15.3em;
+}
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1em;
+}
+
+/* @media only screen and (min-width: 768px) { */
     header{
         background: url('../img/bg.jpg') center/cover;
     }
@@ -171,4 +203,4 @@ footer{
     article{
         width: 25%;
     }
-}
+/* } */
