@@ -1,0 +1,61 @@
+:root {
+    --white: #fff;
+    --gray: #4c4c4c;
+    --violet: #745cf9;
+}
+
+.white-bg {
+    background: var(--white);
+}
+
+.white-text {
+    color: var(--white);
+}
+
+.gray-text {
+    color: var(--gray);
+}
+
+.violet-bg {
+    background: var(--violet);
+}
+
+.flex {
+    display: flex;
+}
+
+.row {
+    width: 100%;
+}
+
+header {
+    width: 100%;
+}
+
+header .top {
+    width: 100%;
+    justify-content: space-between;
+    padding: 2em 5em;
+}
+
+header .logo {}
+
+header nav {}
+
+header nav ul li {
+    margin-right: 1.5em;
+}
+
+header nav ul li i {
+    margin-left: 1em;
+}
+
+header .bottom {
+    width: 100%;
+    height: 100vh;
+    background: url('../img/bg-1.jpg') center/cover fixed;
+}
+
+footer {
+    justify-content: space-between;
+}
