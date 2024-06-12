@@ -45,6 +45,12 @@
 .bg-twitter{background: var(--twitter);}
 .bg-youtube{background: var(--youtube);}
 .bg-linkedin{background: var(--linkedin);}
+.flex{
+    display: flex;
+}
+.padding{
+    padding: 5em 3em 6em 2.4em;
+}
 header{
     width: 100%;
     height: 100vh;
