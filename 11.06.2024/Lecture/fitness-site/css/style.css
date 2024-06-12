@@ -139,12 +139,14 @@ footer{
 }
 input[type="text"],input[type="email"],button{
     height: 3em;
+    border: none;
     border-radius: 3px;
+    color: #83969f;
+    font: 0.9em "Proxima Nova";
 }
 input[type="text"]{
     width: 13em;
     padding-left: 1.4em;
-    /* background: yellow; */
 }
 input[type="email"]{
     width: 21em;
@@ -152,6 +154,11 @@ input[type="email"]{
 }
 button{
     width: 11.3em;
+    background: #a1c927;
+    font-weight: bold;
+}
+button i{
+    margin-left: 0.6em;
 }
 #box-1{
     width: 23em; 
