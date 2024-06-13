@@ -45,7 +45,10 @@ header .top {
     padding: 2em 5em;
 }
 
-header .logo {}
+header .logo {
+    font: 1.5em Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(102, 102, 102);
+}
 
 header nav {}
 
@@ -56,7 +59,14 @@ header nav ul li {
 header nav ul li i {
     margin-left: 1em;
 }
-
+header nav ul li a{
+    font: 0.8em Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgb(76, 76, 76);
+    
+}
+header nav ul li a:hover{
+    color: rgb(58, 82, 191);
+}
 header .bottom {
     height: 100vh;
     background: url('../img/bg-1.jpg') center/cover fixed;
@@ -126,6 +136,10 @@ footer .contact i:hover{
 .icon i:hover{
     color: rgba(255, 255, 255, 1);
     cursor: pointer;
+}
+.search i{
+    cursor: pointer;
+    color: rgb(58, 82, 191);
 }
 .content-buttons{
     margin-top: 2em;
