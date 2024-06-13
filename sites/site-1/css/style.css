@@ -2,6 +2,7 @@
     --white: #fff;
     --gray: #4c4c4c;
     --violet: #745cf9;
+    --black:#0E1015;
 }
 
 .white-bg {
@@ -19,7 +20,9 @@
 .violet-bg {
     background: var(--violet);
 }
-
+.black-bg{
+    background: var(--black);
+}
 .flex {
     display: flex;
 }
@@ -58,4 +61,41 @@ header .bottom {
 
 footer {
     justify-content: space-between;
+    position: relative;
+    
+}
+footer .container{
+    justify-content: space-between;
+    padding: 5em 6em;
+}
+.contact{
+    display: flex;
+    gap: 1.5em;
+}
+footer a{
+    color: rgba(255, 255, 255, 0.5) ;
+    font-weight: 900;
+}
+footer a:hover{
+    color: #745cf9;
+}
+.icon{
+    display: inline-block;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    padding: 0.5em 0.6em;
+    position: absolute;
+    right: 1.3em;
+    bottom: 1.5em;
+    transition: 0.4s all ease;
+}
+.icon:hover{
+    border: 2px solid rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+.icon i{
+    color: rgba(255, 255, 255, 0.5);
+}
+.icon i:hover{
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
 }
