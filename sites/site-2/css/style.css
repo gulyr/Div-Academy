@@ -1,0 +1,79 @@
+/* header */
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: url('../img/bg.png') center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 1.5em;
+    text-align: center;
+}
+
+header .header-top {
+    width: 100%;
+    height: 2em;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0.5em 0; */
+}
+
+header .header-top nav {
+    width: 30%;
+}
+
+header .header-top nav ul {
+    display: flex;
+    gap: 1.5em;
+}
+
+header .header-top nav ul li {
+    padding: 1em 0;
+}
+
+header .header-top nav ul li:first-child {
+    border-top: 0.3em solid #53d153;
+    padding: 0.5em 0;
+    /* padding: 0.4em 0.5em 0 0; */
+}
+
+header .header-top nav ul li a {
+    color: #fff;
+}
+
+header .header-top .logo {
+    padding: 0.5em 0;
+}
+
+header .header-top .logo img {
+    width: 100%;
+    object-fit: cover;
+}
+
+header .header-top .search {
+    width: 30%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0.5em 0;
+}
+
+header .header-center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .header-bottom {
+    width: 100%;
+}
+
+
+/* what we do section */
+
+.what-we-do {
+    width: 100%;
+    height: 100vh;
+}
