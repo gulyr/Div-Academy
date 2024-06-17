@@ -1,168 +1,262 @@
 /* header */
 
 header {
-    width: 100%;
-    height: 100vh;
-    background: url('../img/bg.png') center/cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0 1.5em;
-    text-align: center;
+  width: 100%;
+  height: 100vh;
+  background: url('../img/bg.png') center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 1.5em;
+  text-align: center;
 }
 
 header .header-top {
-    width: 100%;
-    height: 2em;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  height: 2em;
+  display: flex;
+  justify-content: space-between;
 }
 
 header .header-top nav {
-    width: 30%;
+  width: 30%;
 }
 
 header .header-top nav ul {
-    display: flex;
-    gap: 1.5em;
+  display: flex;
+  gap: 1.5em;
 }
 
 header .header-top nav ul li {
-    padding: 1em 0;
+  padding: 1em 0;
 }
 
 header .header-top nav ul li:first-child {
-    border-top: 0.3em solid #53d153;
-    padding: 0.5em 0;
+  border-top: 0.3em solid #53d153;
+  padding: 0.5em 0;
 }
 
 header .header-top nav ul li a {
-    color: #fff;
+  color: #fff;
 }
 
 header .header-top .logo {
-    padding: 0.5em 0;
+  padding: 0.5em 0;
 }
 
 header .header-top .logo img {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
 
 header .header-top .search {
-    width: 30%;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    padding: 0.5em 0;
+  width: 30%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 0.5em 0;
 }
 
 header .header-center {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 header .header-bottom {
-    width: 100%;
+  width: 100%;
 }
-
 
 /* what we do section */
 
 .what-we-do {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
 }
 
 .what-we-do .section-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .what-we-do .section-title .title h2 {
-    letter-spacing: 0.3em;
-    color: #828181;
-    font-weight: 300;
-    font: 1.3em 'Montserrat';
+  letter-spacing: 0.3em;
+  color: #828181;
+  font-weight: 300;
+  font: 1.3em 'Montserrat';
 }
 
 .what-we-do .section-title .line hr {
-    width: 2.7em;
-    color: #444444;
+  width: 2.7em;
+  border-color: #818181;
 }
 
 .what-we-do .section-title .text p {
-    color: #b7b3b3;
-    font: 1em 'Myriad Pro';
+  color: #b7b3b3;
+  font: 1em 'Myriad Pro';
 }
 
 .what-we-do .articles {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .what-we-do .articles article {
-    width: 17em;
-    height: 21em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+  width: 17em;
+  height: 21em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .what-we-do .articles article .article-image {
-    width: 8.9em;
-    height: 8.9em;
-    padding: 2.3em 1.8em;
-    border: none;
-    border-radius: 2em;
-    background: #e0f3e0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 8.9em;
+  height: 8.9em;
+  padding: 2.3em 1.8em;
+  border: none;
+  border-radius: 2em;
+  background: #e0f3e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .what-we-do .articles article .article-image i {
-    font-size: 5.5em;
-    color: #53d153;
+  font-size: 5.5em;
+  color: #53d153;
 }
 
 .what-we-do .articles article .article-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1em;
 }
 
 .what-we-do .articles article .article-content .title h3 {
-    color: #828181;
-    font: 1.5em 'Proxima Nova';
-    font-weight: bold;
+  color: #828181;
+  font: 1.5em 'Proxima Nova';
+  font-weight: bold;
 }
 
 .what-we-do .articles article .article-content .text p {
-    color: #828181;
-    font: 0.9em 'Montserrat';
-    font-weight: 300;
+  color: #828181;
+  font: 0.9em 'Montserrat';
+  font-weight: 300;
 }
 
 .what-we-do .articles article .learn-more-button button {
-    background: #53d153;
-    border: none;
-    border-radius: 2em;
-    color: #fff;
-    padding: 0.6em 1.2em;
-    font-weight: bold;
-    font: 1em 'Proxima Nova';
+  background: #53d153;
+  border: none;
+  border-radius: 2em;
+  color: #fff;
+  padding: 0.6em 1.2em;
+  font-weight: bold;
+  font: 1em 'Proxima Nova';
+}
+
+/* our latest work section */
+
+.our-latest-work {
+  width: 100%;
+  height: 100vh;
+  background: #54d154;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.our-latest-work .section-title .title h2 {
+  font-size: 20px;
+  letter-spacing: 4px;
+  color: #207b20;
+  font-weight: 300;
+  font-family: 'Montserrat';
+  text-align: center;
+}
+
+.our-latest-work .section-title .text p {
+  font-size: 16px;
+  color: #2b9b2b;
+  font-weight: 300;
+  font-family: 'Open Sans';
+  text-align: center;
+}
+
+.our-latest-work .section-title .line hr {
+  width: 2.7em;
+  border-color: #2b9b2b;
+}
+
+.our-latest-work .buttons {
+  display: flex;
+  border: none;
+  border-radius: 3em;
+}
+
+.our-latest-work .buttons button {
+  padding: 0.7em 1em;
+  border: 1px solid #2b9b2b;
+  color: #2b9b2b;
+  font: 1em 'Proxima Nova';
+}
+
+.our-latest-work .buttons .photography {
+  background: #2b9b2b;
+  border-radius: 2em 0 0 2em;
+  color: #ffffff;
+  font: 1em 'Proxima Nova';
+}
+
+.our-latest-work .buttons .print {
+  border-radius: 0 2em 2em 0;
+}
+
+.our-latest-work .view-more-work button {
+  padding: 13px 19px;
+  border-radius: 3em;
+  border: 1px solid #2b9b2b;
+  background: #2b9b2b;
+  font: 1em 'Proxima Nova';
+  color: #fff;
+}
+
+.our-latest-work .view-more-work button i {
+  margin-left: 7px;
+  vertical-align: middle;
+}
+
+.our-latest-work .works {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.our-latest-work .works .work {
+  width: 160px;
+  height: 160px;
+  border-radius: 2em;
+}
+
+.our-latest-work .works .work img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.2em;
 }
