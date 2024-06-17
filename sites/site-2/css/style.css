@@ -16,7 +16,6 @@ header .header-top {
     height: 2em;
     display: flex;
     justify-content: space-between;
-    /* padding: 0.5em 0; */
 }
 
 header .header-top nav {
@@ -35,7 +34,6 @@ header .header-top nav ul li {
 header .header-top nav ul li:first-child {
     border-top: 0.3em solid #53d153;
     padding: 0.5em 0;
-    /* padding: 0.4em 0.5em 0 0; */
 }
 
 header .header-top nav ul li a {
@@ -76,4 +74,95 @@ header .header-bottom {
 .what-we-do {
     width: 100%;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.what-we-do .section-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.what-we-do .section-title .title h2 {
+    letter-spacing: 0.3em;
+    color: #828181;
+    font-weight: 300;
+    font: 1.3em 'Montserrat';
+}
+
+.what-we-do .section-title .line hr {
+    width: 2.7em;
+    color: #444444;
+}
+
+.what-we-do .section-title .text p {
+    color: #b7b3b3;
+    font: 1em 'Myriad Pro';
+}
+
+.what-we-do .articles {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.what-we-do .articles article {
+    width: 17em;
+    height: 21em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.what-we-do .articles article .article-image {
+    width: 8.9em;
+    height: 8.9em;
+    padding: 2.3em 1.8em;
+    border: none;
+    border-radius: 2em;
+    background: #e0f3e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.what-we-do .articles article .article-image i {
+    font-size: 5.5em;
+    color: #53d153;
+}
+
+.what-we-do .articles article .article-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1em;
+}
+
+.what-we-do .articles article .article-content .title h3 {
+    color: #828181;
+    font: 1.5em 'Proxima Nova';
+    font-weight: bold;
+}
+
+.what-we-do .articles article .article-content .text p {
+    color: #828181;
+    font: 0.9em 'Montserrat';
+    font-weight: 300;
+}
+
+.what-we-do .articles article .learn-more-button button {
+    background: #53d153;
+    border: none;
+    border-radius: 2em;
+    color: #fff;
+    padding: 0.6em 1.2em;
+    font-weight: bold;
+    font: 1em 'Proxima Nova';
 }
