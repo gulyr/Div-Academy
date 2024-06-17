@@ -334,9 +334,6 @@ header .header-bottom {
   object-fit: cover;
 }
 
-.testimonials .testimonials-bottom .author {
-}
-
 .testimonials .testimonials-bottom .author .name {
   color: #444444;
   font: 1em 'Proxima Nova';
@@ -346,4 +343,77 @@ header .header-bottom {
   color: #cccccc;
   font-weight: bold;
   font-family: 1em 'Proxima Nova';
+}
+
+/* our happy client */
+
+.our-happy-clients {
+  width: 100%;
+  height: 90vh;
+  background: #f2f1f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.our-happy-clients .section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.our-happy-clients .section-title .title h2 {
+  letter-spacing: 0.3em;
+  color: #828181;
+  font-weight: 300;
+  font: 1.3em 'Montserrat';
+}
+
+.our-happy-clients .section-title .line hr {
+  width: 2.7em;
+  border-color: #818181;
+}
+
+.our-happy-clients .section-title .text p {
+  color: #b7b3b3;
+  font: 1em 'Myriad Pro';
+}
+
+.our-happy-clients .logos {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4em;
+}
+
+.our-happy-clients .logos .logo {
+  width: 10em;
+  height: 8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: red;
+}
+
+.our-happy-clients .logos .logo img {
+  object-fit: cover;
+}
+
+.our-happy-clients .see-all-client button {
+  padding: 0.8em 1.2em;
+  border-radius: 3em;
+  border: none;
+  background: #dddcdc;
+  font: 1.1em 'Proxima Nova';
+  color: #a59d9d;
+}
+
+.our-happy-clients .see-all-client button i {
+  margin-left: 7px;
+  vertical-align: middle;
 }
