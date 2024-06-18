@@ -532,3 +532,263 @@ header .header-bottom {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
     0 4px 6px -4px rgba(0, 0, 0, 0.1);
 }
+
+/* footer */
+
+footer {
+  width: 100%;
+  height: 90vh;
+}
+
+.footer-top {
+  width: 100%;
+  height: 70vh;
+  background: #333333;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1em;
+}
+
+footer .footer-top .about-us {
+  width: 26%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer .footer-top .about-us .title h2 {
+  letter-spacing: 3px;
+  color: #dddddd;
+  font-weight: 300;
+  font: 1em 'Montserrat';
+}
+
+footer .footer-top .about-us .title hr {
+  width: 1.9em;
+  border-color: #dddddd;
+}
+
+footer .footer-top .about-us .text p {
+  color: #cccccc;
+  font: 1em 'Proxima Nova';
+  text-align: center;
+}
+
+footer .footer-top .contact-info {
+  background: #c5e9c5;
+  padding: 4px 5px;
+  border-radius: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.4em;
+}
+
+footer .footer-top .recent-posts {
+  width: 30%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer .footer-top .recent-posts .title h2 {
+  letter-spacing: 3px;
+  color: #dddddd;
+  font-weight: 300;
+  font: 1em 'Montserrat';
+}
+
+footer .footer-top .recent-posts .title hr {
+  width: 1.9em;
+  border-color: #dddddd;
+}
+
+footer .footer-top .recent-posts .posts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7em;
+}
+
+footer .footer-top .recent-posts .posts .post {
+  display: flex;
+  gap: 0.4em;
+}
+
+footer .footer-top .recent-posts .posts .post .post-image {
+  width: 3.3em;
+  height: 3.3em;
+}
+
+footer .footer-top .recent-posts .posts .post .post-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.3em;
+}
+
+footer .footer-top .recent-posts .posts .post .post-info-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+footer .footer-top .recent-posts .posts .post .post-info-type .info {
+  color: #cccccc;
+  font-weight: 300;
+  font: 1em 'Montserrat';
+}
+
+footer .footer-top .recent-posts .posts .post .post-info-type .type {
+  color: #ffffff;
+  font-weight: 300;
+  font: 0.7em 'Montserrat';
+  padding: 0.2em 1em;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+footer #magazine {
+  background: #53d153;
+}
+
+footer #ui-design {
+  background: #ffba00;
+}
+
+footer #photography {
+  background: #089cea;
+}
+
+footer #book {
+  background: #f34c03;
+}
+
+footer .footer-top .contact-us {
+  width: 30%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer .footer-top .contact-us .title h2 {
+  letter-spacing: 3px;
+  color: #dddddd;
+  font-weight: 300;
+  font: 1em 'Montserrat';
+}
+
+footer .footer-top .contact-us .title hr {
+  width: 1.9em;
+  border-color: #dddddd;
+}
+
+footer .footer-top .contact-us .contact-infos {
+}
+
+footer .footer-top .contact-us .contact-infos p {
+  color: #cccccc;
+  font-weight: 300;
+  font: 0.9em 'Proxima Nova';
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+footer .footer-top .message {
+  width: 20em;
+}
+
+footer .footer-top .message form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+
+footer .footer-top .message form input {
+  height: 2em;
+  background: #444444;
+  border: none;
+  color: #777777;
+  font: 1em 'Proxima Nova';
+  padding-left: 0.9em;
+}
+
+footer .footer-top .message form input[type='text'] {
+  border-radius: 0.5em 0.5em 0 0;
+}
+
+footer .footer-top .message form textarea {
+  height: 8.1em;
+  background: #444444;
+  border: none;
+  color: #777777;
+  font: 1em 'Proxima Nova';
+  padding-left: 0.9em;
+}
+
+footer .footer-top .message form input[type='submit'] {
+  color: #ffffff;
+  font: 0.9em 'Proxima Nova';
+  background: #2b9b2b;
+  border: none;
+  border-radius: 0 0 0.5em 0.5em;
+}
+
+.footer-center {
+  width: 100%;
+  height: 30vh;
+  background: #212121;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-center .title h2 {
+  letter-spacing: 3px;
+  color: #101010;
+  font-weight: 300;
+  font: 1em 'Montserrat';
+}
+
+.footer-center .title hr {
+  width: 2.7em;
+  border-color: #101010;
+}
+
+.footer-center .site-logos {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer-center .site-logos .logo {
+  padding: 2em;
+}
+
+.footer-center .site-logos .logo img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.footer-bottom {
+  width: 100%;
+  background: #111111;
+  padding: 0.5em 0;
+}
+
+.footer-bottom p {
+  color: #ffffff;
+  font: 1em 'Proxima Nova';
+  text-align: center;
+}
