@@ -416,3 +416,119 @@ header .header-bottom {
   margin-left: 7px;
   vertical-align: middle;
 }
+
+/* meet the team */
+
+.meet-the-team {
+  width: 100%;
+  height: 100vh;
+}
+
+.meet-the-team .section-top {
+  width: 100%;
+  height: 85vh;
+  background: #53d153;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+.meet-the-team .section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.meet-the-team .section-title .title h2 {
+  letter-spacing: 0.3em;
+  color: #207b20;
+  font-weight: 300;
+  font: 1.3em 'Montserrat';
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+
+.meet-the-team .section-title .line hr {
+  width: 2.7em;
+  border-color: #1f7b1f;
+}
+
+.meet-the-team .section-title .text p {
+  color: #2b9b2b;
+  font: 1em 'Open Sans';
+  font-weight: 300;
+}
+
+.meet-the-team .members {
+  width: 80%;
+  height: 50vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2em;
+}
+
+.meet-the-team .members .member {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.meet-the-team .members .member .member-photo {
+  width: 7.8em;
+}
+
+.meet-the-team .members .member .member-photo img {
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.meet-the-team .members .member .vertical-line {
+  width: 2px;
+  height: 4.9em;
+  background: #1f7b1f;
+}
+
+.meet-the-team .members .member .member-name p {
+  color: #ffffff;
+  font: 1em 'Proxima Nova';
+}
+
+.meet-the-team .members .contact-info {
+  background: #c5e9c5;
+  padding: 4px 5px;
+  border-radius: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.4em;
+}
+
+.meet-the-team .section-bottom {
+  width: 100%;
+  height: 15vh;
+  background: #3eba3e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.meet-the-team .work-with-us {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 300;
+  font: 1.2em 'Proxima Nova';
+  background: #53d153;
+  border: none;
+  border-radius: 2em;
+  padding: 0.7em 1em;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
