@@ -8,12 +8,12 @@ header {
   flex-direction: column;
   justify-content: space-between;
   padding: 0 1.5em;
-  text-align: center;
+  align-items: center;
 }
 
 header .header-top {
   width: 100%;
-  height: 2em;
+  height: 3em;
   display: flex;
   justify-content: space-between;
 }
@@ -24,24 +24,30 @@ header .header-top nav {
 
 header .header-top nav ul {
   display: flex;
+  justify-content: space-between;
   gap: 1.5em;
 }
 
 header .header-top nav ul li {
-  padding: 1em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 header .header-top nav ul li:first-child {
-  border-top: 0.3em solid #53d153;
-  padding: 0.5em 0;
+  border-top: 0.4em solid #53d153;
+  font-weight: 600;
 }
 
 header .header-top nav ul li a {
-  color: #fff;
+  color: #ffffff;
+  font: 1em 'Proxima Nova';
 }
 
 header .header-top .logo {
-  padding: 0.5em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 header .header-top .logo img {
@@ -54,7 +60,21 @@ header .header-top .search {
   display: flex;
   justify-content: end;
   align-items: center;
-  padding: 0.5em 0;
+}
+
+header .header-top .search .input input {
+  border: none;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.4em 0 0.4em 0.9em;
+  border-radius: 0.8em 0 0 0.8em;
+  color: #111111;
+  font: 1em 'Myriad Pro';
+}
+
+header .header-top .search .icon {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.5em 0.4em 0.4em 0;
+  border-radius: 0 0.8em 0.8em 0;
 }
 
 header .header-center {
@@ -62,10 +82,53 @@ header .header-center {
   display: flex;
   flex-direction: column;
   align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1em;
+}
+
+header .header-center h1 {
+  font-size: 55px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: 'Montserrat';
+  text-align: center;
+}
+
+header .header-center .work-with-us {
+  font-size: 22px;
+  color: #ffffff;
+  font-family: 'Proxima Nova';
+  text-align: center;
+  background: #53d153;
+  border: none;
+  border-radius: 2em;
+  padding: 0.6em 1.8em;
 }
 
 header .header-bottom {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding: 1em 0;
+}
+
+header .header-bottom .scroll-down {
+  border: none;
+  border-radius: 2em;
+  background: rgba(255, 255, 255, 0.6);
+  color: #111111;
+  font-weight: 300;
+  font: 16px 'Proxima Nova';
+  padding: 0.4em;
+}
+
+header .header-bottom i {
+  margin: 0 0.5em;
 }
 
 /* what we do section */
@@ -690,9 +753,6 @@ footer .footer-top .contact-us .title h2 {
 footer .footer-top .contact-us .title hr {
   width: 1.9em;
   border-color: #dddddd;
-}
-
-footer .footer-top .contact-us .contact-infos {
 }
 
 footer .footer-top .contact-us .contact-infos p {
