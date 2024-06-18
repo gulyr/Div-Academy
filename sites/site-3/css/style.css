@@ -2,7 +2,7 @@
 
 header {
     width: 100%;
-    height: 100vh;
+    height: 168vh;
     background: url('../img/bg.png') no-repeat center 25%;
     display: flex;
     flex-direction: column;
@@ -33,6 +33,7 @@ header .header-top nav ul li a {
 header .header-bottom {
     width: 90%;
     margin-left: 3em;
+    margin-bottom: 10em;
 }
 
 header .header-bottom h1 {
@@ -56,4 +57,235 @@ header .header-bottom p {
 
 header .header-bottom #red-slash {
     color: #fd634d;
+}
+
+
+/* green section */
+
+.green-section {
+    width: 100%;
+    background: #a2ca28;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5em 0;
+    gap: 5em;
+}
+
+.green-section .articles {
+    width: 78%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.green-section .articles article {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.5em;
+}
+
+.green-section .articles article .article-image i {
+    color: #fff;
+    font-size: 5em;
+}
+
+.green-section .articles article .article-title h2 {
+    font-size: 24px;
+    line-height: 54px;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Open Sans';
+}
+
+.green-section .articles article .article-content p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    font-family: 'Proxima Nova';
+}
+
+.green-section .articles article .explore-more a {
+    line-height: 32px;
+    color: #fff;
+    font: 14px 'Proxima Nova';
+}
+
+.green-section .sections-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.green-section .fitness-first {
+    width: 78%;
+    display: flex;
+    background: #fff;
+    position: relative;
+}
+
+.green-section .fitness-first article {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px 0 50px;
+}
+
+.green-section .fitness-first article .article-title h3 {
+    letter-spacing: 1px;
+    line-height: 22px;
+    color: #fd634d;
+    font-weight: 400;
+    font: 14px 'Montserrat';
+}
+
+.green-section .fitness-first article .article-title h2 {
+    line-height: 30px;
+    color: #a2ca28;
+    font-weight: 300;
+    font: 35px 'Open Sans';
+}
+
+.green-section .fitness-first article .article-content p {
+    line-height: 26px;
+    color: #656e74;
+    font-weight: 400;
+    font: 14px 'Open Sans';
+}
+
+.green-section .fitness-first article .read-more a {
+    text-decoration: underline solid #a2ca28;
+    color: #a2ca28;
+}
+
+.green-section .fitness-first .image {
+    width: 65%;
+    height: 25em;
+    background: url('../img/img-1.png') center/cover;
+}
+
+.green-section .fitness-first .image::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.green-section .fitness-first .image img {
+    width: 1em;
+    height: 1em;
+}
+
+.green-section .fitness-first .image .text {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    right: 2em;
+    bottom: 2em;
+    width: 8em;
+}
+
+.green-section .fitness-first .image .text #red-text {
+    color: #fd634d;
+    line-height: 26px;
+    font-weight: 400;
+    font: 12px 'Open Sans';
+}
+
+.green-section .fitness-first .image .text #white-text {
+    color: #fff;
+    line-height: 26px;
+    font-weight: 400;
+    font: 12px 'Open Sans';
+}
+
+.green-section .love-your-body {
+    width: 78%;
+    display: flex;
+    background: #fff;
+    position: relative;
+}
+
+.green-section .love-your-body article {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px 0 50px;
+}
+
+.green-section .love-your-body article .article-title h3 {
+    letter-spacing: 1px;
+    line-height: 22px;
+    color: #fd634d;
+    font-weight: 400;
+    font: 14px 'Montserrat';
+}
+
+.green-section .love-your-body article .article-title h2 {
+    line-height: 30px;
+    color: #a2ca28;
+    font-weight: 300;
+    font: 35px 'Open Sans';
+}
+
+.green-section .love-your-body article .article-content p {
+    line-height: 26px;
+    color: #656e74;
+    font-weight: 400;
+    font: 14px 'Open Sans';
+}
+
+.green-section .love-your-body article .read-more a {
+    text-decoration: underline solid #a2ca28;
+    color: #a2ca28;
+}
+
+.green-section .love-your-body .image {
+    width: 65%;
+    height: 25em;
+    background: url('../img/img-2.png') center/cover;
+}
+
+.green-section .love-your-body .image::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.green-section .love-your-body .image img {
+    width: 1em;
+    height: 1em;
+}
+
+.green-section .love-your-body .image .text {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    left: 2em;
+    bottom: 2em;
+    width: 9em;
+}
+
+.green-section .love-your-body .image .text #red-text {
+    color: #fd634d;
+    line-height: 26px;
+    font-weight: 400;
+    font: 12px 'Open Sans';
+}
+
+.green-section .love-your-body .image .text #white-text {
+    color: #fff;
+    line-height: 26px;
+    font-weight: 400;
+    font: 12px 'Open Sans';
 }
