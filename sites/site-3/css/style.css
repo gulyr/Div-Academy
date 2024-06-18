@@ -1,3 +1,59 @@
 /* header */
 
-header {}
+header {
+    width: 100%;
+    height: 100vh;
+    background: url('../img/bg.png') no-repeat center 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header .header-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em 3em 0 3em;
+}
+
+header .header-top nav ul {
+    display: flex;
+    gap: 2.5em;
+}
+
+header .header-top nav ul li a {
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 24px;
+    color: #ffffff;
+    font-family: 'Avenir Next Rounded';
+}
+
+header .header-bottom {
+    width: 90%;
+    margin-left: 3em;
+}
+
+header .header-bottom h1 {
+    font-size: 40px;
+    color: #ffffff;
+    font-family: 'Myriad Pro';
+}
+
+header .header-bottom #green-slash {
+    color: #a2ca28;
+}
+
+header .header-bottom p {
+    font-size: 15px;
+    letter-spacing: 3px;
+    line-height: 40px;
+    color: #ffffff;
+    font-family: 'Myriad Pro';
+    margin-left: 11em;
+}
+
+header .header-bottom #red-slash {
+    color: #fd634d;
+}
