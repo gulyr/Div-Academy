@@ -69,25 +69,48 @@ header .header-content .menu ul li p {
   object-fit: cover;
 }
 
-/* title */
+/* main */
 
-.title {
+main {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+
+/* title */
+
+main .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   padding: 53px 0 21px 0;
   gap: 15px;
 }
 
-.title h2 {
+main .title h2 {
   color: #000000;
   font-weight: bold;
   font: 24px 'Georgia';
   text-align: center;
 }
 
-.title hr {
+main .title hr {
   width: 67%;
   border: 0.1em solid #e5e5e5;
+}
+
+/* section-3 */
+
+main .section-3 {
+}
+
+main .section-3 .articles {
+}
+
+main .section-3 .articles .article {
 }
