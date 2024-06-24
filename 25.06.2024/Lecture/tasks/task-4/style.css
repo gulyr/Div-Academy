@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 12% auto 12% 12%;
+    grid-template-columns: 18% auto;
+}
+
+.grid-item {
+    background: #9bcf0b;
+    font-size: 20px;
+    padding: 1em 0 0 1em;
+}
+
+header {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+nav {
+    grid-area: 1 / 1 / 5 / 2;
+}
+
+article {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+aside {
+    grid-area: 3 / 2 / 4 / 3;
+}
+
+footer {
+    grid-area: 4 / 2 / 5 / 3;
+}
