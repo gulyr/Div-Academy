@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.grid-container{
+    background: red;
+    height: 100vh;
+    display: grid;
+    gap: 5px;
+    grid-template-rows: 100px 400px auto;
+    grid-template-columns: 20% 60% auto;
+}
+.grid-item{
+    background: #FCD800;
+}
+header{
+    grid-area: 1 / 1 / 2 / 4;
+}
+nav{
+    grid-area: 2 / 1 / 4 / 2;
+}
+article{
+    grid-area: 2 / 2 / 3 / 3;
+}
+aside{
+    grid-area: 2 / 3 / 3 / 4;
+}
+footer{
+    grid-area: 3 / 2 / 4 / 4;
+}
