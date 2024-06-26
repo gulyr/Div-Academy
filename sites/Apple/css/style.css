@@ -22,10 +22,20 @@ header ul li a {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
     color: silver;
+    transition: 0.5s all ease;
+}
+
+header ul li a:hover {
+    color: #fff;
 }
 
 header ul li i {
     font-size: 16px;
+    transition: 0.5s all ease;
+}
+
+header ul li i:hover {
+    color: #fff;
 }
 
 header ul li #apple-icon {
