@@ -814,3 +814,36 @@ header .header-bottom #blue-link i {
 .section-4 .section-4-bottom .button {
     background: red;
 }
+
+
+/* footer */
+
+footer {
+    padding: 1em 14.1em;
+    width: 100%;
+    background: #fff;
+    background: rgba(245, 245, 247, 0.9);
+    color: #6c6c6c;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    line-height: 1.4em;
+    .footer-top {
+        a {
+            color: #000;
+            text-decoration: underline;
+        }
+        ol {
+            padding: 0 1em;
+            li {
+                margin-top: 1em;
+            }
+            p {
+                margin-top: 1em;
+            }
+        }
+    }
+    hr {
+        width: 100%;
+    }
+    .footer-bottom {}
+}
