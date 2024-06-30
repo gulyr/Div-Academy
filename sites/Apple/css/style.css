@@ -816,6 +816,65 @@ header .header-bottom #blue-link i {
 }
 
 
+/* section-8 */
+
+.section-8 {
+    width: 100%;
+    background: #fff;
+    padding: 5em 4.7em;
+    .section-content {
+        width: 59%;
+        .title {
+            margin-bottom: 5em;
+            h2 {
+                color: rgba(29, 29, 31, 0.8);
+                font-size: 48px;
+                font-weight: 550;
+                font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            }
+        }
+        .columns {
+            display: flex;
+            justify-content: space-between;
+            gap: 1.5em;
+            .column {
+                h3 {
+                    color: rgb(110, 110, 115);
+                    font-size: 12px;
+                    font-weight: 400;
+                    font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                }
+                ul {
+                    margin: 1em 0;
+                    li {
+                        margin-bottom: 1em;
+                        a {
+                            font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                            color: rgba(29, 29, 31, 0.9);
+                            font-weight: 550;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            .column-1 {
+                .ul-1 {
+                    margin-bottom: 3em;
+                    li {
+                        a {
+                            font-family: 'SF Pro Display', 'SF Pro Icons', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                            color: rgb(29, 29, 31);
+                            font-weight: 600;
+                            font-size: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 /* footer */
 
 footer {
