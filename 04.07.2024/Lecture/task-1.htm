@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-1</title>
+    <style>
+        input {
+            width: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="number1" />
+    <input type="text" id="number2" />
+    <input type="text" id="number3" />
+    <button id="button" onclick="Calculate()">Ok</button>
+    <p>Cem: <span id="cem"></span></p>
+    <p>Ort: <span id="ort"></span></p>
+    <p>Hasil: <span id="hasil"></span></p>
+
+    <script>
+        let number1 = document.getElementById('number1')
+        let number2 = document.getElementById('number2')
+        let number3 = document.getElementById('number3')
+        let cem = document.getElementById("cem")
+        let ort = document.getElementById('ort')
+        let hasil = document.getElementById('hasil')
+
+        function Calculate() {
+            cem.innerHTML = eval(+number1.value + +number2.value + +number3.value)
+            ort.innerHTML = eval(+number1.value + +number2.value + +number3.value) / 3
+            hasil.innerHTML = eval(number1.value * number2.value * number3.value)
+        }
+    </script>
+</body>
+
+</html>
