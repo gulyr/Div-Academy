@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-1</title>
+</head>
+
+<body>
+    <input type="text" id="number1" />
+    <span>/</span>
+    <input type="text" id="number2" />
+    <button onclick="Calculate()">=</button>
+    <span id="result"></span>
+    <script>
+        const number1 = document.getElementById('number1')
+        const number2 = document.getElementById('number2')
+        const result = document.getElementById('result')
+
+        function Calculate() {
+            result.innerHTML = `${eval(number1.value / number2.value)} , qaliq ${eval(number1.value % number2.value)}`
+        }
+    </script>
+</body>
+
+</html>
