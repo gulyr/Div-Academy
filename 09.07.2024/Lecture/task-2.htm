@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-2</title>
+</head>
+
+<body>
+    <input type="text" id="name" placeholder="Adiniz" />
+    <fieldset style="border: none">
+        <input type="radio" id="m" name="sex" checked="checked" />kisi
+        <input type="radio" id="f" name="sex" />qadin
+    </fieldset>
+    <button onclick="Check()">Ok</button>
+    <h1 id="msg"></h1>
+    <script>
+        let name = document.getElementById('name')
+        let m = document.getElementById('m')
+        let f = document.getElementById('f')
+        let msg = document.getElementById('msg')
+            // 6 12 18 24
+        function Check() {
+            let saat = 0
+
+            let salam = (saat < 6) ? 'Geceniz xeyre qalsin' :
+                (saat < 12) ? 'Sabahiniz xeyir' :
+                (saat < 18) ? 'Her vaxtiniz xeyir' : 'Axsaminiz xeyir'
+            xitab = m.checked ? `bey` : `xanim`
+            msg.innerHTML = `Salam ${name.value} ${xitab}`
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-1</title>
+</head>
+
+<body>
+    <input type="text" id="x">
+    <button onclick="tekorcut()">Ok</button>
+    <span id="ntc"></span>
+
+    <script>
+        let x = document.getElementById('x')
+        let ntc = document.getElementById('ntc')
+
+        function tekorcut() {
+            // ternary operation
+            ntc.innerHTML = x.value % 2 ? "tekdir" : "cutdur"
+        }
+    </script>
+</body>
+
+</html>

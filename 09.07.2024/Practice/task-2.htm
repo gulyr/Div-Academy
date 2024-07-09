@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-2</title>
+</head>
+
+<body>
+    <p id="text">Lorem ipsum dolor sit amet.</p>
+    <button onclick="Bold()"><b>B</b></button>
+    <button onclick="Underline()" style="text-decoration: underline;">U</button>
+    <button onclick="Italic()"><i>K</i></button>
+
+    <script>
+        let text = document.getElementById('text')
+
+        function Bold() {
+            if (text.style.fontWeight != "bold") {
+                text.style.fontWeight = "bold"
+            } else text.style.fontWeight = "normal"
+        }
+
+        function Underline() {
+            if (text.style.textDecoration != "underline") {
+                text.style.textDecoration = "underline"
+            } else text.style.textDecoration = "none"
+        }
+
+        function Italic() {
+            if (text.style.fontStyle != "italic") {
+                text.style.fontStyle = "italic"
+            } else text.style.fontStyle = "normal"
+        }
+    </script>
+</body>
+
+</html>

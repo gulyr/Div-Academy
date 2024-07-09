@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-1</title>
+</head>
+
+<body>
+    <input type="text" id="number" />
+    <button onclick="Change()">Ok</button>
+    <div id="box" style="width: 100px; height: 100px;"></div>
+    <script>
+        let number = document.getElementById('number')
+        let box = document.getElementById('box')
+
+        function Change() {
+            number.value % 2 == 0 ? box.style.backgroundColor = 'green' : number.value == 0 ? box.style.backgroundColor = 'yellow' : box.style.backgroundColor = 'red'
+                // if (number.value % 2 == 0) {
+                //     box.style.backgroundColor = 'green'
+                // } else {
+                //     box.style.backgroundColor = 'red'
+                // }
+        }
+    </script>
+</body>
+
+</html>
