@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-2</title>
+    <style>
+        div {
+            /* width: 5rem; */
+            /* height: 5rem; */
+            /* background-color: red; */
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="text" />
+    <button onclick="Add()">OK</button>
+    <div id="list"></div>
+
+    <script>
+        let text = document.getElementById('text')
+        let list = document.getElementById('list')
+
+        function Add() {
+            let inp = "<input id='text2'></input>"
+            let text2 = document.getElementById('text2')
+            list.innerHTML += inp
+            let button = "<button onclick='Edit()'>R</button><br/>"
+
+            // function Edit() {
+            //     input.innerHTML = text.value
+            // }
+            list.innerHTML += button
+                // list.innerHTML += "<button>R</button><br/>"
+        }
+    </script>
+</body>
+
+</html>
