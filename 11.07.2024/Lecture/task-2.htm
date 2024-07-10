@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-2</title>
+    <style>
+        input,button{
+            width: 2rem;
+            font-size: 1.2em;
+        }
+        span{
+            margin-left: 4px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="a" /><span>x<sup>2</sup> + </span>
+    <input type="text" id="b" /><span>x + </span>
+    <input type="text" id="c" />
+    <button onclick="Discriminant()">=</button><span>0</span>
+    <p id="x1">x1 = </p>
+    <p id="x2">x2 = </p>
+    <span id="x"></span>
+
+    <script>
+        let a=document.getElementById('a')
+        let b=document.getElementById('b')
+        let c=document.getElementById('c')
+        let x1=document.getElementById('x1')
+        let x2=document.getElementById('x2')
+        let x=document.getElementById('x')
+
+
+        function Discriminant() {
+            let D = Number(b.value)**2 - 4 * Number(a.value) * Number(c.value)
+            if (D>0) {
+                // let x1 = (-Number(b.value) + Math.sqrt(D))/2*a
+                // let x2 = (-Number(b.value) - Math.sqrt(D))/2*a
+                x1.innerHTML+=(-Number(b.value) + Math.sqrt(D))/2*Number(a.value)
+                x2.innerHTML+=(-Number(b.value) - Math.sqrt(D))/2*Number(a.value)
+            }
+            else if (D=0) {
+                // let x1 = (-Number(b.value) + Math.sqrt(D))/2*a
+                // let x2 = (-Number(b.value) - Math.sqrt(D))/2*a
+                x1.innerHTML+=(-Number(b.value))/2*Number(a.value)
+                x2.innerHTML+=(-Number(b.value))/2*Number(a.value)
+
+            }
+            else x.innerHTML="kökü yoxdur"
+        }
+    </script>
+</body>
+</html>
