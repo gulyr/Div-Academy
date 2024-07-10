@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Document</title>
+    </head>
+    <body>
+        <input type="text" id="name" placeholder="Adiniz" />
+        <fieldset style="border:none">
+            <input type="radio" name="sex" id="m" checked="checked">kişi
+            <input type="radio" name="sex" id="f">qadın
+        </fieldset>
+        <button onclick="sayHi()">Ok</button>
+        <h1 id="msg"></h1>
+
+        <script>
+            const name = document.getElementById("name")
+            const m = document.getElementById("m")
+            const f = document.getElementById("f")
+            const msg = document.getElementById("msg")
+
+            function sayHi() {
+                let saat = new Date().getHours()
+
+                let salam = (saat < 6) ? "Gecəniz xeyrə qalsın" :
+                            (saat < 12) ? "Sabahınız xeyir" :
+                            (saat < 18) ? "Hər vaxtınız xeyir" : "Axşamınız xeyir"
+
+                let xitab = m.checked ? `bəy` : `xanım`
+                msg.innerHTML = `${salam}, ${name.value} ${xitab}`
+            }
+        </script>
+    </body>
+</html>
