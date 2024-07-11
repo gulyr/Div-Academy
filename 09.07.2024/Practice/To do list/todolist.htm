@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        input {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" id="inpt" /> 
+        <button onclick="done()"> OK </button>
+    </div>
+    <ol id="history">
+        
+    </ol>
+
+
+    <script>
+        let inpt = document.getElementById("inpt")
+        let history = document.getElementById("history")
+        let a = 1
+        function done () {
+            a++
+            history.innerHTML += `<li id="c${a}">${inpt.value}</li> <button onClick="sil(${a})">X</button>`
+            inpt.value = ""
+        }
+        function sil (a) {
+            const item = document.querySelector(`#c${a}`)
+            item.style.textDecoration = "line-through"
+        }
+
+    </script>
+</body>
+</html>
