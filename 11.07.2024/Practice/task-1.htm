@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task-2</title>
+    <title>Document</title>
     <style>
-        div {
-            /* width: 5rem; */
-            /* height: 5rem; */
-            /* background-color: red; */
+        input {
+            width: 15rem;
+            padding: 0.5rem;
+            font-size: 1.5rem;
+        }
+        button{
+            width: 5rem;
+            padding: 0.5rem;
+            font-size: 1.5rem;
+        }
+        div{
+            margin-top: 1rem;
         }
     </style>
 </head>
-
 <body>
-    <input type="text" id="text" />
-    <button onclick="Add()">OK</button>
+    <input type="text" id="input" /> 
+    <button onclick="Add()">Add</button>
     <div id="list"></div>
 
     <script>
-        let text = document.getElementById('text')
-        let list = document.getElementById('list')
-
-        function Add() {
-            let inp = "<input id='text2'></input>"
-            let text2 = document.getElementById('text2')
-            list.innerHTML += inp
-            let button = "<button onclick='Edit()'>R</button><br/>"
-
-            // function Edit() {
-            //     input.innerHTML = text.value
-            // }
-            list.innerHTML += button
-                // list.innerHTML += "<button>R</button><br/>"
+        let input = document.getElementById("input")
+        let list = document.getElementById("list")
+        let x = 1
+        function Add () {
+            x++
+            list.innerHTML += `<input style="margin-top: 0.5rem" disabled id="li${x}" value="${input.value}" /> <button id="button${x}" onClick="Edit(${x})">Edit</button> <br/>`
+            input.value = ""
+        }
+        function Edit (x) {
+            let item = document.querySelector(`#li${x}`)
+            if (item.disabled) {item.disabled = false; document.querySelector(`#button${x}`).innerHTML ="Save"}
+            else {item.disabled = true; document.querySelector(`#button${x}`).innerHTML ="Edit"}
         }
     </script>
 </body>
-
 </html>
