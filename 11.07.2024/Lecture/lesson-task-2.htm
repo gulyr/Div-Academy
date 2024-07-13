@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-2</title>
+</head>
+
+<body>
+    <p><input type="text" id="ad" placeholder="Ad"></p>
+    <p><input type="text" id="yas" placeholder="Yas"></p>
+    <p>
+        <input type="radio" name="sex" id="m" checked />Kisi
+        <input type="radio" name="sex" id="f" />Qadin
+    </p>
+    <p><button onclick="SayHi()">Ok</button></p>
+    <h1 id="msg"></h1>
+
+    <script>
+        let ad = document.getElementById('ad')
+        let yas = document.getElementById('yas')
+        let m = document.getElementById('m')
+        let f = document.getElementById('f')
+        let msg = document.getElementById('msg')
+
+        function SayHi() {
+            if (Number(yas.value) < 25 && m.checked) {
+                msg.innerHTML = `Salam ${ad.value}`
+            } else if (Number(yas.value) > 25 && m.checked) {
+                msg.innerHTML = `Her vaxtiniz xeyir ${ad.value} bey`
+            } else if (f.checked) {
+                msg.innerHTML = `Her vaxtiniz xeyir ${ad.value} xanim`
+            }
+        }
+    </script>
+</body>
+
+</html>

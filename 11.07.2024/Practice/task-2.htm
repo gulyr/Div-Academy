@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+
+            main {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 30px;
+
+                input {
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                }
+
+                button {
+                    background-color: green;
+                    color: #fff;
+                    padding: 5px 20px;
+                    border-radius: 5px;
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Reqem Tapma Oyunu</h1>
+        <div>
+            <input id="inpGuess" type="number" placeholder="reqemi daxil et">
+            <button onclick="guess()">Texmin et</button>
+        </div>
+        <div id="cehdSec"></div>
+        <div id="content"></div>
+    </main>
+
+    <script>
+        const content = document.getElementById('content')
+        const inpGuess = document.getElementById('inpGuess')
+        const cehdSec = document.getElementById('cehdSec')
+        const randNum = getRndInteger(0, 100)
+        let cehd = 10
+
+        function showCehd() {
+            cehdSec.innerHTML = cehd
+        }
+        showCehd()
+
+        function guess() {
+            if (cehd > 0) cehd--
+            showCehd()
+
+            if (cehd == 0) content.innerHTML = 'uduzdun'
+            else if (+inpGuess.value > randNum) {
+                content.innerHTML = 'Bir az asagi..'
+            } else if (+inpGuess.value < randNum) {
+                content.innerHTML = 'Bir az yuxarı..'
+            } else content.innerHTML = 'YOU WINNNNNNNNNNN.......'
+        }
+
+        function getRndInteger(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+    </script>
+</body>
+
+</html>

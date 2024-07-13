@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task-1</title>
     <style>
-        input{
+        input {
             width: 10em;
             padding: 0.5em 1em;
             border: 1px solid crimson;
         }
-        button{
+        
+        button {
             border: 2px solid gainsboro;
             border-radius: 0.5em;
             padding: 0.5em 1em;
@@ -20,23 +22,25 @@
         }
     </style>
 </head>
+
 <body>
     <input type="text" id="operand1" />
     <button onclick="AddOperand()" id="operator">?</button>
     <input type="text" id="operand2" />
 
     <script>
-        let operand1=document.getElementById('operand1')
-        let operand2=document.getElementById('operand2')
-        let operator=document.getElementById('operator')
+        let operand1 = document.getElementById('operand1')
+        let operand2 = document.getElementById('operand2')
+        let operator = document.getElementById('operator')
 
         function AddOperand() {
             // if (operand1.value > operand2.value) operator.innerHTML=">"
             // else if (operand1.value < operand2.value) operator.innerHTML="<"
             // else operator.innerHTML="="
 
-            (operand1.value > operand2.value) ? operator.innerHTML=">" : (operand1.value < operand2.value) ? operator.innerHTML="<" : operator.innerHTML="="            
+            (Number(operand1.value) > Number(operand2.value)) ? operator.innerHTML = ">": (Number(operand1.value) < Number(operand2.value)) ? operator.innerHTML = "<" : operator.innerHTML = "="
         }
     </script>
 </body>
+
 </html>

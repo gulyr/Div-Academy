@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson-task-1</title>
+</head>
+
+<body>
+    <input type="text" id="giris" placeholder="Giris bali" />
+    <input type="text" id="final" placeholder="Final bal" />
+    <button onclick="Hesabla()">Ok</button>
+    <h1 id="msg"></h1>
+
+    <script>
+        const giris = document.getElementById('giris')
+        const final = document.getElementById('final')
+        const msg = document.getElementById('msg')
+
+        function Hesabla() {
+            let cem = +giris.value + +final.value
+            if (final.value && cem > 50) {
+                msg.innerHTML = "Tebrikler. Kecid balin: " + cem
+            } else msg.innerHTML = "Bextini bir daha sina"
+        }
+    </script>
+</body>
+
+</html>

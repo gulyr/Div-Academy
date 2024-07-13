@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-3</title>
+    <style>
+        #slider {
+            width: 80vw;
+            height: 80vh;
+            margin: 10vh auto;
+            box-shadow: 0 0 10px #333;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="slider"></div>
+    <button id="prev" onclick="Change(-1)">&#60;</button>
+    <button id="next" onclick="Change(1)">&#62;</button>
+    <script>
+        const slider = document.getElementById('slider')
+        let x = 1
+        slider.style.background = `url('img/${x}.jpg') center/cover`
+        let timer = setTimeout(Change, 0, 0)
+
+        function Change(direction) {
+            clearInterval(timer)
+            x += direction
+            if (x > 9) x = 1
+            if (x < 1) x = 9
+            slider.style.background = `url('img/${x}.jpg') center/cover`
+            timer = setInterval(Change, 3000, 1)
+                // setTimeout(fnc, ms)
+
+        }
+
+        // function Show() {
+        //     slider.style.background = `url('img/${x}.jpg') center/cover`
+        // }
+
+        // function Next() {
+        //     if (x < 9) x++
+        //         else x = 1
+        //     Show()
+        // }
+
+        // function Prev() {
+        //     if (x > 1) x--
+        //         else x = 9
+        //     Show()
+        // }
+    </script>
+</body>
+
+</html>
