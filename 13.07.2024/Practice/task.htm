@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <style>
+        body {
+            background: #000;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            p {
+                font-size: 2rem;
+            }
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                gap: 2rem;
+                div {
+                    display: flex;
+                    flex-direction: row;
+                }
+            }
+            input {
+                font-size: 1rem;
+            }
+            button {
+                cursor: pointer;
+                width: 8rem;
+                font-size: 1rem;
+                padding: 0.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 id="title">Reqem Tapma Oyunu</h1>
+        <p id="cehdler">10</p>
+        <div>
+            <input oninput="ShowRandomNumber()" type="number" placeholder="Minimum ededi yaz" id="minimum" />
+            <input oninput="ShowRandomNumber()" type="number" placeholder="Maximum ededi yaz" id="maximum" />
+            <input type="number" placeholder="Eded yaz" id="eded" />
+            <p id="random"></p>
+        </div>
+        <div>
+            <button id="yoxla" onclick="Yoxla()">Yoxla</button>
+            <button id="reload" onclick="document.location.reload()">Yeniden basla</button>
+        </div>
+        <p id="message"></p>
+    </div>
+    <script>
+        let minimum = document.getElementById('minimum')
+        let maximum = document.getElementById('maximum')
+        let eded = document.getElementById('eded')
+        let cehdler = document.getElementById('cehdler')
+        let message = document.getElementById('message')
+        let random = document.getElementById('random')
+        let yoxlaButton = document.getElementById('yoxla')
+        let randomNumber
+        let cehdSayi = 10
+
+        function getRndInteger(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        function ShowRandomNumber() {
+
+            if (minimum.value == "" || maximum.value == "") {
+                random.innerHTML == ""
+            } else {
+                randomNumber = getRndInteger(Number(minimum.value), Number(maximum.value))
+                random.innerHTML = randomNumber
+            }
+        }
+
+        function CehdSayi() {
+            if (minimum.value == "") {
+                message.innerHTML = "Minimum ededi daxil et"
+            } else if (maximum.value == "") {
+                message.innerHTML = "Maximum ededi daxil et"
+            } else if (eded.value == "") {
+                message.innerHTML = "Ededi daxil et"
+            } else {
+                cehdSayi--
+                cehdler.innerHTML = cehdSayi
+            }
+        }
+
+        function Yoxla() {
+            CehdSayi()
+
+            if (Number(Number(eded.value) > randomNumber && cehdSayi > 0 && minimum.value != "" && maximum.value != "" && eded.value != "")) {
+                message.innerHTML = "Biraz asagi eded yaz"
+            } else if (Number(eded.value) < randomNumber && cehdSayi > 0 && minimum.value != "" && maximum.value != "" && eded.value != "") {
+                message.innerHTML = "Biraz yuxari eded yaz"
+            } else if (Number(eded.value) == randomNumber && cehdSayi > 0 && minimum.value != "" && maximum.value != "" && eded.value != "") {
+                message.innerHTML = "Qazandin"
+            } else if (cehdSayi == 0) {
+                message.innerHTML = "Cehdler bitdi"
+                yoxlaButton.disabled = true
+            }
+        }
+    </script>
+</body>
+
+</html>
