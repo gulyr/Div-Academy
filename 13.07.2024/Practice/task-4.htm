@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task - 4</title>
+</head>
+
+<body>
+    <!-- 4) input-a girdiyiniz value-nin icinde nece eded 'a' herifinin oldugunu yoxlayin -->
+    <input type="text" id="input" />
+    <button onclick="CountOfCharacter()">Ok</button>
+    <p id="count"></p>
+    <script>
+        let input = document.getElementById('input');
+        let count = document.getElementById('count');
+        let x = 0
+
+        function CountOfCharacter() {
+            for (let i = 0; i <= input.value.length - 1; i++) {
+                if (input.value.charAt(i) == "a") {
+                    x++;
+                    count.innerHTML = x
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
