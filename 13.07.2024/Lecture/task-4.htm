@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task - 4</title>
+    <style>
+        input{
+            width: 3rem;
+        }
+        input, button, p, td{
+            font-size: 2rem;
+        }
+        table,td{
+            border: 1px solid #000;
+            border-collapse: collapse;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="number" />
+    <button onclick="Add()">Ok</button>
+    <table>
+        <tr id="row"></tr>
+    </table>
+    <script>
+        let number = document.getElementById('number')
+        let row = document.getElementById('row')
+        function Add() {
+            row.innerHTML = ""
+            for (let i = Number(number.value); i > 0 ; i--) {
+                row.innerHTML += `<td id='data'>${i}</td>`
+            }
+            number.value = ""
+        }
+    </script>
+</body>
+</html>
