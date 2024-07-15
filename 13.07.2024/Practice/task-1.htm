@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task - 1</title>
+    <style></style>
+</head>
+
+<body>
+    <!-- 1) 1-14 arasindaki cut ededleri yazdirin. ex: 2,4,6,8,10,12,14 -->
+    <p id="numbers"></p>
+    <script>
+        let numbers = document.getElementById('numbers')
+        for (let i = 1; i <= 14; i++) {
+            if (i % 2 == 0) {
+                numbers.innerHTML += `${i}, `
+            }
+        }
+    </script>
+</body>
+
+</html>
