@@ -23,6 +23,9 @@
         let number2 = document.getElementById('number2')
         let numbers = document.getElementById('numbers')
         function Add() {
+            number1.innerHTML = ""
+            number2.innerHTML = ""
+            numbers.innerHTML = ""
             for (let i = 1; i <= Number(number1.value); i+=Number(number2.value)) {
                 numbers.innerHTML += `${i} `;
             }
