@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task - 1</title>
+    <style>
+        #number{
+            width: 3rem;
+        }
+        #number, button, p{
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="number" />
+    <button onclick="Add()">Ok</button>
+    <p id="numbers"></p>
+    <script>
+        let number = document.getElementById('number')
+        let numbers = document.getElementById('numbers')
+        function Add() {
+            for (let i = Number(number.value); i >= 1; i--) {
+                numbers.innerHTML += `${i} `;
+            }
+        }
+    </script>
+</body>
+</html>
