@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task - 6</title>
+</head>
+
+<body>
+    <!-- 6) 1-7 arasi butun reqemlerin cemini tap. 1+2+3+4+5+6+7=28 -->
+    <p id="cem"></p>
+    <script>
+        let cem = document.getElementById('cem')
+        let sum = 0
+        for (let i = 1; i <= 7; i++) {
+            cem.innerHTML += `${i}+`
+            sum += i
+        }
+        cem.innerHTML += `=${sum}`
+    </script>
+</body>
+
+</html>
