@@ -21,9 +21,11 @@
         let number = document.getElementById('number')
         let numbers = document.getElementById('numbers')
         function Add() {
+            numbers.innerHTML = ""
             for (let i = Number(number.value); i >= 1; i--) {
                 numbers.innerHTML += `${i} `;
             }
+            number.value = ""
         }
     </script>
 </body>
