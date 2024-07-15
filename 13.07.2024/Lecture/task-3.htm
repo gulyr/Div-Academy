@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task - 3</title>
+    <style>
+        input{
+            width: 3rem;
+        }
+        input, button, p{
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="number1" />
+    <input type="text" id="number2" />
+    <button onclick="Add()">Ok</button>
+    <p id="numbers"></p>
+    <script>
+        let number1 = document.getElementById('number1')
+        let number2 = document.getElementById('number2')
+        let numbers = document.getElementById('numbers')
+        function Add() {
+            for (let i = 1; i <= Number(number1.value); i+=Number(number2.value)) {
+                numbers.innerHTML += `${i} `;
+            }
+        }
+    </script>
+</body>
+</html>
