@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task - 3</title>
+</head>
+
+<body>
+    <!-- 3) inputdan aldigim deyeri uzerine gelmelidi araliq: 0-50 input: 4 output: 4 8 12 16 20 24 28 32 36 40 44 48 -->
+    <input type="text" id="input" />
+    <button onclick="AddNumber()">Ok</button>
+    <p id="numbers"></p>
+    <script>
+        let input = document.getElementById('input');
+
+        function AddNumber() {
+            numbers.innerHTML = ""
+            for (let i = Number(input.value); i <= 50; i += Number(input.value)) {
+                numbers.innerHTML += `${i} `
+            }
+        }
+    </script>
+</body>
+
+</html>
