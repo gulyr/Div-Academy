@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task - 5</title>
+    <style></style>
+</head>
+
+<body>
+    <!-- 7) palindrome sozlerin validasiyasi. ex: input: civic output: "bu soz palindrome-dur"   
+input:"apple" output: "bu soz palidrome deyil" -->
+
+    <input type="text" name="" id="input">
+    <button onclick="Show()">Ok</button>
+    <p id="message"></p>
+    <script>
+        let input = document.getElementById('input')
+        let message = document.getElementById('message')
+
+
+        function Show() {
+            let newText = ""
+            for (let i = 0; i < input.value.length; i++) {
+                newText += input.value.charAt(i)
+                if (newText == input.value) {
+                    message.innerHTML = "Eded polindromedir"
+                } else {
+                    message.innerHTML = "Eded polindrome deyil"
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
