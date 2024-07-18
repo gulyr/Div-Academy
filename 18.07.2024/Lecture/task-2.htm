@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task - 1</title>
+    <title>Task - 2</title>
     <style>
       table {
         border-collapse: collapse;
@@ -17,20 +17,22 @@
       }
     </style>
   </head>
-
   <body>
     <table id="table"></table>
     <script>
-      let table = document.getElementById("table");
+      const table = document.getElementById("table");
       let kod = "";
+      kod += `<tr>`;
       for (let i = 1; i <= 5; i++) {
-        kod += `<tr>`;
         for (let j = 1; j <= 5; j++) {
-          kod += `<td>${i * j}</td>`;
+          if ((i * j) % 2 == 0) {
+            kod += `<td>1</td>`;
+          } else kod += `<td>0</td>`;
+          //   kod += `<td>(${i * j}%2==0 ? "0" : "1")</td>`;
         }
         kod += `</tr>`;
       }
-      table.innerHTML = kod;
+      table.innerHTML += kod;
     </script>
   </body>
 </html>
