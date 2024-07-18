@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <style>
+            table { border-collapse: collapse; font: bold 1.6em Arial;}
+            td {width: 50px; height: 50px; text-align: center;}
+            .black { background: orange;}
+            .white { background: yellow;}
+        </style>
+    </head>
+    <body>
+        <table id="chess"></table>
+        
+        <script>
+            const chess = document.getElementById("chess")
+            let kod = ''
+            for (let i = 0; i <= 8; i++) {
+                kod += '<tr>'
+                for (let j = 0; j <= 8; j++) {
+                    let color = (i == 0 || j == 0) ? '' :
+                                (i + j) % 2 ? 'black' : 'white' 
+                    let cell =  j == 0 ? i : 
+                                i == 0 ? j : ''
+                    kod += `<td class="${color}">${cell}</td>`
+                }
+                kod += '</tr>'
+            }
+            chess.innerHTML = kod
+        </script>
+    </body>
+</html>
