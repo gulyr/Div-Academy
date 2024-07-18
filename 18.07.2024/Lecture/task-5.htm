@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task - 4</title>
+    <title>Task - 5</title>
     <style>
         table {
             border-collapse: collapse;
@@ -24,18 +24,14 @@
     <script>
         const table = document.getElementById("table");
         let kod = "";
-
         for (let i = 1; i <= 5; i++) {
             kod += `<tr>`;
             for (let j = 1; j <= 5; j++) {
-                if (i >= j) {
-                    kod += `<td>${j}</td>`;
-                } else kod += `<td></td>`;
-
-            }
-            kod += `</tr>`;
-        }
-        table.innerHTML += kod;
+                kod += `${i >= j ? `<td>${j}</td>` : `<td></td>`}`
+      }
+      kod += `</tr>`;
+    }
+    table.innerHTML += kod;
     </script>
 </body>
 
