@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task - 1</title>
+  </head>
+  <body>
+    <input
+      type="text"
+      id="text"
+      oninput="document.getElementById('newText').innerHTML=''"
+    />
+    <button onclick="Ok()">Ok</button>
+    <p id="newText"></p>
+
+    <script>
+      let text = document.getElementById("text");
+
+      //   function Ok() {
+      //     document.getElementById("newText").innerHTML = text.value.toUpperCase();
+      //   }
+
+      function Ok() {
+        for (let j = 0; j < text.value.length; j++) {
+          if (text.value[j].toLowerCase() && j != 0) {
+            document.getElementById("newText").innerHTML +=
+              text.value.replace(text.value[j], text.value[j].toUpperCase()) +
+              `<br/>`;
+          } else {
+            document.getElementById("newText").innerHTML +=
+              text.value.replace(text.value[0], text.value[0].toUpperCase()) +
+              `<br/>`;
+          }
+        }
+        text.value = "";
+      }
+    </script>
+  </body>
+</html>
