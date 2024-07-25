@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task - 1</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    div {
+      background-color: beige;
+    }
+    .div-1 {
+      display: flex;
+      justify-content: space-between;
+      gap: 1em;
+    }
+    .div-3 {
+      display: flex;
+      justify-content: space-between;
+      gap: 1em;
+      width: 100%;
+      background-color: beige;
+    }
+    .container {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1em;
+      margin-top: 1em;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="div-1">
+        <input type="text" id="person" />
+        <button onclick="Add()">Add</button>
+      </div>
+      <div class="div-2">
+        <input type="radio" id="kisi" name="sex" checked />
+        <label for="kisi">Kisi</label>
+        <input type="radio" id="qadin" name="sex" />
+        <label for="qadin">Qadin</label>
+      </div>
+      <div class="div-3">
+        <div id="kisicont">
+          <p id="kisisayi"></p>
+        </div>
+        <div id="qadincont">
+          <p id="qadinsayi"></p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let person = document.getElementById("person");
+      let kisi = document.getElementById("kisi");
+      let qadin = document.getElementById("qadin");
+      let kisicont = document.getElementById("kisicont");
+      let qadincont = document.getElementById("qadincont");
+      let kisisayi = document.getElementById("kisisayi");
+      let qadinsayi = document.getElementById("qadinsayi");
+      let kod = "";
+      function Add() {
+        kisicont.innerHTML += `<ul>`;
+        for (let i = 0; i < person.length; i++) {
+          const element = array[i];
+        }
+        kisicont.innerHTML += `</ul>`;
+      }
+    </script>
+  </body>
+</html>
