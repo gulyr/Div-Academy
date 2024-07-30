@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>30.07.2024</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        #area {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        #area>* {
+            position: absolute;
+        }
+        
+        #cicek {
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="area">
+        <div id="cicek">🌸</div>
+    </div>
+    <script>
+        const area = document.getElementById('area');
+        let cicek = document.getElementById('cicek');
+        let y = 0
+        setInterval(move, 40);
+
+        function move() {
+            if (y < area.offsetHeight) y += 3
+            else cicek.remove()
+            cicek.style.top = y + 'px';
+        }
+    </script>
+</body>
+
+</html>
