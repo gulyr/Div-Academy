@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>30.07.2024</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        #area {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        #area>* {
+            position: absolute;
+        }
+        
+        #cicek {
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="area"></div>
+    <script>
+        const area = document.getElementById('area');
+        let cicek = document.getElementById('cicek');
+        const types = ['🌸', '🌻', '🌹', '🌼', '🥀', '💮', '💠']
+        const flowers = []
+        let y = 0
+
+        setInterval(create, 1000);
+        setInterval(move, 40);
+
+        function create() {
+            let id = 'c' + flowers.length
+            let type = rnd(0, types.length - 1)
+            let size = rnd(10, 30) / 10
+            let x = rnd(0, area.offsetWidth)
+            let y = -16 * size
+            let speed = rnd(20, 50) / 10
+                //   0     1    2   3  4    5
+            flowers.push([id, type, size, x, y, speed])
+            area.innerHTML += `<div id='${id}'>${types[type]}</div>`
+        }
+
+        function move() {
+            for (let i = 0; i < flowers.length; i++) {
+                if (flowers[i]) {
+                    let cicek = flowers[i];
+                    let elem = document.getElementById(cicek[0]);
+
+                    cicek[4] += cicek[5]
+
+                    if (cicek[4] > area.offsetHeight) {
+                        elem.remove()
+                        delete flowers[i]
+                    } else {
+                        elem.style.left = cicek[3] + 'px';
+                        elem.style.top = cicek[4] + 'px';
+                        elem.style.fontSize = cicek[2] + 'em';
+                    }
+                }
+            }
+        }
+
+        function rnd(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        nav {
+            padding: 30px 10px;
+            background-color: #888;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+            i {
+                font-size: 1.2rem;
+                cursor: pointer;
+            }
+        }
+        
+        #sidebar {
+            position: fixed;
+            top: 0;
+            right: -40%;
+            width: 40vw;
+            height: 100vh;
+            background-color: #dedede;
+            /* visibility: hidden; */
+            transition: 1s ease-in-out;
+            i {
+                font-size: 1.5rem;
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                cursor: pointer;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h2>Aaaa</h2>
+        <i onclick="handleBar(true)" class="fa-solid fa-bag-shopping"></i>
+    </nav>
+    <div id="sidebar">
+        <i onclick="handleBar(false)" class="fa-solid fa-x"></i>
+    </div>
+    <script>
+        const sidebar = document.getElementById('sidebar');
+
+        function handleBar(status) {
+            sidebar.style.right = status ? '0' : '-40%';
+        }
+    </script>
+</body>
+
+</html>
