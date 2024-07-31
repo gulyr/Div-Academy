@@ -61,10 +61,10 @@ header {
   align-items: center;
   position: relative;
   background: #eee;
+  border-radius: 15px;
   /* background: url("../img/atb_productpage_istehlak_az_july.png") no-repeat; */
   /* background-size: cover; */
   /* background-position: right 100% bottom; */
-  border-radius: 15px;
   /* overflow: hidden; */
 }
 
@@ -74,6 +74,14 @@ h2 {
   left: 16px;
   font-size: 18px;
 }
+
+.header-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 }
