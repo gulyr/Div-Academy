@@ -1,0 +1,99 @@
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+}
+header {
+  width: 100%;
+  height: 40vh;
+  background: bisque;
+}
+.header-top {
+  width: 100%;
+  height: 10vh;
+  background: #fff;
+}
+.header-bottom {
+  width: 100%;
+  height: 50vh;
+  margin-bottom: 20px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card {
+  width: 90%;
+  height: 30vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: #eee;
+  /* background: url("../img/atb_productpage_istehlak_az_july.png") no-repeat; */
+  /* background-size: cover; */
+  /* background-position: right 100% bottom; */
+  border-radius: 15px;
+  /* overflow: hidden; */
+}
+
+h2 {
+  position: absolute;
+  top: 100px;
+  left: 16px;
+  font-size: 18px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .card {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
