@@ -1,0 +1,393 @@
+@media only screen and (min-width: 992px) {
+    header {
+        width: 100%;
+        height: 50vh;
+        background: greenyellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    header::after {
+        content: '';
+        clear: both;
+        display: table;
+    }
+    .header-top {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #2980b9;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+    }
+    .header-left {
+        width: 50%;
+        background: gray;
+        display: flex;
+    }
+    .header-left nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .header-left ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-right {
+        width: 50%;
+        /* height: 100%; */
+        background: gray;
+    }
+    .kredit-dropbtn {
+        background-color: transparent;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+    .kredit-dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .kredit-dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 500px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        border-radius: 1em;
+        margin-top: 1rem;
+    }
+    .kredit-dropdown-content:before {
+        content: '';
+        position: absolute;
+        top: -20px;
+        left: 7%;
+        transform: translateX(-10%);
+        border: 10px solid transparent;
+        border-bottom-color: #f1f1f1;
+    }
+    .kredit-dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .kredit-dropdown-content a:hover {
+        background-color: #ddd;
+    }
+    .kredit-dropdown:hover .kredit-dropdown-content {
+        display: block;
+    }
+    .kredit-dropdown:hover .kredit-dropbtn {
+        /* background-color: #3e8e41; */
+    }
+    .kartlar-dropbtn {
+        background-color: transparent;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+    .kartlar-dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .kartlar-dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 500px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        border-radius: 1em;
+        margin-top: 1rem;
+    }
+    .kartlar-dropdown-content:before {
+        content: '';
+        position: absolute;
+        top: -20px;
+        left: 7%;
+        transform: translateX(-10%);
+        border: 10px solid transparent;
+        border-bottom-color: #f1f1f1;
+    }
+    .kartlar-dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .kartlar-dropdown-content a:hover {
+        background-color: #ddd;
+    }
+    .kartlar-dropdown:hover .kartlar-dropdown-content {
+        display: block;
+    }
+    .kredit-dropdown:hover .kartlar-dropbtn {
+        /* background-color: #3e8e41; */
+    }
+    .ipoteka-dropbtn {
+        background-color: transparent;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+    .ipoteka-dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .ipoteka-dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 500px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        border-radius: 1em;
+        margin-top: 1rem;
+    }
+    .ipoteka-dropdown-content:before {
+        content: '';
+        position: absolute;
+        top: -20px;
+        left: 7%;
+        transform: translateX(-10%);
+        border: 10px solid transparent;
+        border-bottom-color: #f1f1f1;
+    }
+    .ipoteka-dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .ipoteka-dropdown-content a:hover {
+        background-color: #ddd;
+    }
+    .ipoteka-dropdown:hover .ipoteka-dropdown-content {
+        display: block;
+    }
+    .ipoteka-dropdown:hover .ipoteka-dropbtn {
+        /* background-color: #3e8e41; */
+    }
+    .emanetler-dropbtn {
+        background-color: transparent;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+    .emanetler-dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .emanetler-dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 500px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        border-radius: 1em;
+        margin-top: 1rem;
+    }
+    .emanetler-dropdown-content:before {
+        content: '';
+        position: absolute;
+        top: -20px;
+        left: 7%;
+        transform: translateX(-10%);
+        border: 10px solid transparent;
+        border-bottom-color: #f1f1f1;
+    }
+    .emanetler-dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .emanetler-dropdown-content a:hover {
+        background-color: #ddd;
+    }
+    .emanetler-dropdown:hover .emanetler-dropdown-content {
+        display: block;
+    }
+    .emanetler-dropdown:hover .emanetler-dropbtn {
+        /* background-color: #3e8e41; */
+    }
+    .onlayn-dropbtn {
+        background-color: transparent;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+    .onlayn-dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .onlayn-dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 500px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        border-radius: 1em;
+        margin-top: 1rem;
+    }
+    .onlayn-dropdown-content:before {
+        content: '';
+        position: absolute;
+        top: -20px;
+        left: 7%;
+        transform: translateX(-10%);
+        border: 10px solid transparent;
+        border-bottom-color: #f1f1f1;
+    }
+    .onlayn-dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .onlayn-dropdown-content a:hover {
+        background-color: #ddd;
+    }
+    .onlayn-dropdown:hover .onlayn-dropdown-content {
+        display: block;
+    }
+    .onlayn-dropdown:hover .onlayn-dropbtn {
+        /* background-color: #3e8e41; */
+    }
+    .diger-dropbtn {
+        background-color: transparent;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+    .diger-dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .diger-dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 500px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        border-radius: 1em;
+        margin-top: 1rem;
+    }
+    .diger-dropdown-content:before {
+        content: '';
+        position: absolute;
+        top: -20px;
+        left: 7%;
+        transform: translateX(-10%);
+        border: 10px solid transparent;
+        border-bottom-color: #f1f1f1;
+    }
+    .diger-dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .diger-dropdown-content a:hover {
+        background-color: #ddd;
+    }
+    .diger-dropdown:hover .diger-dropdown-content {
+        display: block;
+    }
+    .diger-dropdown:hover .diger-dropbtn {
+        /* background-color: #3e8e41; */
+    }
+    .languages-dropbtn {
+        background-color: transparent;
+        color: purple;
+        padding: 8px;
+        font-size: 15px;
+        border: 1px solid purple;
+        border-radius: 0.5rem;
+        cursor: pointer;
+    }
+    /* .languages-dropbtn:hover,
+.languages-dropbtn:focus {
+    background-color: transparent;
+} */
+    .languages-dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .languages-dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        overflow: auto;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+    .languages-dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .languages-dropdown a:hover {
+        background-color: #ddd;
+    }
+    .languages-show {
+        display: block;
+    }
+    .bank-haqqinda-dropbtn {
+        background-color: transparent;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+    .bank-haqqinda-dropdown {
+        position: relative;
+        display: inline-block;
+    }
+    .bank-haqqinda-dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 500px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        border-radius: 1em;
+        margin-top: 1rem;
+    }
+    .bank-haqqinda-dropdown-content:before {
+        content: '';
+        position: absolute;
+        top: -20px;
+        left: 7%;
+        transform: translateX(-10%);
+        border: 10px solid transparent;
+        border-bottom-color: #f1f1f1;
+    }
+    .bank-haqqinda-dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+    .bank-haqqinda-dropdown-content a:hover {
+        background-color: #ddd;
+    }
+    .bank-haqqinda-dropdown:hover .bank-haqqinda-dropdown-content {
+        display: block;
+    }
+    .bank-haqqinda-dropdown:hover .bank-haqqinda-dropbtn {
+        /* background-color: #3e8e41; */
+    }
+}

@@ -11,13 +11,10 @@ var swiper = new Swiper('.mySwiper', {
     },
 })
 
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
 function myFunction() {
     document.getElementById('myDropdown').classList.toggle('show')
 }
 
-// Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
     if (!event.target.matches('.dropbtn')) {
         var dropdowns = document.getElementsByClassName('dropdown-content')
@@ -26,6 +23,29 @@ window.onclick = function(event) {
             var openDropdown = dropdowns[i]
             if (openDropdown.classList.contains('show')) {
                 openDropdown.classList.remove('show')
+            }
+        }
+    }
+}
+
+function myFunctionLanguages() {
+    document.querySelector('.languages-dropbtn').style.backgroundColor =
+        'transparent' ? 'white' : 'transparent'
+    document
+        .getElementById('languages-myDropdown')
+        .classList.toggle('languages-show')
+}
+
+window.onclick = function(event) {
+    if (!event.target.matches('.languages-dropbtn')) {
+        var dropdowns = document.getElementsByClassName(
+            'languages-dropdown-content'
+        )
+        var i
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i]
+            if (openDropdown.classList.contains('languages-show')) {
+                openDropdown.classList.remove('languages-show')
             }
         }
     }

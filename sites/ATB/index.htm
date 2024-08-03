@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/end-icons-section.css">
+    <link rel="stylesheet" href="css/cards-1-section.css">
+    <link rel="stylesheet" href="css/cards-2-section.css">
+    <link rel="stylesheet" href="css/news-section.css">
+    <link rel="stylesheet" href="css/valyuta-section.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -17,6 +24,99 @@
     <!-- container -->
     <div class="container">
         <!-- header -->
+        <header>
+            <div class="header-top">
+                <div class="header-left">
+                    <a href=""><img src="img/logo.svg" alt=""></a>
+                    <nav>
+                        <ul class="nav-1">
+                            <li><a href="">FƏRDİ</a></li>
+                            <li><a href="">BİZNES</a></li>
+                            <li><a href="">KOB</a></li>
+                        </ul>
+                        <div class="nav-2">
+                            <div class="kredit-dropdown">
+                                <button class="kredit-dropbtn">KREDİTLƏR</button>
+                                <div class="kredit-dropdown-content">
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                </div>
+                            </div>
+                            <div class="kartlar-dropdown">
+                                <button class="kartlar-dropbtn">KARTLAR</button>
+                                <div class="kartlar-dropdown-content">
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                </div>
+                            </div>
+                            <div class="ipoteka-dropdown">
+                                <button class="ipoteka-dropbtn">İPOTEKA</button>
+                                <div class="ipoteka-dropdown-content">
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                </div>
+                            </div>
+                            <div class="emanetler-dropdown">
+                                <button class="emanetler-dropbtn">ƏMANƏTLƏR</button>
+                                <div class="emanetler-dropdown-content">
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                </div>
+                            </div>
+                            <div class="onlayn-dropdown">
+                                <button class="onlayn-dropbtn">ONLAYN</button>
+                                <div class="onlayn-dropdown-content">
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                </div>
+                            </div>
+                            <div class="diger-dropdown">
+                                <button class="diger-dropbtn">DİGƏR</button>
+                                <div class="diger-dropdown-content">
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="header-right">
+                    <div class="search-container">
+                        <form action="/action_page.php">
+                            <!-- <input type="text" placeholder="Search.." name="search"> -->
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+                    <button class="atb-360"></button>
+                    <div class="languages-dropdown">
+                        <button onclick="myFunctionLanguages()" class="languages-dropbtn">AZ</button>
+                        <div id="languages-myDropdown" class="languages-dropdown-content">
+                            <a href="">AZ</a>
+                            <a href="">RU</a>
+                            <a href="">EN</a>
+                        </div>
+                    </div>
+                    <div class="bank-haqqinda-dropdown">
+                        <button class="bank-haqqinda-dropbtn">BANK HAQQINDA</button>
+                        <i class="fa-solid fa-chevron-down"></i>
+                        <div class="bank-haqqinda-dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <a href="tel:945"><i class="fa-solid fa-phone"></i>945</a>
+                    </div>
+                </div>
+        </header>
+
         <!-- <header>
             <div class="header-top">
                 <div class="icons">
@@ -65,6 +165,7 @@
                 <div class="swiper-pagination"></div>
             </div>
         </header> -->
+
 
         <!-- cards section -->
         <section class="cards">
@@ -317,9 +418,9 @@
                 <i class="fa-solid fa-comment-dots"></i>
             </div>
         </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="script.js"></script>
 </body>
 
 </html>
