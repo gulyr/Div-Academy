@@ -31,8 +31,8 @@
                     <nav>
                         <ul class="nav-1">
                             <li><a href="">FƏRDİ</a></li>
-                            <li><a href="">BİZNES</a></li>
-                            <li><a href="">KOB</a></li>
+                            <li><a class="blacktext" href="">BİZNES</a></li>
+                            <li><a class="blacktext" href="">KOB</a></li>
                         </ul>
                         <div class="nav-2">
                             <div class="kredit-dropdown">
@@ -87,12 +87,13 @@
                     </nav>
                 </div>
                 <div class="header-right">
-                    <div class="search-container">
-                        <form action="/action_page.php">
-                            <!-- <input type="text" placeholder="Search.." name="search"> -->
-                            <button type="submit"><i class="fa fa-search"></i></button>
+                    <!-- <div class="search-container">
+                        <form action="">
+                            <input placeholder="sizə necə kömək edə bilərik?" id="inp" type="text" name="search" onclick="document.getElementById('inp').style.border='none'">
+                            <button onclick="show()" type="submit"><i class="fa fa-search"></i></button>
                         </form>
-                    </div>
+                    </div> -->
+                    <button class="search-button" onclick=""><i class="fa fa-search"></i></button>
                     <button class="atb-360"></button>
                     <div class="languages-dropdown">
                         <button onclick="myFunctionLanguages()" class="languages-dropbtn">AZ</button>
@@ -115,6 +116,7 @@
                         <a href="tel:945"><i class="fa-solid fa-phone"></i>945</a>
                     </div>
                 </div>
+            </div>
         </header>
 
         <!-- <header>
@@ -418,9 +420,9 @@
                 <i class="fa-solid fa-comment-dots"></i>
             </div>
         </div>
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script src="script.js"></script>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

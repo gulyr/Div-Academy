@@ -21,10 +21,11 @@ body {
     color: #000;
 }
 
-.container header .swiper .swiper-slide .card {
+
+/* .container header .swiper .swiper-slide .card {
     width: 90%;
     border-radius: 15px;
-}
+} */
 
 
 /* Extra small devices (phones, 600px and down) */
@@ -52,7 +53,6 @@ body {
         margin: 0;
         padding: 0;
     }
-    /* header */
 }
 
 
