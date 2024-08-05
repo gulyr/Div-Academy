@@ -50,3 +50,23 @@ window.onclick = function(event) {
         }
     }
 }
+
+// document
+//     .getElementsByClassName('search-button')
+//     .addEventListener('click', function() {
+//         alert('Hello World!')
+//     })
+document.getElementById('searchbtn').addEventListener('click', function() {
+    document.getElementById('searchcontainer').style.display = 'block'
+})
+
+document
+    .getElementById('searchcontainer')
+    .addEventListener('click', function() {
+        if ((document.getElementById('searchcontainer').style.display = 'block')) {
+            document.getElementById('searchcontainer').style.display = 'none'
+        }
+    })
+document.getElementById('inp').addEventListener('click', function(event) {
+    document.getElementById('inp').style.border = 'none'
+})
