@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+        <select id="year"></select>
+        
+        <script>
+            const year = document.getElementById("year")
+            let kod = ''
+
+            for (let i = 2024; i >= 1905; i--) {
+                kod += `<option>${i}</option>`
+            }
+
+            year.innerHTML = kod
+        </script>
+    </body>
+</html>

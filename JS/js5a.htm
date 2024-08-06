@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="giris" placeholder="Giris bali" />
+    <input type="text" id="final" placeholder="Final bal" />
+    <button onclick="hesabla()">Ok</button>
+    <h1 id="msg"></h1>
+
+    <script>
+        const giris = document.getElementById("giris")
+        const final = document.getElementById("final")
+        const msg = document.getElementById("msg")
+
+        function hesabla() {  
+            let cem = +giris.value + +final.value
+            if (final.value > 16 && cem > 50) 
+                msg.innerHTML = "Təbriklər. Keçid balın: " + cem
+            else msg.innerHTML = "Bəxtini bir daha sına"
+        }
+    </script>
+</body>
+</html>

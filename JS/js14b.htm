@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+        <input type="number" id="a" />
+        <input type="number" id="b" />
+        <button onclick="getObject()">Ok</button>
+
+        <script>
+            const a = document.getElementById("a")
+            const b = document.getElementById("b")
+
+            function getObject() {
+                console.log( {
+                    width: +a.value,
+                    height: +b.value,
+                    getPerimeter() {
+                        return 2 * (this.width + this.height)
+                    },
+                    getArea() {
+                        return this.width * this.height
+                    } 
+                } )
+            }
+        </script>
+    </body>
+</html>

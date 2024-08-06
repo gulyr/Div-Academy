@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Document</title>
+    </head>
+    <body>
+        <select id="n" onchange="vur()"></select>
+        <div id="tbl"></div>
+
+        <script>
+            const n = document.getElementById("n")
+            const tbl = document.getElementById("tbl")
+            let kod = ''
+
+            for (let i = 1; i <= 9; i++) {
+                kod += `<option>${i}</option>`
+            }
+            n.innerHTML = kod
+
+            function vur() {
+                let kod = ''
+
+                for (let i = 1; i <= 9; i++) {
+                    kod += `${i} x ${n.value} = ${i * n.value}<br />`
+                }
+                tbl.innerHTML = kod
+            }
+        </script>
+    </body>
+</html>

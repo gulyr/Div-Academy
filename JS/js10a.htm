@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Document</title>
+        <style>
+            table { border-collapse: collapse; margin: 10vh auto; font: bold 1.6em Arial; text-align: center;}
+            td { width: 100px; height: 100px; border: 1px solid #333; background-size: cover;}
+        </style>
+    </head>
+    <body>
+        <table id="oyun"></table>
+
+        <script>
+            const oyun = document.getElementById("oyun")
+            let arr = []
+            let matrix = []
+            let kod = ''
+            let ilk = []
+
+            for (let i = 1; i <= 8; i++) {
+                arr.push(i)
+                arr.push(i)      
+            }
+            arr.sort( function () {return rnd(-100, 100)} )
+
+            for (let i = 0; i < 4; i++) {
+                matrix[i] = []  // !!!!!!!!!!!11
+                for (let j = 0; j < 4; j++) {
+                    matrix[i][j] = arr.pop()
+                }
+            }
+
+            for (let i = 0; i < 4; i++) {
+                kod += '<tr>'
+                for (let j = 0; j < 4; j++) {
+                    kod += `<td onclick="ac(${i}, ${j})" id="_${i}${j}" style="background-image: url('img/png/${matrix[i][j]}.png')"></td>`
+                }
+                kod += '</tr>'
+            }
+            oyun.innerHTML = kod
+
+            setTimeout(bagla, 3000)
+
+            function ac(i, j) {
+                deyis(i, j, matrix[i][j])
+                if(ilk.length) {
+                    if( matrix[i][j] == matrix[ilk[0]][ilk[1]] ) {
+                        ilk = [] 
+                    } else {
+                        setTimeout(function(){
+                            deyis(i, j, 0)
+                            deyis(ilk[0], ilk[1], 0)
+                            ilk = []
+                        }, 1000)
+                    }
+                } else {
+                    ilk = [i, j]
+                }
+            }
+
+            function bagla() {
+                for (let i = 0; i < 4; i++) {
+                    for (let j = 0; j < 4; j++) {
+                        deyis(i, j, 0)
+                    }
+                }
+            }
+
+            function deyis(i, j, n) {
+                let id = `_${i}${j}`
+                let td = document.getElementById(id)
+                td.style.backgroundImage = `url('img/png/${n}.png')`
+            }
+
+            function rnd(min, max) {
+                return Math.floor(Math.random() * (max - min + 1) ) + min
+            }
+        </script>
+
+    </body>
+</html>

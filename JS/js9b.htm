@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+        <ul id="siyahi"></ul>
+
+        <script>
+            let num = [6, 3, 2, -3, 16, 8, 9, 0.8, 53, 47, 19]
+            
+            console.log( arrMin(num) )
+            console.log( arrSort(num) )
+            console.log( num.sort( function(x, y) {return x - y} ) )
+            console.log( `Min: ${num[0]}` )
+
+            function arrSort(a) {
+                for (let i = 0; i < a.length; i++) {
+                    for (let j = 0; j < a.length; j++) {
+                        if (a[i] < a[j]) {
+                            let z = a[i]
+                            a[i] = a[j]
+                            a[j] = z
+                        }  
+                    }                    
+                }
+                return a
+            }
+            
+            function arrMin(a) {
+                let min = a[0]
+                for (let i = 1; i < a.length; i++) {
+                    if (a[i] < min) min = a[i]
+                }
+                return min
+            }
+
+
+
+
+            const siyahi = document.getElementById("siyahi")
+            let arr = ["Vuqar", "Guldeste", "Fuad", "Aysu", "Murad" ]
+            let kod = ''
+
+            arr.push("Ayxan")
+            arr[99] = "Afsane"
+            arr.splice(6, 93, "Elxan")
+
+            for (let i = 0; i < arr.length; i++) {
+                kod += `<li>${arr[i]}</li>`
+            }
+            siyahi.innerHTML = kod
+        </script>
+    </body>
+</html>

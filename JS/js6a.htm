@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="test"></div>
+
+        <script>
+            const test = document.getElementById("test")
+            let kod = '1'
+
+            for (let i = 2; i <= 16; i++) {
+                kod += ', ' + i
+            }
+
+            test.innerHTML = kod
+        </script>
+    </body>
+</html>

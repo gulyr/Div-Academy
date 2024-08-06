@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Document</title>
+        <style>
+            #game { position: relative; width: 800px; height: 600px; box-shadow: 0 0 10px #333; margin: 10vh auto }
+            #game > * { position: absolute; }
+            #ball { width: 30px; height: 30px; border-radius: 50%; background: red; }
+            #bar { width: 150px; height: 10px; background: blue; bottom: 0}
+        </style>
+    </head>
+    <body>
+        <div id="game">
+            <div id="ball"></div>
+            <div id="bar"></div>
+        </div>
+
+        <script>
+            const ball = document.getElementById("ball")
+            const bar = document.getElementById("bar")
+            let x = 0
+            let y = 0
+            let stepX = 5
+            let stepY = 5
+            let barX = 0
+
+            let timer = setInterval(ballMove, 40)
+            onkeydown = barMove
+            
+            function barMove(e) {
+                if( barX > 0 && e.keyCode == 37 ) barX -= 10
+                if( barX < 650 && e.keyCode == 39 ) barX += 10
+                bar.style.left = barX + 'px'
+            }
+
+            function ballMove() {
+                if(x < 0 || x > 770) stepX *= -1
+                if(y < 0 ||
+                   y > 560 && x > barX - 15 && x < barX  + 135) stepY *= -1
+                if (y > 570) gameOver()
+                x += stepX
+                y += stepY
+                
+                ball.style.left = x + 'px'
+                ball.style.top = y + 'px'
+            }
+
+            function gameOver() {
+                clearInterval(timer)
+                alert("Fso ! Oldun")
+            }
+        </script>
+    </body>
+</html>

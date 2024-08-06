@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let tlb = {
+                name: 'Murad',
+                year: 2005,
+                getAge: function() {
+                    return new Date().getFullYear() - this.year
+                },
+                sayHi() {
+                    return `Salam, mən ${this.name}, ${this.getAge()} yaşım var.`
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Document</title>
+        <style>
+            table { border-collapse: collapse; font: bold 1.6em Arial;}
+            td {border: 1px solid #333; width: 50px; height: 50px; text-align: center;}
+        </style>
+    </head>
+    <body>
+        <table id="tbl"></table>
+        
+        <script>
+            const tbl = document.getElementById("tbl")
+            let kod = ''
+            for (let i = 1; i <= 7; i++) {
+                let x = 1
+                kod += '<tr>'
+                for (let j = 1; j <= 7; j++) {
+                    let cell =  (i <= j && i + j <= 8 || i >= j && i + j >= 8) ? 
+                                (j < 4 ? x++ : x--) : ''
+                    kod += `<td>${cell}</td>`
+                }
+                kod += '</tr>'
+            }
+            tbl.innerHTML = kod
+        </script>
+    </body>
+</html>

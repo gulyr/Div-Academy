@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+        <ul id="list"></ul>
+        <script>
+            const list = document.getElementById("list")
+            let kod = ''
+            let obj1 = {
+                name: 'Murad',
+                year: 2005,
+                sex: 'm',
+                height: 181
+            }
+
+            obj1.weight = 55
+            obj1.test = 'nese'
+            delete obj1.test
+            obj1.weight = 55.6
+
+            for (const key in obj1) {
+                kod += `<li>${key} - ${obj1[key]}</li>`
+            }
+            list.innerHTML = kod
+        </script>
+    </body>
+</html>

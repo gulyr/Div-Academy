@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Document</title>
+        <style>
+            ul { list-style: none; padding: 0;}
+            ul > li { padding: 5px;}
+        </style>
+    </head>
+    <body>
+        <input id="date" type="date" />
+        <input id="task" type="text" />
+        <button onclick="addTask()"> + </button>
+
+        <ul id="list"></ul>
+
+        <script>
+            const date = document.getElementById("date")
+            const task = document.getElementById("task")
+            const list = document.getElementById("list")
+            let taskArr = []
+
+            function addTask() {
+                taskArr.push({
+                    date: date.value,
+                    task: task.value,
+                    status: false
+                })
+                show()
+                date.value = ''
+                task.value = ''
+            }
+
+            function delTask(i) {
+                taskArr.splice(i, 1)
+                show()
+            }
+
+            function checkTask(i) {
+                taskArr[i].status = true
+                show()
+            }
+
+            function show() {
+                let kod = ''
+                for (let i = 0; i < taskArr.length; i++) {
+                    let t = taskArr[i]
+                    kod += `
+                    <li>
+                        ${t.date} - ${t.task} - 
+                        ${t.status ? `<input type="checkbox" checked />` : 
+                                     `<button onclick="checkTask(${i})">ok</button>`}
+                        <button onclick="delTask(${i})">x</button>
+                    </li>
+                `
+                }
+                list.innerHTML = kod
+            }
+        </script>
+    </body>
+</html>

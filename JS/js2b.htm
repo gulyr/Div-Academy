@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <style>
+            input { width: 30px;}
+        </style>
+    </head>
+    <body>
+        <input type="number" id="a" /> +
+        <input type="number" id="b" />
+        <button onclick="topla()"> = </button>
+        <span id="c"></span>
+
+        <script>
+            let a = document.getElementById("a")
+            let b = document.getElementById("b")
+            let c = document.getElementById("c")
+
+            function topla() {
+                c.innerHTML = +a.value + +b.value
+            }
+        </script>
+    </body>
+</html>

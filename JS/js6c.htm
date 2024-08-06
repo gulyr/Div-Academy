@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+        <div id="mult"></div>
+
+        <script>
+            const mult = document.getElementById("mult")
+            let kod = ''
+
+            for (let i = 1; i <= 9; i++) {
+                kod += `${i} x 2 = ${2 * i}<br />`
+            }
+
+            mult.innerHTML = kod
+        </script>
+    </body>
+</html>

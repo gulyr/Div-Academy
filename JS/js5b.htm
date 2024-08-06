@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+        <p><input type="text" id="name" placeholder="Ad" /></p>
+        <p><input type="number" id="age" placeholder="Yas" /></p>
+        <p>
+            <input type="radio" name="sex" id="m" checked="checked">Kişi
+            <input type="radio" name="sex" id="f">Qadın
+        </p>
+        <p><button onclick="sayHi()">Ok</button></p>
+        <h1 id="msg"></h1>
+
+        <script>
+            const name = document.getElementById("name")
+            const age = document.getElementById("age")
+            const m = document.getElementById("m")
+            const f = document.getElementById("f")
+            const msg = document.getElementById("msg")
+
+            function sayHi() {
+                if (f.checked || age.value >= 25) {
+                    let title = m.checked ? 'bəy' : 'xanım'
+                    msg.innerHTML = `Hər vaxtınız xeyir, ${name.value} ${title}`
+                } else msg.innerHTML = `Salam, ${name.value}`
+            }
+        </script>
+    </body>
+</html>

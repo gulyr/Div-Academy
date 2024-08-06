@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Document</title>
+        <style>
+            #game { position: relative; box-shadow: 0 0 10px #333; margin: 10vh auto }
+            #game > * { position: absolute; }
+        </style>
+    </head>
+    <body>
+        <script>
+            const game = {
+                id: 'game',
+                width: 800,
+                height: 600,
+                radius: 0,
+                color: 'white',
+                create(main) {
+                    main.innerHTML += `<div id="${this.id}"></div>`
+                    this.show()
+                },
+                show() {
+                    this.elem = document.getElementById(this.id)
+                    this.elem.style.width = this.width + 'px'
+                    this.elem.style.height = this.height + 'px'
+                    this.elem.style.borderRadius = this.radius + '%'
+                    this.elem.style.backgroundColor = this.color
+                },
+                over() {
+                    clearInterval(timer)
+                    this.color = "black"
+                    this.elem.innerHTML = ""
+                    alert("Fso ! Oldun")
+                    this.show()
+                }
+            }
+            const ball = {
+                id: 'ball',
+                width: 30,
+                height: 30,
+                radius: 50,
+                color: 'red',
+                x: 0,
+                y: 0,
+                stepX: 5,
+                stepY: 5,
+                create(main) {
+                    main.innerHTML += `<div id="${this.id}"></div>`
+                    this.show()
+                },
+                show() {
+                    this.elem = document.getElementById(this.id)
+                    this.elem.style.width = this.width + 'px'
+                    this.elem.style.height = this.height + 'px'
+                    this.elem.style.borderRadius = this.radius + '%'
+                    this.elem.style.backgroundColor = this.color
+                    this.elem.style.left = this.x + 'px'
+                    this.elem.style.top = this.y + 'px'
+                },
+                move() {
+                    if(this.x < 0 || this.x > game.width - this.width) this.stepX *= -1
+                    if(this.y < 0 ||
+                    this.y > game.height - ball.height - bar.height && 
+                    this.x > bar.x - this.width/2 && this.x < bar.x  + bar.width - this.width/2) this.stepY *= -1
+                    if (this.y > game.height - this.height) game.over()
+                    this.x += this.stepX
+                    this.y += this.stepY
+                    this.show()
+                }
+            }
+            const bar = {
+                id: 'bar',
+                width: 150,
+                height: 10,
+                radius: 0,
+                color: 'blue',
+                x: 0,
+                y: 0,
+                stepX: 10,
+                create(main) {
+                    main.innerHTML += `<div id="${this.id}"></div>`
+                    this.show()
+                },
+                show() {
+                    this.elem = document.getElementById(this.id)
+                    this.elem.style.width = this.width + 'px'
+                    this.elem.style.height = this.height + 'px'
+                    this.elem.style.borderRadius = this.radius + '%'
+                    this.elem.style.backgroundColor = this.color
+                    this.elem.style.left = this.x + 'px'
+                    this.elem.style.top = this.y + 'px'
+                },
+                move(e) {
+                    if( this.x > 0 && e.keyCode == 37 ) this.x -= this.stepX
+                    if( this.x < 650 && e.keyCode == 39 ) this.x += this.stepX
+                    this.show()
+                }
+            }
+            bar.y = game.height - bar.height
+
+            game.create(document.querySelector("body"))
+            ball.create(game.elem)
+            bar.create(game.elem)
+            
+            let timer = setInterval(function() { ball.move() }, 40)
+            onkeydown = function(e) { bar.move(e) }
+        </script>
+    </body>
+</html>
