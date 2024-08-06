@@ -1,0 +1,109 @@
+@media only screen and (min-width: 992px) {
+  html,
+  body {
+    position: relative;
+    height: 100%;
+  }
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .krediti-hesabla {
+    width: 1488px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: normal;
+    align-items: center;
+    height: 633.734px;
+    transition: background 0.3s ease, border 0.3s ease, box-shadow 0.3s ease,
+      transform 0.4s ease;
+    padding: 0 15px 0 15px;
+    padding-inline-start: 15px;
+    padding-inline-end: 15px;
+    overflow-x: visible;
+    overflow-y: visible;
+    text-size-adjust: 100%;
+    margin-block-end: 48px;
+    margin-bottom: 48px;
+    text-align: start;
+    background: yellowgreen;
+  }
+  .tab {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .tablinks {
+    max-width: 265px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: rgb(243, 243, 243);
+    column-gap: 15px;
+    row-gap: 15px;
+    cursor: pointer;
+    padding: 20.5px 30px 20.5px 30px;
+    transition: all 0.3s ease-in-out;
+    text-wrap: wrap;
+    white-space-collapse: collapse;
+    display: flex;
+    align-items: center;
+  }
+  .tab span {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 19.5552px;
+    text-align: left;
+    white-space-collapse: collapse;
+    flex-basis: 0%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    cursor: pointer;
+    text-wrap: wrap;
+    margin-left: 3.7rem;
+  }
+  .tab .tablinks.active {
+    background-color: rgb(111, 11, 187);
+    color: #fff;
+  }
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+  }
+  .tab #tab-button-1 {
+    background: url("../img/button-1-black-border.png") no-repeat left;
+    background-color: rgb(243, 243, 243);
+    background-size: initial;
+    background-position: 12% 48%;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+  }
+  .tab #tab-button-2 {
+    background: url("../img/button-2-black-border.png") no-repeat left center;
+    background-color: rgb(243, 243, 243);
+    background-size: initial;
+    background-position: 12% 48%;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .tab #tab-button-1.active {
+    background: url("../img/button-1-white-border.png") no-repeat left center;
+    background-size: initial;
+    background-color: rgb(111, 11, 187);
+    background-position: 12% 48%;
+  }
+  .tab #tab-button-2.active {
+    background: url("../img/button-2-white-border.png") no-repeat left center;
+    background-size: initial;
+    background-color: rgb(111, 11, 187);
+    background-position: 12% 48%;
+  }
+}
