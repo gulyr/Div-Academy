@@ -1,3 +1,4 @@
+// header swiper
 var swiper = new Swiper(".mySwiper", {
   spaceBetween: 0,
   centeredSlides: true,
@@ -11,13 +12,31 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
+// valyuta section - dropdown1
+function myFunctionValyuta1() {
+  document.getElementById("myDropdown1").classList.toggle("show");
 }
 
 window.onclick = function (event) {
-  if (!event.target.matches(".dropbtn")) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
+  if (!event.target.matches(".dropbtn1")) {
+    var dropdowns = document.getElementsByClassName("dropdown-content1");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains("show")) {
+        openDropdown.classList.remove("show");
+      }
+    }
+  }
+};
+// valyuta section - dropdown2
+function myFunctionValyuta2() {
+  document.getElementById("myDropdown2").classList.toggle("show");
+}
+
+window.onclick = function (event) {
+  if (!event.target.matches(".dropbtn2")) {
+    var dropdowns = document.getElementsByClassName("dropdown-content2");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
@@ -28,6 +47,7 @@ window.onclick = function (event) {
   }
 };
 
+// header languages button
 function myFunctionLanguages() {
   document.querySelector(".languages-dropbtn").style.backgroundColor =
     "transparent" ? "white" : "transparent";
@@ -50,7 +70,23 @@ window.onclick = function (event) {
     }
   }
 };
+function write() {
+  let dropbtn = document.querySelector(".dropbtn");
+  let myDropdown2 = document.querySelector(".dropdown-content2");
+  let selection = document.querySelector(".selection");
+  let text = document.getElementById("text");
+  dropbtn.innerHTML = myDropdown2.innerHTML;
+  selection.addEventListener("click", function () {
+    text.innerHTML = selection.innerHTML;
+  });
+  // for (let i = 0; i < dropbtn.length; i++) {
+  //   dropbtn[i].addEventListener("click", function () {
+  //     dropbtn[i].style.backgroundColor = "white";
+  //   });
+  // }
+}
 
+// hedaer search button
 document.getElementById("searchbtn").addEventListener("click", function () {
   document.getElementById("searchcontainer").style.display = "block";
 });

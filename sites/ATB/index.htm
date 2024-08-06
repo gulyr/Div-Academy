@@ -390,13 +390,22 @@
         </div>
         <div class="tab-contents">
           <div id="content-1" class="tabcontent">
-            <h3>London</h3>
-            <p>London is the capital city of England.</p>
+            <h2>nağd krediti hesabla</h2>
+            <div class="">
+              <form action="">
+                <input
+                  type="range"
+                  id="vol"
+                  name="vol"
+                  min="300"
+                  max="50"
+                  placeholder="hansı məbləğ arzunuzu reallaşdırar?"
+                />
+              </form>
+            </div>
           </div>
-
           <div id="content-2" class="tabcontent">
-            <h3>Paris</h3>
-            <p>Paris is the capital of France.</p>
+            <h2>əmanət üzrə gəliri hesablayın</h2>
           </div>
         </div>
       </section>
@@ -460,24 +469,57 @@
               </h2>
             </div>
             <div class="buttons">
-              <!-- <div class="btn"> -->
-              <!-- <input type="text" value="100"> -->
-              <!-- </div> -->
-              <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-                <div id="myDropdown" class="dropdown-content">
-                  <a href=""><img src="img/US.svg" alt="" />USD</a>
-                  <a href=""><img src="img/EU.svg" alt="" />GBP</a>
-                  <a href=""><img src="img/frame-32.svg" alt="" />AZN</a>
+              <div class="calculator-container">
+                <input type="text" placeholder="100" onchange="" oninput="" />
+                <div class="exchanges">
+                  <select name="" id="">
+                    <option value="">
+                      <a href=""><img src="img/US.svg" alt="" />USD</a>
+                    </option>
+                    <option value="">
+                      <a href=""><img src="img/EU.svg" alt="" />GBP</a>
+                    </option>
+                    <option value="">
+                      <a href=""><img src="img/frame-32.svg" alt="" />AZN</a>
+                    </option>
+                  </select>
                 </div>
+                <!-- <div class="dropdown dropdown1">
+                  <button
+                    onclick="myFunctionValyuta1()"
+                    class="dropbtn dropbtn1"
+                  >
+                    Dropdown
+                  </button>
+                  <div
+                    id="myDropdown1"
+                    class="dropdown-content dropdown-content1"
+                  >
+                    <a href=""><img src="img/US.svg" alt="" />USD</a>
+                    <a href=""><img src="img/EU.svg" alt="" />GBP</a>
+                    <a href=""><img src="img/frame-32.svg" alt="" />AZN</a>
+                  </div>
+                </div> -->
               </div>
 
               <i class="fa-solid fa-arrow-right-long"></i>
 
-              <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-                <div id="myDropdown" class="dropdown-content">
-                  <a href=""><img src="img/US.svg" alt="" />USD</a>
+              <div class="dropdown dropdown2">
+                <button onclick="myFunctionValyuta2()" class="dropbtn dropbtn2">
+                  <span id="text">Button</span>
+                </button>
+                <div
+                  id="myDropdown2"
+                  class="dropdown-content dropdown-content2"
+                >
+                  <a href=""
+                    ><img
+                      src="img/US.svg"
+                      alt=""
+                      class="selection"
+                      onclick="write()"
+                    />USD</a
+                  >
                   <a href=""><img src="img/EU.svg" alt="" />GBP</a>
                   <a href=""><img src="img/frame-32.svg" alt="" />AZN</a>
                 </div>
