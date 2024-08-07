@@ -374,7 +374,7 @@
       <section class="krediti-hesabla">
         <div class="tab">
           <button
-            class="tablinks"
+            class="tablinks active"
             onclick="openCity(event, 'content-1')"
             id="tab-button-1"
           >
@@ -391,17 +391,60 @@
         <div class="tab-contents">
           <div id="content-1" class="tabcontent">
             <h2>nağd krediti hesabla</h2>
-            <div class="">
-              <form action="">
-                <input
-                  type="range"
-                  id="vol"
-                  name="vol"
-                  min="300"
-                  max="50"
-                  placeholder="hansı məbləğ arzunuzu reallaşdırar?"
-                />
-              </form>
+            <div class="tabcontent-boxes">
+              <div class="box" id="box-1">
+                <div class="box-1-internal-external">
+                  <div class="box-1-internal">
+                    <p>hansı məbləğ arzunuzu reallaşdırar?</p>
+                    <p>40000 AZN</p>
+                  </div>
+                  <input
+                    type="range"
+                    name=""
+                    id="range-1"
+                    min="300"
+                    max="40000"
+                  />
+                </div>
+                <div class="box-1-external">
+                  <span>300</span>
+                  <span>40 000</span>
+                </div>
+                <div class="box-1-internal-external">
+                  <div class="box-1-internal">
+                    <p>müddəti seçin</p>
+                    <p>12 ay</p>
+                  </div>
+                  <input type="range" name="" id="range-2" min="3" max="48" />
+                </div>
+                <div class="box-1-external">
+                  <span>3 ay</span>
+                  <span>48 ay</span>
+                </div>
+                <div class="muqavile">
+                  <input type="checkbox" name="" id="" checked />
+                  <p>
+                    "sifariş" düyməsini basaraq
+                    <u
+                      ><a href="https://atb.az/ru/tehlukesizliyiniz/"
+                        >müraciət qaydaları</a
+                      ></u
+                    >
+                    ilə razılaşmış olursunuz
+                  </p>
+                </div>
+              </div>
+              <div class="box" id="box-2">
+                <h2>bizim təklif</h2>
+                <div>
+                  <p>faiz dərəcəsi</p>
+                  <h2>11%</h2>
+                </div>
+                <div>
+                  <p>aylıq ödəniş</p>
+                  <h2>442₼</h2>
+                </div>
+              </div>
             </div>
           </div>
           <div id="content-2" class="tabcontent">
