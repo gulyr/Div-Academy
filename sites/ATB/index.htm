@@ -423,6 +423,8 @@
                     max="40000"
                     step="100"
                     id="rangee"
+                    oninput="ayliqOdenisHesabla()"
+                    onchange="ayliqOdenisHesabla()"
                   />
                 </div>
                 <div class="box-1-external">
@@ -441,6 +443,8 @@
                     max="48"
                     step="1"
                     id="rangee2"
+                    oninput="ayliqOdenisHesabla()"
+                    onchange="ayliqOdenisHesabla()"
                   />
                 </div>
                 <div class="box-1-external">
@@ -479,6 +483,14 @@
           <div id="content-2" class="tabcontent">
             <h2>əmanət üzrə gəliri hesablayın</h2>
           </div>
+        </div>
+
+        <div>
+            <p id="pulnumber">pulnumber</p>
+        <p id="ayliqnumber">ayliqnumber</p>
+        <p id="faiznumber">faiznumber</p>
+        <p id="netice">netice</p>
+        <button onclick="ayliqOdenisHesabla()" style="width: 1rem; height: 1rem;"</button>
         </div>
       </section>
 

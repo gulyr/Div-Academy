@@ -181,38 +181,55 @@ function updateRangeEl(rangeEl) {
 }
 
 function initRangeEl1() {
-  let rangeEl = document.querySelector("#rangee");
-  let textEl = document.querySelector("#range1value");
-  let faiz = document.querySelector("#faiz");
-  let ayliqodenis = document.querySelector("#ayliqodenis");
+  var rangeEl = document.querySelector("#rangee");
+  var textEl = document.querySelector("#range1value");
+  let pulnumber = document.querySelector("#pulnumber");
   if (isOlderEdgeOrIE()) {
     rangeEl.style.height = "20px";
     rangeEl.addEventListener("change", function (e) {
       textEl.innerHTML = e.target.value + " AZN";
+      pulnumber.innerHTML = e.target.value;
     });
     rangeEl.addEventListener("input", function (e) {
       textEl.innerHTML = e.target.value + " AZN";
+      pulnumber.innerHTML = e.target.value;
     });
   } else {
     updateRangeEl(rangeEl);
     rangeEl.addEventListener("input", function (e) {
+      pulnumber.innerHTML = e.target.value;
       updateRangeEl(e.target);
       textEl.innerHTML = e.target.value + " AZN";
     });
   }
   rangeEl.value;
-  //   faiz.innerHTML =
 }
 
 initRangeEl1();
 
 function initRangeEl2() {
-  let rangeEl = document.querySelector("#rangee2");
-  let textEl = document.querySelector("#range2value");
-
+  var rangeEl = document.querySelector("#rangee2");
+  var textEl = document.querySelector("#range2value");
+  let ayliqnumber = document.querySelector("#ayliqnumber");
+  let faiznumber = document.querySelector("#faiznumber");
+  let faiz = document.querySelector("#faiz");
   if (isOlderEdgeOrIE()) {
     rangeEl.style.height = "20px";
     rangeEl.addEventListener("change", function (e) {
+      ayliqnumber.innerHTML = e.target.value;
+      faiznumber.innerHTML = faiz.innerHTML.slice(0, -1);
+      function faizhesabla() {
+        if (e.target.value < 12) {
+          faiz.innerHTML = 11 + "%";
+        } else if (e.target.value > 12 && e.target.value < 24) {
+          faiz.innerHTML = 15 + "%";
+        } else if (e.target.value > 24 && e.target.value < 36) {
+          faiz.innerHTML = 15.5 + "%";
+        } else {
+          faiz.innerHTML = 16.5 + "%";
+        }
+      }
+
       if (e.target.value > 12) {
         textEl.innerHTML =
           e.target.value / 12 + " il" + " " + (e.target.value % 12) + " ay";
@@ -221,6 +238,21 @@ function initRangeEl2() {
       }
     });
     rangeEl.addEventListener("input", function (e) {
+      ayliqnumber.innerHTML = e.target.value;
+      faiznumber.innerHTML = faiz.innerHTML.slice(0, -1);
+      if (e.target.value < 12) {
+        faiz.innerHTML = 11 + "%";
+      }
+      if (e.target.value > 12 && e.target.value < 24) {
+        faiz.innerHTML = 15 + "%";
+      }
+      if (e.target.value > 24 && e.target.value < 36) {
+        faiz.innerHTML = 15.5 + "%";
+      }
+      if (e.target.value > 36) {
+        faiz.innerHTML = 16.5 + "%";
+      }
+
       if (e.target.value > 12) {
         textEl.innerHTML =
           e.target.value / 12 + " il" + " " + (e.target.value % 12) + " ay";
@@ -230,7 +262,22 @@ function initRangeEl2() {
     });
   } else {
     updateRangeEl(rangeEl);
+
     rangeEl.addEventListener("input", function (e) {
+      ayliqnumber.innerHTML = e.target.value;
+      faiznumber.innerHTML = faiz.innerHTML.slice(0, -1);
+      if (e.target.value < 12) {
+        faiz.innerHTML = 11 + "%";
+      }
+      if (e.target.value > 12 && e.target.value < 24) {
+        faiz.innerHTML = 15 + "%";
+      }
+      if (e.target.value > 24 && e.target.value < 36) {
+        faiz.innerHTML = 15.5 + "%";
+      }
+      if (e.target.value > 36) {
+        faiz.innerHTML = 16.5 + "%";
+      }
       updateRangeEl(e.target);
       if (e.target.value > 12 && e.target.value % 12 != 0) {
         textEl.innerHTML =
@@ -239,6 +286,8 @@ function initRangeEl2() {
           " " +
           Math.floor(e.target.value % 12) +
           " ay";
+      } else if (e.target.value < 12) {
+        textEl.innerHTML = Math.floor(e.target.value % 12) + " ay";
       } else {
         textEl.innerHTML = Math.floor(e.target.value / 12) + " il";
       }
@@ -247,3 +296,14 @@ function initRangeEl2() {
 }
 
 initRangeEl2();
+function ayliqOdenisHesabla() {
+  let pulnumber = document.querySelector("#pulnumber").innerHTML;
+  let ayliqnumber = document.querySelector("#ayliqnumber").innerHTML;
+  let faiznumber = document.querySelector("#faizumber").innerHTML;
+  let netice = document.querySelector("#netice").innerHTML;
+  //   netice.innerHTML =
+  //     (Number(pulnumber.innerHTML.value) *
+  //       Number(faiznumber.innerHTML.value) *
+  //       Number(ayliqnumber.innerHTML).value) /
+  //     1200;
+}
