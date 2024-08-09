@@ -307,3 +307,26 @@ function ayliqOdenisHesabla() {
   //       Number(ayliqnumber.innerHTML).value) /
   //     1200;
 }
+
+// end-icons section
+document.getElementById("chat").addEventListener("click", function () {
+  if (document.querySelector(".chat-icons").style.display == "none") {
+    document.querySelector(".chat-icons").style.display = "flex";
+    document.querySelector(".chat-icons").style.bottom = "6.3rem";
+    document.querySelector("#chat").style.backgroundColor = "#fff";
+    document.querySelector("#chat").style.borderColor = "#F7F7F7";
+    document.querySelector("#messageicon").classList.remove("fa-comment-dots");
+    document.querySelector("#messageicon").classList.add("fa-x");
+    document.querySelector("#messageicon").style.fontSize = "1rem";
+    document.querySelector("#messageicon").style.color = "#757575";
+  } else {
+    document.querySelector(".chat-icons").style.display = "none";
+    document.querySelector(".chat-icons").style.bottom = "2.2rem";
+    document.querySelector("#chat").style.backgroundColor = "#60269e";
+    document.querySelector("#chat").style.borderColor = "#60269e";
+    document.querySelector("#messageicon").classList.remove("fa-x");
+    document.querySelector("#messageicon").classList.add("fa-comment-dots");
+    document.querySelector("#messageicon").style.fontSize = "1.7rem";
+    document.querySelector("#messageicon").style.color = "#fff";
+  }
+});
