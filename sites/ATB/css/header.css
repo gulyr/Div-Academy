@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@media only screen and (min-width: 600px) {
+}
 @media only screen and (min-width: 992px) {
   html,
   body {
@@ -214,15 +216,14 @@
     width: 200px;
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: #fff;
     min-width: 500px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 1em;
     margin-top: 1rem;
     transition: all 0.3s ease-in-out;
-    /* display: flex;
-        justify-content: space-between; */
+    border: 1px solid #000;
   }
   .kredit-dropdown-content .kredit-dropdown-content-internal {
     width: 100%;
@@ -235,8 +236,12 @@
     top: -30px;
     left: 7%;
     transform: translateX(-10%);
-    border: 15px solid transparent;
-    border-bottom-color: #f1f1f1;
+    border: 1px solid #000;
+    /* border-bottom-color: #f1f1f1; */
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    width: 1rem;
+    height: 1rem;
+    background: #fff;
   }
   .kredit-dropdown-content a {
     color: black;
@@ -518,22 +523,25 @@
   .bank-haqqinda-dropdown {
     position: relative;
     display: inline-block;
+    /* background-color: red; */
   }
   .bank-haqqinda-dropdown:hover i {
     transform: rotate(180deg);
     cursor: pointer;
   }
   .bank-haqqinda-dropdown-content {
-    display: none;
+    /* display: none; */
     position: absolute;
     background-color: #f1f1f1;
     min-width: 300px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     border-radius: 1em;
-    margin-top: 1rem;
-    left: -5rem;
+    margin-top: 1.5rem;
+    right: 6rem;
+    background-color: #fff;
   }
+
   .bank-haqqinda-dropdown-content:before {
     content: "";
     position: absolute;
@@ -541,7 +549,7 @@
     left: 45%;
     transform: translateX(-10%);
     border: 10px solid transparent;
-    border-bottom-color: #f1f1f1;
+    border-bottom-color: #fff;
   }
   .bank-haqqinda-dropdown-content a {
     color: black;
@@ -556,7 +564,6 @@
     display: block;
   }
   .bank-haqqinda-dropdown:hover .bank-haqqinda-dropbtn {
-    /* background-color: #3e8e41; */
   }
   .swiper {
     width: 100%;
