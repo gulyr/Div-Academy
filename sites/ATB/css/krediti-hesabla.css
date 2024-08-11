@@ -1,23 +1,33 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 @media only screen and (min-width: 600px) {
 }
+
 @media only screen and (min-width: 992px) {
-  html,
-  body {
-    position: relative;
-    height: 100%;
-  }
-  body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #000;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
   .krediti-hesabla {
     width: 100%;
-    height: 95vh;
-    max-width: 100%;
+    /* height: 95vh; */
+    height: auto;
+    /* max-width: 100%; */
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -25,7 +35,7 @@
     align-items: center;
     transition: background 0.3s ease, border 0.3s ease, box-shadow 0.3s ease,
       transform 0.4s ease;
-    padding: 0 15px 0 15px;
+    padding: 0 2rem 0 2rem;
     padding-inline-start: 15px;
     padding-inline-end: 15px;
     overflow-x: visible;
@@ -33,10 +43,11 @@
     margin-block-end: 48px;
     margin-bottom: 48px;
     text-align: start;
+    /* padding: 0 2rem; */
     gap: 3rem;
   }
   .inner-krediti-hesabla {
-    width: 1170px;
+    width: 100%;
     height: 633.734px;
     line-height: 19.5552px;
     margin: 0 79px;
@@ -78,7 +89,7 @@
     align-items: center;
   }
   .tab span {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
     line-height: 19.5552px;
     text-align: left;
@@ -95,7 +106,7 @@
     color: #fff;
   }
   .tab #tab-button-1 {
-    background: url("../img/button-1-black-border.png") no-repeat left;
+    background: url('../img/button-1-black-border.png') no-repeat left;
     background-color: rgb(243, 243, 243);
     background-size: initial;
     background-position: 12% 48%;
@@ -103,7 +114,7 @@
     border-top-left-radius: 15px;
   }
   .tab #tab-button-2 {
-    background: url("../img/button-2-black-border.png") no-repeat left center;
+    background: url('../img/button-2-black-border.png') no-repeat left center;
     background-color: rgb(243, 243, 243);
     background-size: initial;
     background-position: 12% 48%;
@@ -111,19 +122,19 @@
     border-top-right-radius: 15px;
   }
   .tab #tab-button-1.active {
-    background: url("../img/button-1-white-border.png") no-repeat left center;
+    background: url('../img/button-1-white-border.png') no-repeat left center;
     background-size: initial;
     background-color: rgb(111, 11, 187);
     background-position: 12% 48%;
   }
   .tab #tab-button-2.active {
-    background: url("../img/button-2-white-border.png") no-repeat left center;
+    background: url('../img/button-2-white-border.png') no-repeat left center;
     background-size: initial;
     background-color: rgb(111, 11, 187);
     background-position: 12% 48%;
   }
   .tab-contents {
-    width: 1170px;
+    width: 100%;
     height: 384.656px;
     line-height: 19.5552px;
     transition: background 0.3s ease, border 0.3s ease, border-radius 0.3s ease,
@@ -131,7 +142,7 @@
     vertical-align: baseline;
   }
   .tabcontent {
-    width: 1170px;
+    width: 100%;
     height: 384.656px;
     line-height: 19.5552px;
     background-color: #fff;
@@ -146,7 +157,7 @@
     display: none;
   }
   .tab-contents .tabcontent h2 {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 33px;
     font-weight: 700;
     line-height: 38.9984px;
@@ -155,7 +166,7 @@
     letter-spacing: 0.5px;
   }
   .tabcontent-boxes {
-    width: 1170px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     row-gap: 30px;
@@ -167,7 +178,8 @@
     width: 60%;
   }
   #box-1 {
-    width: 765.375px;
+    /* width: 47.836em; */
+    width: 70%;
     height: 332.656px;
     line-height: 19.5552px;
     display: block;
@@ -179,7 +191,8 @@
     background-color: #f3f3f3;
   }
   .box-1-internal-external {
-    width: 695.375px;
+    /* width: 100%; */
+    width: 43.461em;
     height: 4rem;
     margin-bottom: 10px;
     line-height: 19.5552px;
@@ -196,7 +209,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 649.375px;
+    width: 40.586em;
     height: 24px;
     background-color: #fff;
     margin-top: 1rem;
@@ -209,7 +222,7 @@
     margin-bottom: 1rem;
   }
   .box-1-external span {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 12px;
     color: rgb(143, 143, 143);
     line-height: 15px;
@@ -217,7 +230,7 @@
     vertical-align: baseline;
   }
   .box-1-internal-external #range-1 {
-    width: 649.375px;
+    width: 40.586em;
     height: 3px;
     cursor: pointer;
     /* background: linear-gradient(
@@ -253,7 +266,6 @@
     transition: background 450ms ease-in;
     -webkit-appearance: none;
   } */
-
   /* .progress::-webkit-slider-thumb {
     width: 20px;
     height: 20px;
@@ -263,7 +275,7 @@
     background: #434343;
   } */
   .box-1-internal p:nth-of-type(1) {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 14px;
     line-height: 16.9988px;
     flex-basis: 0%;
@@ -273,7 +285,7 @@
     text-align: start;
   }
   .box-1-internal #range1value {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 18px;
     line-height: 22px;
     font-weight: 600;
@@ -282,7 +294,8 @@
     text-align: start;
   }
   #box-2 {
-    width: 374.609px;
+    /* width: 23.413em; */
+    width: 30%;
     height: 332.656px;
     line-height: 19.5552px;
     background-color: #fff;
@@ -309,7 +322,7 @@
     font-weight: 700;
     line-height: 28.9992px;
     width: 5rem;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
   }
   #box-2 .part-2 {
     width: 15rem;
@@ -318,18 +331,18 @@
     font-size: 35px;
     line-height: 49px;
     font-weight: 700;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
   }
   #box-2 .part-2 p {
     font-size: 14px;
     line-height: 19.6px;
     font-weight: 300;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
   }
   #box-2 button {
     background-color: rgb(111, 11, 187);
     border-radius: 10px;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     cursor: pointer;
     border: 1px solid rgb(111, 11, 187);
     font-size: 18px;
@@ -360,7 +373,7 @@
     line-height: 14.6664px;
   }
   .muqavile p {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 12px;
     line-height: 14.6664px;
     color: #000;
@@ -439,7 +452,6 @@
   #rangee {
     border: none;
   }
-
   #rangee2 {
     -webkit-appearance: none;
     -moz-appearance: none;

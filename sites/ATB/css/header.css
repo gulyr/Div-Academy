@@ -1,6 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+}
+
 @media only screen and (min-width: 600px) {
 }
+
 @media only screen and (min-width: 992px) {
   html,
   body {
@@ -8,7 +19,7 @@
     height: 100%;
   }
   body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: #000;
     margin: 0;
     padding: 0;
@@ -30,7 +41,7 @@
     position: relative;
   }
   header::after {
-    content: "";
+    content: '';
     clear: both;
     display: table;
   }
@@ -47,7 +58,7 @@
     padding: 1.5rem 4.5rem 1.3rem 4.5rem;
   }
   .header-top::after {
-    content: "";
+    content: '';
     clear: both;
     display: table;
   }
@@ -82,7 +93,7 @@
     justify-content: space-between;
   }
   .header-left .nav-1 a {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 0.875rem;
     font-weight: 800;
     cursor: pointer;
@@ -101,7 +112,7 @@
   }
   .header-left .nav-2 button {
     width: auto;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 0.875rem;
     cursor: pointer;
     line-height: 1.062em;
@@ -109,6 +120,385 @@
     text-align: left;
     transition: color 0.3s ease-in-out;
     color: #000;
+  }
+  .header-left .nav-2 a {
+    /* transition: color 0.3s ease-in-out; */
+  }
+  .header-left .nav-2 a:hover {
+    color: rgb(111, 11, 187);
+  }
+  /* line */
+  /* .vl {
+    border-left: 1px solid gray;
+    height: 5rem;
+    margin-top: 2rem;
+  } */
+  /* kredit dropdown */
+  .kredit-dropbtn {
+    background-color: transparent;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .kredit-dropdown {
+    display: inline-block;
+    transition: 0.3s ease-in;
+  }
+  .kredit-dropdown:hover .kredit-dropbtn {
+    color: rgb(111, 11, 187);
+  }
+  .kredit-dropdown:hover .kredit-dropdown-content {
+    top: 4rem;
+    opacity: 1;
+    animation: example 0.6s ease-in-out;
+  }
+  .kredit-dropdown:not(:hover) .kredit-dropdown-content {
+    top: 6rem;
+    opacity: 0;
+    animation: example-1 0.6s ease-in-out;
+  }
+  .kredit-dropdown:hover .kredit-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .kredit-content {
+    display: none;
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #000;
+    cursor: pointer;
+    border-radius: 15px;
+    width: calc(100% + 20px);
+    height: auto;
+    row-gap: 61px;
+    padding: 22px 36px 22px 36px;
+    padding-inline-start: 36px;
+    text-align: left;
+    min-width: 624px;
+  }
+  .kredit-content .kartlar {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .kredit-content .faydali {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .kredit-content h2 {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.9996px;
+    text-align: left;
+    margin-bottom: 19px;
+  }
+  .kredit-content ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .kredit-content .kartlar ul {
+    border-right: 1px solid gray;
+  }
+  .kredit-content a {
+    font-family: Inter, sans-serif;
+    font-size: 13px;
+    line-height: 16.25px;
+    text-align: left;
+    color: #000;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+  .kredit-content a:hover {
+    color: #6f0bbb;
+  }
+  .kredit-content .vl {
+    margin: auto;
+    height: 3rem;
+  }
+  .kredit-content::before,
+  .kredit-content::after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 2.9rem;
+    border: 11px solid transparent;
+    border-bottom-color: #000;
+  }
+  .kredit-content::after {
+    left: 3rem;
+    border: 10px solid transparent;
+    border-bottom-color: #ffffff;
+  }
+  .kredit-dropdown-content {
+    width: auto;
+    position: absolute;
+    border-radius: 5px;
+    height: auto;
+    top: 6rem;
+    left: 6.2rem;
+    opacity: 0;
+  }
+  /* kartlar dropdown */
+  .kartlar-dropbtn {
+    background-color: transparent;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .kartlar-dropdown {
+    display: inline-block;
+    transition: 0.4s ease-in;
+  }
+  .kartlar-dropdown:hover .kartlar-dropbtn {
+    color: rgb(111, 11, 187);
+  }
+  .kartlar-dropdown:hover .kartlar-dropdown-content {
+    top: 4rem;
+    opacity: 1;
+    animation: example 0.6s ease-in-out;
+  }
+  .kartlar-dropdown:not(:hover) .kartlar-dropdown-content {
+    top: 6rem;
+    opacity: 0;
+    animation: example-1 0.6s ease-in-out;
+  }
+  .kartlar-dropdown:hover .kartlar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .kartlar-content {
+    display: none;
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #000;
+    cursor: pointer;
+    border-radius: 15px;
+    width: calc(100% + 20px);
+    height: auto;
+    row-gap: 61px;
+    padding: 22px 36px 22px 36px;
+    padding-inline-start: 36px;
+    text-align: left;
+    min-width: 624px;
+  }
+  .kartlar-content .kartlar {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .kartlar-content .faydali {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .kartlar-content h2 {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.9996px;
+    text-align: left;
+    margin-bottom: 19px;
+  }
+  .kartlar-content ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .kartlar-content .kartlar ul {
+    border-right: 1px solid gray;
+  }
+  .kartlar-content a {
+    font-family: Inter, sans-serif;
+    font-size: 13px;
+    line-height: 16.25px;
+    text-align: left;
+    color: #000;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+  .kartlar-content a:hover {
+    color: #6f0bbb;
+  }
+  .kartlar-content::before,
+  .kartlar-content::after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 8.71rem;
+    border: 11px solid transparent;
+    border-bottom-color: #000;
+  }
+  .kartlar-content::after {
+    left: 8.8rem;
+    border: 10px solid transparent;
+    border-bottom-color: #ffffff;
+  }
+  .kartlar-dropdown-content {
+    width: auto;
+    position: absolute;
+    border-radius: 5px;
+    height: auto;
+    top: 6rem;
+    left: 6.2rem;
+    opacity: 0;
+  }
+  @keyframes example {
+    from {
+      top: 6rem;
+      opacity: 0;
+    }
+    to {
+      top: 4rem;
+      opacity: 1;
+    }
+  }
+  @keyframes example-1 {
+    from {
+      top: 4rem;
+      opacity: 1;
+    }
+    to {
+      top: 6rem;
+      opacity: 0;
+    }
+  }
+  /* ipoteka dropdown */
+  .ipoteka-dropbtn {
+    background-color: transparent;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .ipoteka-dropdown {
+    display: inline-block;
+    transition: 0.3s ease-in;
+  }
+  .ipoteka-dropdown:hover .ipoteka-dropbtn {
+    color: rgb(111, 11, 187);
+  }
+  .ipoteka-dropdown:hover .ipoteka-dropdown-content {
+    top: 4rem;
+    opacity: 1;
+    animation: example 0.6s ease-in-out;
+  }
+  .ipoteka-dropdown:not(:hover) .ipoteka-dropdown-content {
+    top: 6rem;
+    opacity: 0;
+    animation: example-1 0.6s ease-in-out;
+  }
+  .ipoteka-dropdown:hover .ipoteka-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .ipoteka-content {
+    display: none;
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #000;
+    cursor: pointer;
+    border-radius: 15px;
+    width: calc(100% + 20px);
+    height: auto;
+    row-gap: 61px;
+    padding: 22px 36px 22px 36px;
+    padding-inline-start: 36px;
+    text-align: left;
+    min-width: 624px;
+  }
+  .ipoteka-content .kartlar {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .ipoteka-content .faydali {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .ipoteka-content h2 {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.9996px;
+    text-align: left;
+    margin-bottom: 19px;
+  }
+  .ipoteka-content ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .ipoteka-content .kartlar ul {
+    border-right: 1px solid gray;
+  }
+  .ipoteka-content a {
+    font-family: Inter, sans-serif;
+    font-size: 13px;
+    line-height: 16.25px;
+    text-align: left;
+    color: #000;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+  .ipoteka-content a:hover {
+    color: #6f0bbb;
+  }
+  .ipoteka-content .vl {
+    margin: auto;
+    height: 3rem;
+  }
+  .ipoteka-content::before,
+  .ipoteka-content::after {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 13.9rem;
+    border: 11px solid transparent;
+    border-bottom-color: #000;
+  }
+  .ipoteka-content::after {
+    left: 14rem;
+    border: 10px solid transparent;
+    border-bottom-color: #ffffff;
+  }
+  .ipoteka-dropdown-content {
+    width: auto;
+    position: absolute;
+    border-radius: 5px;
+    height: auto;
+    top: 6rem;
+    left: 6.2rem;
+    opacity: 0;
   }
   .header-right {
     width: 40%;
@@ -160,7 +550,7 @@
     border-radius: 0.5em 0 0 0.5em;
   }
   form.example::after {
-    content: "";
+    content: '';
     clear: both;
     display: table;
   }
@@ -172,7 +562,7 @@
     color: #fff;
     text-align: center;
     font-size: 0.875em;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
     line-height: 1.062em;
     border: none;
@@ -180,7 +570,7 @@
     cursor: pointer;
   }
   .contact a {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 1.2em;
     cursor: pointer;
     height: auto;
@@ -201,110 +591,7 @@
   .contact:hover a i {
     color: rgb(111, 11, 187);
   }
-  .kredit-dropbtn {
-    background-color: transparent;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  .kredit-dropdown {
-    position: relative;
-    display: inline-block;
-    transition: all 0.3s ease-in-out;
-  }
-  .kredit-dropdown-content {
-    width: 200px;
-    display: none;
-    position: absolute;
-    background-color: #fff;
-    min-width: 500px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border-radius: 1em;
-    margin-top: 1rem;
-    transition: all 0.3s ease-in-out;
-    border: 1px solid #000;
-  }
-  .kredit-dropdown-content .kredit-dropdown-content-internal {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-  .kredit-dropdown-content:before {
-    content: "";
-    position: absolute;
-    top: -30px;
-    left: 7%;
-    transform: translateX(-10%);
-    border: 1px solid #000;
-    /* border-bottom-color: #f1f1f1; */
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    width: 1rem;
-    height: 1rem;
-    background: #fff;
-  }
-  .kredit-dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    cursor: pointer;
-  }
-  .kredit-dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  .kredit-dropdown:hover .kredit-dropdown-content {
-    display: block;
-  }
-  .kredit-dropdown:hover .kredit-dropbtn {
-    /* background-color: #3e8e41; */
-  }
-  .kartlar-dropbtn {
-    background-color: transparent;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  .kartlar-dropdown {
-    position: relative;
-    display: inline-block;
-    transition: all 0.4s ease-in;
-  }
-  .kartlar-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 500px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border-radius: 1em;
-    margin-top: 1rem;
-  }
-  .kartlar-dropdown-content:before {
-    content: "";
-    position: absolute;
-    top: -20px;
-    left: 7%;
-    transform: translateX(-10%);
-    border: 10px solid transparent;
-    border-bottom-color: #f1f1f1;
-  }
-  .kartlar-dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  .kartlar-dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  .kartlar-dropdown:hover .kartlar-dropdown-content {
-    display: block;
-  }
-  .kredit-dropdown:hover .kartlar-dropbtn {
-    /* background-color: #3e8e41; */
-  }
-  .ipoteka-dropbtn {
+  /* .ipoteka-dropbtn {
     background-color: transparent;
     font-size: 16px;
     border: none;
@@ -325,7 +612,7 @@
     margin-top: 1rem;
   }
   .ipoteka-dropdown-content:before {
-    content: "";
+    content: '';
     position: absolute;
     top: -20px;
     left: 7%;
@@ -344,10 +631,10 @@
   }
   .ipoteka-dropdown:hover .ipoteka-dropdown-content {
     display: block;
-  }
-  .ipoteka-dropdown:hover .ipoteka-dropbtn {
-    /* background-color: #3e8e41; */
-  }
+  } */
+  /* .ipoteka-dropdown:hover .ipoteka-dropbtn {
+    background-color: #3e8e41;
+  } */
   .emanetler-dropbtn {
     background-color: transparent;
     font-size: 16px;
@@ -369,7 +656,7 @@
     margin-top: 1rem;
   }
   .emanetler-dropdown-content:before {
-    content: "";
+    content: '';
     position: absolute;
     top: -20px;
     left: 7%;
@@ -413,7 +700,7 @@
     margin-top: 1rem;
   }
   .onlayn-dropdown-content:before {
-    content: "";
+    content: '';
     position: absolute;
     top: -20px;
     left: 7%;
@@ -457,7 +744,7 @@
     margin-top: 1rem;
   }
   .diger-dropdown-content:before {
-    content: "";
+    content: '';
     position: absolute;
     top: -20px;
     left: 7%;
@@ -525,12 +812,15 @@
     display: inline-block;
     /* background-color: red; */
   }
+  .bank-haqqinda-dropdown:hover .diger-dropbtn {
+    color: #6f0bbb;
+  }
   .bank-haqqinda-dropdown:hover i {
     transform: rotate(180deg);
     cursor: pointer;
   }
-  .bank-haqqinda-dropdown-content {
-    /* display: none; */
+  /* .bank-haqqinda-dropdown-content {
+    display: none;
     position: absolute;
     background-color: #f1f1f1;
     min-width: 300px;
@@ -540,9 +830,8 @@
     margin-top: 1.5rem;
     right: 6rem;
     background-color: #fff;
-  }
-
-  .bank-haqqinda-dropdown-content:before {
+  } */
+  /* .bank-haqqinda-dropdown-content:before {
     content: "";
     position: absolute;
     top: -20px;
@@ -550,62 +839,71 @@
     transform: translateX(-10%);
     border: 10px solid transparent;
     border-bottom-color: #fff;
-  }
-  .bank-haqqinda-dropdown-content a {
+  } */
+  /* .bank-haqqinda-dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
-  .bank-haqqinda-dropdown-content a:hover {
+  } */
+  /* .bank-haqqinda-dropdown-content a:hover {
     background-color: #ddd;
-  }
-  .bank-haqqinda-dropdown:hover .bank-haqqinda-dropdown-content {
+  } */
+  /* .bank-haqqinda-dropdown:hover .bank-haqqinda-dropdown-content {
     display: block;
-  }
+  } */
   .bank-haqqinda-dropdown:hover .bank-haqqinda-dropbtn {
+    color: #6f0bbb;
   }
   .swiper {
     width: 100%;
     height: 100%;
     position: relative;
+    transition: all 0.7s ease-in-out;
   }
   .swiper-slide {
     font-size: 18px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.7s ease-in-out;
   }
   .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: all 0.7s ease-in-out;
   }
   #slide-1 {
-    background: url("../img/atb_productpage_istehlak_az_july.png") no-repeat;
+    background: url('../img/atb_productpage_istehlak_az_july.png') no-repeat;
     background-size: cover;
     background-position: 50% 100%;
+    transition: all 0.7s ease-in-out;
   }
   #slide-2 {
-    background: url("../img/atb_360-sima_1980x430_parkinq.jpg") no-repeat;
+    background: url('../img/atb_360-sima_1980x430_parkinq.jpg') no-repeat;
     background-size: cover;
     background-position: 50% 100%;
+    transition: all 0.7s ease-in-out;
   }
   #slide-3 {
-    background: url("../img/atb_360-sima_1980x430.jpg") no-repeat;
+    background: url('../img/atb_360-sima_1980x430.jpg') no-repeat;
     background-size: cover;
     background-position: 50% 100%;
+    transition: all 0.7s ease-in-out;
   }
   #slide-4 {
-    background: url("../img/atb_atbcard_junior.png") no-repeat;
+    background: url('../img/atb_atbcard_junior.png') no-repeat;
     background-size: cover;
     background-position: 50% 100%;
+    transition: all 0.7s ease-in-out;
   }
   #slide-5 {
-    background: url("../img/atb_atbcard_kredit.png") no-repeat;
+    background: url('../img/atb_atbcard_kredit.png') no-repeat;
     background-size: cover;
     background-position: 50% 100%;
+    transition: all 0.7s ease-in-out;
   }
   .slide-elements {
     position: absolute;
@@ -619,7 +917,7 @@
     gap: 1.7rem;
   }
   .slide-elements h2 {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 42px;
     font-weight: 800;
     text-align: start;
@@ -628,7 +926,7 @@
     display: block;
   }
   .slide-elements button {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 1em;
     font-weight: 400;
     width: 9.7em;
@@ -648,7 +946,7 @@
     justify-content: space-between;
   }
   .slide-elements p {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 24.444px;
@@ -682,8 +980,4 @@
     stroke-dasharray: 125.6;
     transform: rotate(-90deg);
   } */
-  /* .kreditler {
-        display: flex;
-        flex-direction: column;
-    } */
 }
