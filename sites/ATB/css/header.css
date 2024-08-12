@@ -1,39 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
 .container {
   width: 100%;
 }
-
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body::-webkit-scrollbar {
+  width: 0.6em;
+}
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px #dedede;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #a9a9a9;
+}
 @media only screen and (min-width: 600px) {
 }
 
 @media only screen and (min-width: 992px) {
-  html,
-  body {
-    position: relative;
-    height: 100%;
-  }
-  body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: #000;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body::-webkit-scrollbar {
-    width: 0.6em;
-  }
-  body::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px #dedede;
-  }
-  body::-webkit-scrollbar-thumb {
-    background-color: #a9a9a9;
-  }
   header {
     width: 100%;
     height: 71vh;
@@ -41,7 +39,7 @@
     position: relative;
   }
   header::after {
-    content: '';
+    content: "";
     clear: both;
     display: table;
   }
@@ -58,7 +56,7 @@
     padding: 1.5rem 4.5rem 1.3rem 4.5rem;
   }
   .header-top::after {
-    content: '';
+    content: "";
     clear: both;
     display: table;
   }
@@ -93,7 +91,7 @@
     justify-content: space-between;
   }
   .header-left .nav-1 a {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 0.875rem;
     font-weight: 800;
     cursor: pointer;
@@ -112,7 +110,7 @@
   }
   .header-left .nav-2 button {
     width: auto;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 0.875rem;
     cursor: pointer;
     line-height: 1.062em;
@@ -127,12 +125,6 @@
   .header-left .nav-2 a:hover {
     color: rgb(111, 11, 187);
   }
-  /* line */
-  /* .vl {
-    border-left: 1px solid gray;
-    height: 5rem;
-    margin-top: 2rem;
-  } */
   /* kredit dropdown */
   .kredit-dropbtn {
     background-color: transparent;
@@ -229,7 +221,7 @@
   }
   .kredit-content::before,
   .kredit-content::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 100%;
     left: 2.9rem;
@@ -342,7 +334,7 @@
   }
   .kartlar-content::before,
   .kartlar-content::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 100%;
     left: 8.71rem;
@@ -479,7 +471,7 @@
   }
   .ipoteka-content::before,
   .ipoteka-content::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 100%;
     left: 13.9rem;
@@ -492,6 +484,354 @@
     border-bottom-color: #ffffff;
   }
   .ipoteka-dropdown-content {
+    width: auto;
+    position: absolute;
+    border-radius: 5px;
+    height: auto;
+    top: 6rem;
+    left: 6.2rem;
+    opacity: 0;
+  }
+  /* emanetler dropdown */
+  .emanetler-dropbtn {
+    background-color: transparent;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .emanetler-dropdown {
+    display: inline-block;
+    transition: 0.3s ease-in;
+  }
+  .emanetler-dropdown:hover .emanetler-dropbtn {
+    color: rgb(111, 11, 187);
+  }
+  .emanetler-dropdown:hover .emanetler-dropdown-content {
+    top: 4rem;
+    opacity: 1;
+    animation: example 0.6s ease-in-out;
+  }
+  .emanetler-dropdown:not(:hover) .emanetler-dropdown-content {
+    top: 6rem;
+    opacity: 0;
+    animation: example-1 0.6s ease-in-out;
+  }
+  .emanetler-dropdown:hover .emanetler-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .emanetler-content {
+    display: none;
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #000;
+    cursor: pointer;
+    border-radius: 15px;
+    width: calc(100% + 20px);
+    height: auto;
+    row-gap: 61px;
+    padding: 22px 36px 5px 36px;
+    padding-inline-start: 36px;
+    text-align: left;
+    min-width: 624px;
+  }
+  .emanetler-content .kartlar {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  .emanetler-content .faydali {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .emanetler-content .faydali ul {
+    padding: 10px 0 10px 0;
+  }
+  .emanetler-content h2 {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.9996px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .emanetler-content ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .emanetler-content .kartlar ul {
+    border-right: 1px solid gray;
+    padding: 10px 0 15px 0;
+  }
+  .emanetler-content a {
+    font-family: Inter, sans-serif;
+    font-size: 13px;
+    line-height: 16.25px;
+    text-align: left;
+    color: #000;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+  .emanetler-content a:hover {
+    color: #6f0bbb;
+  }
+  .emanetler-content::before,
+  .emanetler-content::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 17.9rem;
+    border: 11px solid transparent;
+    border-bottom-color: #000;
+  }
+  .emanetler-content::after {
+    left: 18rem;
+    border: 10px solid transparent;
+    border-bottom-color: #ffffff;
+  }
+  .emanetler-dropdown-content {
+    width: auto;
+    position: absolute;
+    border-radius: 5px;
+    height: auto;
+    top: 6rem;
+    left: 6.2rem;
+    opacity: 0;
+  }
+  /* onlayn dropdown */
+  .onlayn-dropbtn {
+    background-color: transparent;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .onlayn-dropdown {
+    display: inline-block;
+    transition: 0.3s ease-in;
+  }
+  .onlayn-dropdown:hover .onlayn-dropbtn {
+    color: rgb(111, 11, 187);
+  }
+  .onlayn-dropdown:hover .onlayn-dropdown-content {
+    top: 4rem;
+    opacity: 1;
+    animation: example 0.6s ease-in-out;
+  }
+  .onlayn-dropdown:not(:hover) .onlayn-dropdown-content {
+    top: 6rem;
+    opacity: 0;
+    animation: example-1 0.6s ease-in-out;
+  }
+  .onlayn-dropdown:hover .onlayn-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .onlayn-content {
+    display: none;
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #000;
+    cursor: pointer;
+    border-radius: 15px;
+    width: calc(100% + 20px);
+    height: auto;
+    row-gap: 61px;
+    padding: 22px 36px 22px 36px;
+    padding-inline-start: 36px;
+    text-align: left;
+    min-width: 624px;
+  }
+  .onlayn-content .kartlar {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .onlayn-content .faydali {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .onlayn-content h2 {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.9996px;
+    text-align: left;
+    margin-bottom: 19px;
+  }
+  .onlayn-content ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .onlayn-content .kartlar ul {
+    border-right: 1px solid gray;
+  }
+  .onlayn-content a {
+    font-family: Inter, sans-serif;
+    font-size: 13px;
+    line-height: 16.25px;
+    text-align: left;
+    color: #000;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+  .onlayn-content a:hover {
+    color: #6f0bbb;
+  }
+  .onlayn-content .vl {
+    margin: auto;
+    height: 3rem;
+  }
+  .onlayn-content::before,
+  .onlayn-content::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 24.9rem;
+    border: 11px solid transparent;
+    border-bottom-color: #000;
+  }
+  .onlayn-content::after {
+    left: 25rem;
+    border: 10px solid transparent;
+    border-bottom-color: #ffffff;
+  }
+  .onlayn-dropdown-content {
+    width: auto;
+    position: absolute;
+    border-radius: 5px;
+    height: auto;
+    top: 6rem;
+    left: 6.2rem;
+    opacity: 0;
+  }
+  /* diger dropdown */
+  .diger-dropbtn {
+    background-color: transparent;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .diger-dropdown {
+    display: inline-block;
+    transition: 0.3s ease-in;
+  }
+  .diger-dropdown:hover .diger-dropbtn {
+    color: rgb(111, 11, 187);
+  }
+  .diger-dropdown:hover .diger-dropdown-content {
+    top: 4rem;
+    opacity: 1;
+    animation: example 0.6s ease-in-out;
+  }
+  .diger-dropdown:not(:hover) .diger-dropdown-content {
+    top: 6rem;
+    opacity: 0;
+    animation: example-1 0.6s ease-in-out;
+  }
+  .diger-dropdown:hover .diger-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .diger-content {
+    display: none;
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #000;
+    cursor: pointer;
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    row-gap: 61px;
+    padding: 22px 36px 22px 36px;
+    padding-inline-start: 36px;
+    text-align: left;
+    min-width: 624px;
+  }
+  .diger-content .kartlar {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .diger-content .faydali {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .diger-content h2 {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.9996px;
+    text-align: left;
+    margin-bottom: 19px;
+  }
+  .diger-content ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .diger-content .kartlar ul {
+    border-right: 1px solid gray;
+  }
+  .diger-content a {
+    font-family: Inter, sans-serif;
+    font-size: 13px;
+    line-height: 16.25px;
+    text-align: left;
+    color: #000;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+  .diger-content a:hover {
+    color: #6f0bbb;
+  }
+  .diger-content::before,
+  .diger-content::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 29.9rem;
+    border: 11px solid transparent;
+    border-bottom-color: #000;
+  }
+  .diger-content::after {
+    left: 30rem;
+    border: 10px solid transparent;
+    border-bottom-color: #ffffff;
+  }
+  .diger-dropdown-content {
     width: auto;
     position: absolute;
     border-radius: 5px;
@@ -550,7 +890,7 @@
     border-radius: 0.5em 0 0 0.5em;
   }
   form.example::after {
-    content: '';
+    content: "";
     clear: both;
     display: table;
   }
@@ -562,7 +902,7 @@
     color: #fff;
     text-align: center;
     font-size: 0.875em;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 700;
     line-height: 1.062em;
     border: none;
@@ -570,7 +910,7 @@
     cursor: pointer;
   }
   .contact a {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 1.2em;
     cursor: pointer;
     height: auto;
@@ -590,182 +930,6 @@
   .contact:hover a,
   .contact:hover a i {
     color: rgb(111, 11, 187);
-  }
-  /* .ipoteka-dropbtn {
-    background-color: transparent;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  .ipoteka-dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  .ipoteka-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 500px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border-radius: 1em;
-    margin-top: 1rem;
-  }
-  .ipoteka-dropdown-content:before {
-    content: '';
-    position: absolute;
-    top: -20px;
-    left: 7%;
-    transform: translateX(-10%);
-    border: 10px solid transparent;
-    border-bottom-color: #f1f1f1;
-  }
-  .ipoteka-dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  .ipoteka-dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  .ipoteka-dropdown:hover .ipoteka-dropdown-content {
-    display: block;
-  } */
-  /* .ipoteka-dropdown:hover .ipoteka-dropbtn {
-    background-color: #3e8e41;
-  } */
-  .emanetler-dropbtn {
-    background-color: transparent;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  .emanetler-dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  .emanetler-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 500px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border-radius: 1em;
-    margin-top: 1rem;
-  }
-  .emanetler-dropdown-content:before {
-    content: '';
-    position: absolute;
-    top: -20px;
-    left: 7%;
-    transform: translateX(-10%);
-    border: 10px solid transparent;
-    border-bottom-color: #f1f1f1;
-  }
-  .emanetler-dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  .emanetler-dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  .emanetler-dropdown:hover .emanetler-dropdown-content {
-    display: block;
-  }
-  .emanetler-dropdown:hover .emanetler-dropbtn {
-    /* background-color: #3e8e41; */
-  }
-  .onlayn-dropbtn {
-    background-color: transparent;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  .onlayn-dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  .onlayn-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 500px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border-radius: 1em;
-    margin-top: 1rem;
-  }
-  .onlayn-dropdown-content:before {
-    content: '';
-    position: absolute;
-    top: -20px;
-    left: 7%;
-    transform: translateX(-10%);
-    border: 10px solid transparent;
-    border-bottom-color: #f1f1f1;
-  }
-  .onlayn-dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  .onlayn-dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  .onlayn-dropdown:hover .onlayn-dropdown-content {
-    display: block;
-  }
-  .onlayn-dropdown:hover .onlayn-dropbtn {
-    /* background-color: #3e8e41; */
-  }
-  .diger-dropbtn {
-    background-color: transparent;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-  .diger-dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  .diger-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 500px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border-radius: 1em;
-    margin-top: 1rem;
-  }
-  .diger-dropdown-content:before {
-    content: '';
-    position: absolute;
-    top: -20px;
-    left: 7%;
-    transform: translateX(-10%);
-    border: 10px solid transparent;
-    border-bottom-color: #f1f1f1;
-  }
-  .diger-dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  .diger-dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  .diger-dropdown:hover .diger-dropdown-content {
-    display: block;
-  }
-  .diger-dropdown:hover .diger-dropbtn {
-    /* background-color: #3e8e41; */
   }
   .languages-dropbtn {
     background-color: transparent;
@@ -801,6 +965,7 @@
   .languages-show {
     display: block;
   }
+  /* bank-haqqinda dropdown */
   .bank-haqqinda-dropbtn {
     background-color: transparent;
     font-size: 14px;
@@ -808,53 +973,116 @@
     cursor: pointer;
   }
   .bank-haqqinda-dropdown {
-    position: relative;
     display: inline-block;
-    /* background-color: red; */
+    transition: 0.3s ease-in;
   }
-  .bank-haqqinda-dropdown:hover .diger-dropbtn {
+  .bank-haqqinda-dropdown:hover .bank-haqqinda-dropbtn {
+    color: rgb(111, 11, 187);
+  }
+  .bank-haqqinda-dropdown:hover .bank-haqqinda-dropbtn i {
+    transform: rotate(180deg);
+  }
+  .bank-haqqinda-dropdown-content {
+    width: auto;
+    position: absolute;
+    border-radius: 5px;
+    height: auto;
+    top: 7rem;
+    right: 9rem;
+    opacity: 0;
+  }
+  .bank-haqqinda-dropdown:hover .bank-haqqinda-dropdown-content {
+    top: 4.8rem;
+    opacity: 1;
+    animation: example-2 0.6s ease-in-out;
+  }
+  .bank-haqqinda-dropdown:not(:hover) .bank-haqqinda-dropdown-content {
+    top: 7rem;
+    opacity: 0;
+    animation: example-3 0.6s ease-in-out;
+  }
+  .bank-haqqinda-dropdown:hover .bank-haqqinda-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .bank-haqqinda-content {
+    display: none;
+    position: relative;
+    background: #ffffff;
+    border: 1px solid #000;
+    cursor: pointer;
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    row-gap: 61px;
+    padding: 35px 36px 35px 36px;
+    padding-inline-start: 36px;
+    text-align: left;
+    min-width: 17rem;
+  }
+  .bank-haqqinda-content .kartlar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  .bank-haqqinda-content ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+  }
+  .bank-haqqinda-content a {
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    line-height: 16.25px;
+    text-align: left;
+    color: #000;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+  .bank-haqqinda-content a:hover {
     color: #6f0bbb;
   }
-  .bank-haqqinda-dropdown:hover i {
-    transform: rotate(180deg);
-    cursor: pointer;
-  }
-  /* .bank-haqqinda-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 300px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border-radius: 1em;
-    margin-top: 1.5rem;
-    right: 6rem;
-    background-color: #fff;
-  } */
-  /* .bank-haqqinda-dropdown-content:before {
+  .bank-haqqinda-content::before,
+  .bank-haqqinda-content::after {
     content: "";
     position: absolute;
-    top: -20px;
-    left: 45%;
-    transform: translateX(-10%);
-    border: 10px solid transparent;
-    border-bottom-color: #fff;
-  } */
-  /* .bank-haqqinda-dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  } */
-  /* .bank-haqqinda-dropdown-content a:hover {
-    background-color: #ddd;
-  } */
-  /* .bank-haqqinda-dropdown:hover .bank-haqqinda-dropdown-content {
-    display: block;
-  } */
-  .bank-haqqinda-dropdown:hover .bank-haqqinda-dropbtn {
-    color: #6f0bbb;
+    bottom: 100%;
+    left: 9.92rem;
+    border: 11px solid transparent;
+    border-bottom-color: #000;
   }
+  .bank-haqqinda-content::after {
+    left: 10rem;
+    border: 10px solid transparent;
+    border-bottom-color: #ffffff;
+  }
+  @keyframes example-2 {
+    from {
+      top: 7rem;
+      opacity: 0;
+    }
+    to {
+      top: 4.8rem;
+      opacity: 1;
+    }
+  }
+  @keyframes example-3 {
+    from {
+      top: 4.8rem;
+      opacity: 1;
+    }
+    to {
+      top: 7rem;
+      opacity: 0;
+    }
+  }
+  /* swiper */
   .swiper {
     width: 100%;
     height: 100%;
@@ -876,31 +1104,31 @@
     transition: all 0.7s ease-in-out;
   }
   #slide-1 {
-    background: url('../img/atb_productpage_istehlak_az_july.png') no-repeat;
+    background: url("../img/atb_productpage_istehlak_az_july.png") no-repeat;
     background-size: cover;
     background-position: 50% 100%;
     transition: all 0.7s ease-in-out;
   }
   #slide-2 {
-    background: url('../img/atb_360-sima_1980x430_parkinq.jpg') no-repeat;
+    background: url("../img/atb_360-sima_1980x430_parkinq.jpg") no-repeat;
     background-size: cover;
     background-position: 50% 100%;
     transition: all 0.7s ease-in-out;
   }
   #slide-3 {
-    background: url('../img/atb_360-sima_1980x430.jpg') no-repeat;
+    background: url("../img/atb_360-sima_1980x430.jpg") no-repeat;
     background-size: cover;
     background-position: 50% 100%;
     transition: all 0.7s ease-in-out;
   }
   #slide-4 {
-    background: url('../img/atb_atbcard_junior.png') no-repeat;
+    background: url("../img/atb_atbcard_junior.png") no-repeat;
     background-size: cover;
     background-position: 50% 100%;
     transition: all 0.7s ease-in-out;
   }
   #slide-5 {
-    background: url('../img/atb_atbcard_kredit.png') no-repeat;
+    background: url("../img/atb_atbcard_kredit.png") no-repeat;
     background-size: cover;
     background-position: 50% 100%;
     transition: all 0.7s ease-in-out;
@@ -917,7 +1145,7 @@
     gap: 1.7rem;
   }
   .slide-elements h2 {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 42px;
     font-weight: 800;
     text-align: start;
@@ -926,7 +1154,7 @@
     display: block;
   }
   .slide-elements button {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 1em;
     font-weight: 400;
     width: 9.7em;
@@ -946,11 +1174,27 @@
     justify-content: space-between;
   }
   .slide-elements p {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 24.444px;
     text-align: start;
+  }
+  #progress {
+    width: 1%;
+    height: 2%;
+    background-color: #d9d9d9;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    right: 50%;
+    z-index: 1;
+  }
+  #bar {
+    width: 1%;
+    height: 100%;
+    background-color: rgb(111, 11, 187);
   }
   /* .autoplay-progress {
     position: absolute;
@@ -966,14 +1210,15 @@
     color: var(--swiper-theme-color);
   }
   .autoplay-progress svg {
+    background-color: red;
     --progress: 0;
     position: absolute;
-    left: 0;
+    right: 10px;
     top: 0px;
     z-index: 10;
-    width: 100%;
+    width: 10rem;
     height: 100%;
-    stroke-width: 4px;
+    stroke-width: 10px;
     stroke: var(--swiper-theme-color);
     fill: none;
     stroke-dashoffset: calc(125.6px * (1 - var(--progress)));

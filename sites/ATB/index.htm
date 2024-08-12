@@ -44,7 +44,7 @@
                                     <div class="kredit-dropdown-content">
                                         <div class="kredit-content">
                                             <div class="kartlar">
-                                                <h2>kreditler</h2>
+                                                <h2>kreditlər</h2>
                                                 <ul>
                                                     <li>
                                                         <a href="">istehlak krediti</a>
@@ -92,7 +92,6 @@
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <!-- <div class="vl"></div> -->
                                             <div class="faydali">
                                                 <h2>faydalı</h2>
                                                 <ul>
@@ -131,7 +130,6 @@
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <!-- <div class="vl"></div> -->
                                             <div class="faydali">
                                                 <h2>faydalı</h2>
                                                 <ul>
@@ -145,15 +143,105 @@
                                 </div>
                                 <div class="emanetler-dropdown">
                                     <button class="emanetler-dropbtn">ƏMANƏTLƏR</button>
-                                    <div class="emanetler-dropdown-content"></div>
+                                    <div class="emanetler-dropdown-content">
+                                        <div class="emanetler-content">
+                                            <div class="kartlar">
+                                                <h2>əmanətlər</h2>
+                                                <ul>
+                                                    <li>
+                                                        <a href="">«klassik» əmanət</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="faydali">
+                                                <h2>faydalı</h2>
+                                                <ul>
+                                                    <li>
+                                                        <a href="">tariflər</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="onlayn-dropdown">
                                     <button class="onlayn-dropbtn">ONLAYN</button>
-                                    <div class="onlayn-dropdown-content"></div>
+                                    <div class="onlayn-dropdown-content">
+                                        <div class="onlayn-content">
+                                            <div class="kartlar">
+                                                <h2>onlayn xidmətlər</h2>
+                                                <ul>
+                                                    <li>
+                                                        <a href="">karta mədaxil</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">kredit ödənişi</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">depozit qutularının ödənişi</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">arayışın onlayn sifarişi</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">atb360</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">Apple Pay</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">Google pay</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="faydali">
+                                                <h2>faydalı</h2>
+                                                <ul>
+                                                    <li>
+                                                        <a href="">tariflər</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="diger-dropdown">
                                     <button class="diger-dropbtn">DİGƏR</button>
-                                    <div class="diger-dropdown-content"></div>
+                                    <div class="diger-dropdown-content">
+                                        <div class="diger-content">
+                                            <div class="kartlar">
+                                                <h2>xidmətlər</h2>
+                                                <ul>
+                                                    <li>
+                                                        <a href="">depozit qutuları</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">valyuta mübadiləsi əməliyyatları</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">müxbir hesablara xidmət</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">hesablaşma-kassa xidməti</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="faydali">
+                                                <h2>faydalı</h2>
+                                                <ul>
+                                                    <li>
+                                                        <a href="">tariflər</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">3D secure</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="">bank market</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </nav>
@@ -168,7 +256,7 @@
                             <input placeholder="sizə necə kömək edə bilərik?" id="inp" type="text" name="search" />
                         </form>
                     </div>
-                    <button class="atb-360">atb360</button>
+                    <button onclick="move()" class="atb-360">atb360</button>
                     <div class="languages-dropdown">
                         <button onclick="myFunctionLanguages()" class="languages-dropbtn">
                             AZ
@@ -180,12 +268,47 @@
                         </div>
                     </div>
                     <div class="bank-haqqinda-dropdown">
-                        <button class="bank-haqqinda-dropbtn">BANK HAQQINDA</button>
-                        <i class="fa-solid fa-chevron-down"></i>
+                        <button class="bank-haqqinda-dropbtn">BANK HAQQINDA <i class="fa-solid fa-chevron-down"></i></button>
+                        <div class="bank-haqqinda-dropdown-content">
+                            <div class="bank-haqqinda-content">
+                                <div class="kartlar">
+                                    <ul>
+                                        <li>
+                                            <a href="">bank məlumatları</a>
+                                        </li>
+                                        <li>
+                                            <a href="">karyera mərkəzi</a>
+                                        </li>
+                                        <li>
+                                            <a href="">məlumatların açıqlanması</a>
+                                        </li>
+                                        <li>
+                                            <a href="">xəbərlər</a>
+                                        </li>
+                                        <li>
+                                            <a href="">bankla əlaqə</a>
+                                        </li>
+                                        <li>
+                                            <a href="">irad və təkliflər</a>
+                                        </li>
+                                        <li>
+                                            <a href="">filiallar</a>
+                                        </li>
+                                        <li>
+                                            <a href="">təhlükəsizliyiniz</a>
+                                        </li>
+                                        <li>
+                                            <a href="">satınalmalar</a>
+                                        </li>
+                                        <li>
+                                            <a href="">xeyriyyəçilik</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="bank-haqqinda-dropdown-internal">
-                        <div class="bank-haqqinda-dropdown-content"></div>
-                    </div>
+                    
                     <div class="contact">
                         <a href="tel:945"><i class="fa-solid fa-phone"></i>945</a>
                     </div>
@@ -239,9 +362,12 @@
             <svg viewBox="0 0 48 48">
               <circle cx="24" cy="24" r="20"></circle>
             </svg>
-            <span></span>
           </div> -->
+          <div id="progress">
+            <div id="bar"></div>
+          </div>
             </div>
+            
 
             <!-- <div class="kartlar-content"></div>
             <div class="ipoteka-content"></div>

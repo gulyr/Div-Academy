@@ -11,6 +11,25 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
+// progress-bar
+var i = 0;
+function move() {
+  if (i == 0) {
+    i = 1;
+    var elem = document.getElementById("bar");
+    var width = 1;
+    var id = setInterval(frame, 25);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+        i = 0;
+      } else {
+        width++;
+        elem.style.width = width + "%";
+      }
+    }
+  }
+}
 
 // valyuta section - dropdown1
 function myFunctionValyuta1() {
@@ -124,6 +143,8 @@ document.getElementById("inp").addEventListener("click", function (event) {
 //     },
 //   },
 // });
+
+// const autoplayProgress = document.querySelector(".autoplay-progress");
 
 // krediti-hesabla section
 function openCity(evt, tab) {
