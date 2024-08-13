@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@ body {
 }
 
 body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #000;
   margin: 0;
   padding: 0;
@@ -89,7 +89,7 @@ body {
     align-items: center;
   }
   .tab span {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 16px;
     line-height: 19.5552px;
     text-align: left;
@@ -106,7 +106,7 @@ body {
     color: #fff;
   }
   .tab #tab-button-1 {
-    background: url('../img/button-1-black-border.png') no-repeat left;
+    background: url("../img/button-1-black-border.png") no-repeat left;
     background-color: rgb(243, 243, 243);
     background-size: initial;
     background-position: 12% 48%;
@@ -114,7 +114,7 @@ body {
     border-top-left-radius: 15px;
   }
   .tab #tab-button-2 {
-    background: url('../img/button-2-black-border.png') no-repeat left center;
+    background: url("../img/button-2-black-border.png") no-repeat left center;
     background-color: rgb(243, 243, 243);
     background-size: initial;
     background-position: 12% 48%;
@@ -122,13 +122,13 @@ body {
     border-top-right-radius: 15px;
   }
   .tab #tab-button-1.active {
-    background: url('../img/button-1-white-border.png') no-repeat left center;
+    background: url("../img/button-1-white-border.png") no-repeat left center;
     background-size: initial;
     background-color: rgb(111, 11, 187);
     background-position: 12% 48%;
   }
   .tab #tab-button-2.active {
-    background: url('../img/button-2-white-border.png') no-repeat left center;
+    background: url("../img/button-2-white-border.png") no-repeat left center;
     background-size: initial;
     background-color: rgb(111, 11, 187);
     background-position: 12% 48%;
@@ -157,7 +157,7 @@ body {
     display: none;
   }
   .tab-contents .tabcontent h2 {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 33px;
     font-weight: 700;
     line-height: 38.9984px;
@@ -222,7 +222,7 @@ body {
     margin-bottom: 1rem;
   }
   .box-1-external span {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 12px;
     color: rgb(143, 143, 143);
     line-height: 15px;
@@ -275,7 +275,7 @@ body {
     background: #434343;
   } */
   .box-1-internal p:nth-of-type(1) {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 14px;
     line-height: 16.9988px;
     flex-basis: 0%;
@@ -285,7 +285,7 @@ body {
     text-align: start;
   }
   .box-1-internal #range1value {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 18px;
     line-height: 22px;
     font-weight: 600;
@@ -322,7 +322,7 @@ body {
     font-weight: 700;
     line-height: 28.9992px;
     width: 5rem;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
   }
   #box-2 .part-2 {
     width: 15rem;
@@ -331,18 +331,18 @@ body {
     font-size: 35px;
     line-height: 49px;
     font-weight: 700;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
   }
   #box-2 .part-2 p {
     font-size: 14px;
     line-height: 19.6px;
     font-weight: 300;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
   }
   #box-2 button {
     background-color: rgb(111, 11, 187);
     border-radius: 10px;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     cursor: pointer;
     border: 1px solid rgb(111, 11, 187);
     font-size: 18px;
@@ -373,7 +373,7 @@ body {
     line-height: 14.6664px;
   }
   .muqavile p {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 12px;
     line-height: 14.6664px;
     color: #000;

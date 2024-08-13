@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 /* cards-2 section */
 
@@ -12,7 +12,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 * {
@@ -43,7 +43,7 @@ body {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto;
-    padding: 1rem;
+    padding: 1rem 0;
     gap: 1rem;
   }
   .container .cards-2 .card {
@@ -87,7 +87,7 @@ body {
     border-radius: 0.5rem;
     text-align: center;
     border: none;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 1.125em;
     padding: 1rem 0;
     background-size: auto;
@@ -103,7 +103,7 @@ body {
   }
   .container .cards-2 .card .card-elements .card-title {
     width: 100%;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 1.5em;
     font-weight: 500;
     color: #000;
@@ -119,19 +119,19 @@ body {
 @media only screen and (min-width: 1200px) {
   .container .cards-2 {
     max-width: 100%;
-    height: 45vh;
+    height: auto;
     /* display: flex; */
     /* justify-content: center; */
     /* align-items: center; */
     display: grid;
-    grid-template-columns: 49% 49%;
+    grid-template-columns: 48.5% 48.5%;
     grid-template-rows: auto;
-    padding: 1.1rem;
-    gap: 1.5rem;
+    padding: 1.1rem auto;
+    gap: 1rem;
   }
   .container .cards-2 .card {
     width: 100%;
-    height: auto;
+    height: 45vh;
     /* height: 37vh; */
     border-radius: 1rem;
     display: flex;
@@ -141,14 +141,14 @@ body {
   }
   .container .cards-2 #card-1 {
     background-color: #eff6fb;
-    background-image: url('../img/atb_productpage_atbcard_header_single-300x233.png');
+    background-image: url("../img/atb_productpage_atbcard_header_single-300x233.png");
     background-repeat: no-repeat;
     background-position: left 93% bottom 0%;
     background-size: 50%;
     /* background-size: contain; */
   }
   .container .cards-2 #card-2 {
-    background-image: url('../img/atb_productpage_atbcard_premium_header_double-300x233.png'),
+    background-image: url("../img/atb_productpage_atbcard_premium_header_double-300x233.png"),
       linear-gradient(to right, #000, #a0a0a0, #bfbfbf);
     background-repeat: no-repeat;
     background-position: left 93% top 0%;
@@ -176,7 +176,7 @@ body {
     border-radius: 0.5rem;
     text-align: center;
     border: none;
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 1.125em;
     padding: 1rem 0;
     background-size: auto;
@@ -191,7 +191,7 @@ body {
     color: #fff;
   }
   .container .cards-2 .card .card-elements .card-title {
-    font-family: 'Inter', sans-serif;
+    font-family: "Inter", sans-serif;
     font-size: 1.5em;
     font-weight: 500;
     color: #000;

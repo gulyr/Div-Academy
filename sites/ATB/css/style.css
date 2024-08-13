@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 @font-face {
-  font-family: 'Helvetica Neue';
-  src: url('../font/HelveticaNeue/HelveticaNeueMedium.otf');
+  font-family: "Helvetica Neue";
+  src: url("../font/HelveticaNeue/HelveticaNeueMedium.otf");
 }
 
 * {
@@ -16,11 +16,15 @@ body {
 }
 
 body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
 }
-
+.padding-div {
+  width: 100%;
+  height: auto;
+  padding: 0 5.5rem;
+}
 /* .container header .swiper .swiper-slide .card {
     width: 90%;
     border-radius: 15px;
