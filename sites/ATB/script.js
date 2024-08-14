@@ -1,3 +1,7 @@
+//header-top-2 menu icon
+function myFunction(x) {
+  x.classList.toggle("change");
+}
 // header swiper
 var swiper = new Swiper(".mySwiper", {
   spaceBetween: 0,

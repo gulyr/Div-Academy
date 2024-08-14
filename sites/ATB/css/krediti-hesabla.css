@@ -25,9 +25,7 @@ body {
 @media only screen and (min-width: 992px) {
   .krediti-hesabla {
     width: 100%;
-    /* height: 95vh; */
     height: auto;
-    /* max-width: 100%; */
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -35,39 +33,17 @@ body {
     align-items: center;
     transition: background 0.3s ease, border 0.3s ease, box-shadow 0.3s ease,
       transform 0.4s ease;
-    padding: 0 2rem 0 2rem;
-    padding-inline-start: 15px;
-    padding-inline-end: 15px;
     overflow-x: visible;
     overflow-y: visible;
     margin-block-end: 48px;
     margin-bottom: 48px;
     text-align: start;
-    /* padding: 0 2rem; */
     gap: 3rem;
-  }
-  .inner-krediti-hesabla {
-    width: 100%;
-    height: 633.734px;
-    line-height: 19.5552px;
-    margin: 0 79px;
-    max-width: min(100%, 1170px);
-    display: flex;
-    flex-direction: column;
-    justify-content: normal;
-    align-items: normal;
-    align-content: normal;
-    align-self: auto;
-    flex-wrap: nowrap;
-    flex-shrink: 1;
-    flex-grow: 1;
-    flex-basis: 0%;
-    background-color: #fff;
-    vertical-align: baseline;
   }
   .tab {
     overflow: hidden;
     width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
   }
@@ -135,7 +111,8 @@ body {
   }
   .tab-contents {
     width: 100%;
-    height: 384.656px;
+    /* height: 384.656px; */
+    height: auto;
     line-height: 19.5552px;
     transition: background 0.3s ease, border 0.3s ease, border-radius 0.3s ease,
       box-shadow 0.3s ease, transform 0.4s ease;
@@ -143,7 +120,8 @@ body {
   }
   .tabcontent {
     width: 100%;
-    height: 384.656px;
+    /* height: 384.656px; */
+    height: auto;
     line-height: 19.5552px;
     background-color: #fff;
     display: flex;
@@ -167,6 +145,7 @@ body {
   }
   .tabcontent-boxes {
     width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-between;
     row-gap: 30px;
@@ -233,47 +212,12 @@ body {
     width: 40.586em;
     height: 3px;
     cursor: pointer;
-    /* background: linear-gradient(
-      to right,
-      #6f0bbb 0%,
-      #6f0bbb 10%,
-      #fff 10%,
-      #fff 100%
-    );
-    outline: none;
-    transition: background 450ms ease-in;
-    -webkit-appearance: none; */
   }
-  /* .box-1-internal-external #range-1::-webkit-slider-thumb {
-    width: 0.9rem;
-    height: 0.9rem;
-    border-radius: 50%;
-    -webkit-appearance: none;
-    background: #6f0bbb;
-  } */
   .box-1-internal-external #range-2 {
     width: 649.375px;
     height: 2px;
     cursor: pointer;
   }
-  /* .progress {
-    background: linear-gradient(to right, #82CFD0 0%, #82CFD0 40%, #fff 40%, #fff 100%);
-    border: solid 2px #82CFD0;
-    border-radius: 8px;
-    height: 7px;
-    width: 400px;
-    outline: none;
-    transition: background 450ms ease-in;
-    -webkit-appearance: none;
-  } */
-  /* .progress::-webkit-slider-thumb {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    -webkit-appearance: none;
-    cursor: ew-resize;
-    background: #434343;
-  } */
   .box-1-internal p:nth-of-type(1) {
     font-family: "Inter", sans-serif;
     font-size: 14px;
